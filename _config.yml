@@ -8,5 +8,5 @@ github:
   about_url: ./index.html
   data_url: ./datasets.html
   tutorial_url: ./another-page.html
-  contribute_url: ./contact.html
-  contact_url: ./contacte.html
+  contribute_url: ./contribute.html
+  contact_url: ./contact.html
