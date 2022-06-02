@@ -1,3 +1,5 @@
+<script src="/demo.js"></script>
+
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
 <table id="myTable">
