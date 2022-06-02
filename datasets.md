@@ -1,6 +1,8 @@
 <script src="./assets/js/table.js"></script>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+Current available cases:
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for cases..">
 
 <table id="myTable">
   <tr class="header">
