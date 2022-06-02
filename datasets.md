@@ -1,4 +1,4 @@
-<script src="/demo.js"></script>
+<script src="./assets/table.js"></script>
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
