@@ -1,123 +1,44 @@
 ---
 layout: default
+title: BLASTNet
+description: Bearable Large Accessible Scientific Training Network-of-Datasets
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+# A Network-of-Datasets for Scientific Big Data
 
-There should be whitespace between paragraphs.
+![approach](./assets/img/approach.png)
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+# About
+This Bearable Large Accessible Scientific Training Network-of-Datasets (BLASTNet) is composed of:
+* Involvement from the scientific community.
+* Public Machine Learning (ML) repositories such as Kaggle.
+* Lossy compression techniques for managing >100 GB data.
+* An easily-accessible webpage. (You're browsing it right now!)
 
-# Header 1
+Right now, our efforts are focused on community outreach for [contributions](./contribute.html) from 100 different reacting and non-reacting flow physics simulations. 
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+We are also interested in experimental measurements and all kinds of data from other fields so please [contact us](./contact.html) if you're interested in collaborating.
 
-## Header 2
+# Sharing and Compressing
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Our datasets are shared via [Kaggle](https://www.kaggle.com/) since unique DOIs can be created for each dataset and a easy command line interface ([tutorial](./tutorial.html)) can be used for scientific clusters.
 
-### Header 3
+Many scientific data do exceed the 100 GB limit set by Kaggle. If this applies to you zip your files (.gz,.tar,.zip,_etc._) or consider error-bounded lossy compression algorithms ([tutorial](./tutorial.html)).
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+# Contribute
+Find out how to [contribute](./contribute.html) to our project to join our growing list of authors.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+# Authors and Contributors
 
-#### Header 4
+We thank the following people for contributing and curating this network-of-datasets:
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+| Name      | Affilliation | Date Joined |
+| ----------| -----------  | ---------- |
+| Wai Tong Chung   | Stanford University   | June 6 2022 |
+| Ki Sung Jung   | Sandia National Laboratory   | June 6 2022 |
+| Jacqueline H. Chen | Sandia National Laboratory   | June 6 2022 |
+| Matthias Ihme | Stanford University, SLAC National Laboratory  | June 6 2022 |
 
 
-### Definition lists can be used with HTML syntax.
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
