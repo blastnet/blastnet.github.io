@@ -6,7 +6,7 @@ description: Find out how to contribute to BLASTNet.
 
 # Submit your Kaggle Link
 
-Please click on [this link](https://forms.gle/VYMWvuNjFqPMJjwo6).
+Please click on [this link](https://forms.gle/VYMWvuNjFqPMJjwo6) to access a form.
 
 Before doing this checkout the standards and formats below.
 
@@ -16,11 +16,11 @@ To ensure that all files available on BLASTNet has consistent file formats, we p
 1. All simulation datasets must contain [U,&rho;,T,P,Y] to ensure that any additional variables can be easily post-processed. Provide chemkin or cantera files so that thermodynamic and transport properties can 
 2. X,Y,Z variables can be provided as a mathematical function for structured grids or a single share a single snapshot of the X,Y,Z values. 
 3. Shared simulation datasets must have a corresponding publication or conference submission.
-4. All uncompressed files should be in little endian float32 binaries. Tutorials on how to create this via python and matlab are provided [here](./tutorial.html).
+4. All uncompressed files should be in little endian float32 binaries. A Colab/tutorial on how to read and write this format in python is provided [here](./tutorial.html).
 5. Use .gz, .tar, .tar.gz, and .zip files for lossless compressed files. 
 6. All lossy compressed files should be compressed via [SZ2](https://github.com/szcompressor/SZ) with a point-wise error bound of 1% if possible. A study that we conducted concluded that deep learning algorithms are robust to a point-wise error bound of 4%. This is the hard limit for files on BLASTNet if your files need further compression. Tutorials for compression and decompression are provided [here](./tutorial.html).
 7. Datasets should be uploaded onto Kaggle ([tutorial](./tutorial.html)) to simplify batch access via a command line API.
-8. Once files are shared with these standards are met, join BLASTNet by **submitting the form above**. 
+8. Once files are shared with these standards are met, join BLASTNet by **submitting [the form](https://forms.gle/VYMWvuNjFqPMJjwo6) above**. 
 
 
 # Metadata Format
