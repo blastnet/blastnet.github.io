@@ -6,7 +6,7 @@ description: Tutorials for reading and compressing files.
 
 # Quick-start Colab
 
-[Click here](https://colab.research.google.com/drive/1_dk1IPQsOK-Dxq9VYSci4lB_LOyVCb5c?usp=sharing) for a quick-start tutorial on how to use Kaggle and read and write basic data formats from BLASTNet.  
+[Click here](https://colab.research.google.com/drive/1_dk1IPQsOK-Dxq9VYSci4lB_LOyVCb5c?usp=sharing) for a quick-start tutorial on how to use Kaggle, as well as reading and writing basic data formats from BLASTNet.  
 
 <!-- ___ -->
 
