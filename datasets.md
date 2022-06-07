@@ -8,6 +8,8 @@ description: Browse for datasets here
 
 # BLASTNet Simulation Datasets
 
+To download all cases via [Kaggle API](./tutorial.html), download [this bash script](./assets/bash/batch_download.sh).
+
 Search for cases, contributors, and whether the data has been compressed.
 
 Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>species</sub>.
