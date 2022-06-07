@@ -39,7 +39,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     <td style="text-align:center">0</td>
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/inert-ch4o2-hit-dns">Kaggle</a><BR>
-      <a href="./assets/immg/chung2022.png">.png</a><BR>
+      <a href="./assets/img/chung2022.png">.png</a><BR>
       <a href="https://doi.org/10.1016/j.combustflame.2021.111758">DOI</a><BR>
       <a href="./assets/bib/chung2022.bib">.bib</a><BR>
       <a href="./assets/json/chung2022_info.json">info.json</a>
@@ -60,7 +60,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     <td style="text-align:center">0</td>
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-bfer">Kaggle</a><BR>
-      <a href="./assets/immg/brouzet2021.png">.png</a><BR>
+      <a href="./assets/img/brouzet2021.png">.png</a><BR>
       <a href="https://doi.org/10.1017/jfm.2020.1184">DOI</a><BR>
       <a href="./assets/bib/brouzet2021.bib">.bib</a><BR>
       <a href="./assets/json/brouzet2021_info.json">info.json</a>
@@ -80,7 +80,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     <td style="text-align:center">0</td>
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-coffee">Kaggle</a><BR>
-      <a href="./assets/immg/brouzet2021.png">.png</a><BR>
+      <a href="./assets/img/brouzet2021.png">.png</a><BR>
       <a href="https://doi.org/10.1017/jfm.2020.1184">DOI</a><BR>
       <a href="./assets/bib/brouzet2021.bib">.bib</a><BR>
       <a href="./assets/json/brouzet2021b_info.json">info.json</a>
