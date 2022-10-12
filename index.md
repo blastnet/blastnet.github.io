@@ -39,6 +39,7 @@ We thank the following people for contributing and curating this network-of-data
 | Ki Sung Jung   | Sandia National Laboratory   | June 6 2022 |
 | Jacqueline H. Chen | Sandia National Laboratory   | June 6 2022 |
 | Matthias Ihme | Stanford University, SLAC National Laboratory  | June 6 2022 |
+| Jack Guo | Stanford University   | June 6 2022 |
 | Davy Brouzet | Stanford University  | June 6 2022 |
 | Mohsen Talei | University of Melbourne | June 6 2022 |
 

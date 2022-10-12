@@ -62,6 +62,26 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
       <a href="./assets/json/brouzet2021_info.json">info.json</a>
     </td>
   </tr>
+  <tr>
+    <td>Turbulent Round Jet Premixed COFFEE CH4-air Premixed Flame DNS</td>
+    <td>&#8226; Davy Brouzet <BR>&#8226; Mohsen Talei</td>
+    <!-- <td>T [K]; 300 , P [atm]: 1; Y: (CH4, O2), Inert </sub></td> -->
+    <td>
+        N<sub>x</sub> = 1235 <BR>
+        N<sub>y</sub> = 676 <BR>
+        N<sub>z</sub> = 676 <BR>
+        N<sub>&#632;</sub> = 6 + 6  <BR>
+        Size = 58 GB 
+    </td>
+    <td style="text-align:center">0</td>
+    <td>
+      <a href="https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-coffee">Kaggle</a><BR>
+      <a href="https://doi.org/10.1017/jfm.2020.1184">DOI</a><BR>
+      <a href="./assets/bib/brouzet2021.bib">.bib</a><BR>
+      <a href="./assets/json/brouzet2021b_info.json">info.json</a>
+    </td>
+  </tr>
+
 </table>
 
 
@@ -89,4 +109,17 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     <td style="text-align:center">1</td>
     <td>Under Review</td>
   </tr>
+  <<!-- tr>
+    <td>Transcritical (Peng-Robinson) Nitrogen Channel DNS</td>
+    <td>&#8226; Jack Guo  <BR> &#8226; Matthias Ihme</td>
+    <td>
+        N<sub>x</sub> = 384 <BR>
+        N<sub>y</sub> = 256 <BR>
+        N<sub>z</sub> = 384 <BR>
+        N<sub>&#632;</sub> = 6 + 0<BR>
+        Size = 50 GB 
+    </td>
+    <td style="text-align:center">0</td>
+    <td>Reformatting</td>
+  </tr> -->
 </table>
