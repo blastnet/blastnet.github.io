@@ -36,7 +36,8 @@ We will provide quick start instructions here to quickly share data on Kaggle. P
 3. Go to your account page `https://www.kaggle.com/<username>/account` and click on 'Create API Token' to download a `kaggle.json` file.
 4. Move the files to the default location and change the permissions:
 	```bash
-	mv ~/.kaggle/kaggle.json
+	mkdir ~/.kaggle
+	mv kaggle.json ~/.kaggle/kaggle.json
 	chmod 600 ~/.kaggle/kaggle.json
 	```
 5. Now you're ready to download and upload.
