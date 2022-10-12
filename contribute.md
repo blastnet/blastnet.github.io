@@ -6,7 +6,7 @@ description: Find out how to contribute to BLASTNet.
 
 # Submit your Kaggle Link
 
-Please click on [this link](https://forms.gle/VYMWvuNjFqPMJjwo6) to access a form.
+Please click on [this link](https://forms.gle/VYMWvuNjFqPMJjwo6) to access a form for submitting your metadata and Kaggle link.
 
 Before doing this checkout the standards and formats below.
 
