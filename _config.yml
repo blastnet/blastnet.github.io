@@ -1,5 +1,5 @@
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
+title: BLASTNet
+description: Bearable Large Accessible Scientific Training Network-of-Datasets
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
@@ -10,3 +10,4 @@ github:
   tutorial_url: ./tutorial.html
   contribute_url: ./contribute.html
   contact_url: ./contact.html
+  cite_url: ./cite.html
