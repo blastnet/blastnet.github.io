@@ -73,7 +73,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
         N<sub>y</sub> = 676 <BR>
         N<sub>z</sub> = 676 <BR>
         N<sub>&#632;</sub> = 6 + 6  <BR>
-        Size = 58 GB 
+        Size = 52 GB 
     </td>
     <td style="text-align:center">0</td>
     <td>
