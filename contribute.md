@@ -30,7 +30,7 @@ Each submission on blastnet should have a global and local metadata in an info.j
 ### Global Metadata
 ```py
 metadata['global'] = {
-	"dataset_id":"inert_ch4o2_hit_dns",
+	"dataset_id":"waitongchung/inert-ch4o2-hit-dns",
 		"Nxyz": [129,129,129],
 	"snapshots":98,
 	"variables":["UX_ms-1","UY_ms-1","UZ_ms-1"
