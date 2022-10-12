@@ -10,7 +10,7 @@ description: Browse for datasets here
 
 Search for cases, contributors, and whether the data has been compressed.
 
-Size of scalars N<sub>&#632;</sub> is provided in terms 4 (U,T,P,&rho;) + N<sub>species</sub>.
+Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>species</sub>.
 
 
 <table id="myTable">
@@ -31,7 +31,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 4 (U,T,P,&rho;) + N<sub>
         N<sub>x</sub> = 128 <BR>
         N<sub>y</sub> = 128 <BR>
         N<sub>z</sub> = 128 <BR>
-        N<sub>&#632;</sub> = 7 + 2  <BR>
+        N<sub>&#632;</sub> = 6 + 2  <BR>
         Size = 6 GB 
     </td>
     <td style="text-align:center">0</td>
@@ -39,7 +39,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 4 (U,T,P,&rho;) + N<sub>
       <a href="https://www.kaggle.com/datasets/waitongchung/inert-ch4o2-hit-dns">Kaggle</a><BR>
       <a href="https://doi.org/10.1016/j.combustflame.2021.111758">DOI</a><BR>
       <a href="./assets/bib/chung2022.bib">.bib</a><BR>
-      <a href="./assets/json/chung2022.json">info.json</a>
+      <a href="./assets/json/chung2022_info.json">info.json</a>
     </td>
   </tr>
   <!-- Brouzet and Talei -->

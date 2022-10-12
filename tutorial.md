@@ -66,11 +66,14 @@ To upload an entire dataset:
 	```
 	**Note that only alphanumeric and hyphens - are allowed.**
 3. Put your files into 3 folders (`<data>`, `grid`, and `<chem_thermo_tran>`), since Kaggle's API can only show 20 directories/files at most.
-4. Upload your dataset (automatically zips folders to 'tar' file) via:
-```bash
-kaggle datasets create -u -p <path/to/dataset>
-```
-
+4. Upload your dataset (Kaggle automatically zips folders into .tar file) via:
+	```bash
+	kaggle datasets create -u -p <path/to/dataset> --dir-mode 'tar'
+	```
+	or update your previously created datasets with
+	```bash
+	kaggle datasets version  -h
+	```
 ___
 
 
