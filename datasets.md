@@ -123,7 +123,48 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
       <a href="./assets/img/jung2021.png">.png</a><BR>
       <a href="https://doi.org/10.1016/j.combustflame.2021.111584">DOI</a><BR>
       <a href="./assets/bib/jung2021.bib">.bib</a><BR>
-      <a href="./assets/json/jung_2021_full_info.json">info.json</a>
+      <a href="./assets/json/jung2021_full_info.json">info.json</a>
+    </td>
+  </tr>
+    </tr>
+    <tr>
+    <td>Slot Burner Diluted H2-air Lifted Flame DNS (Half Domain)</td>
+    <td>&#8226; Ki Sung Jung <BR>&#8226;  Jacqueline H. Chen</td>
+    <!-- <td>T [K]; 300 , P [atm]: 1; Y: (CH4, O2), Inert </sub></td> -->
+    <td>
+        N<sub>x</sub> = 1000 <BR>
+        N<sub>y</sub> = 334 <BR>
+        N<sub>z</sub> = 201 <BR>
+        N<sub>&#632;</sub> = 6 + 9  <BR>
+        Size = 5 GB 
+    </td>
+    <td style="text-align:center">0</td>
+    <td>
+      <a href="https://www.kaggle.com/datasets/waitongchung/half-lifted-flame-dns-li">Kaggle</a><BR>
+      <a href="./assets/img/jung2021.png">.png</a><BR>
+      <a href="https://doi.org/10.1016/j.combustflame.2021.111584">DOI</a><BR>
+      <a href="./assets/bib/jung2021.bib">.bib</a><BR>
+      <a href="./assets/json/jung2021_info.json">info.json</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Premixed Flame-wall Interaction CH4-Air DNS</td>
+    <td>&#8226; Bin Jiang <BR>&#8226; Mohsen Talei</td>
+    <!-- <td>T [K]; 300 , P [atm]: 1; Y: (CH4, O2), Inert </sub></td> -->
+    <td>
+        N<sub>x</sub> = 1001 <BR>
+        N<sub>y</sub> = 251 <BR>
+        N<sub>z</sub> = 251 <BR>
+        N<sub>&#632;</sub> = 6 + 23  <BR>
+        Size = 89 GB 
+    </td>
+    <td style="text-align:center">0</td>
+    <td>
+      <a href="https://www.kaggle.com/datasets/waitongchung/premixed-flame-wall-ch4-air-dns-gri">Kaggle</a><BR>
+      <a href="./assets/img/jiang2021.jpeg">.jpeg</a><BR>
+      <a href="https://doi.org/10.1016/j.combustflame.2021.111432">DOI</a><BR>
+      <a href="./assets/bib/jiang2021.bib">.bib</a><BR>
+      <a href="./assets/json/jiang2021_info.json">info.json</a>
     </td>
   </tr>
 

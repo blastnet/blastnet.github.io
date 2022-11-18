@@ -42,6 +42,7 @@ We thank the following people for contributing and curating this network-of-data
 | Jack Guo | Stanford University   | June 6 2022 |
 | Davy Brouzet | Stanford University  | June 6 2022 |
 | Mohsen Talei | University of Melbourne | June 6 2022 |
+| Bin Jiang | University of Melbourne | Nov 18 2022 |
 
 
 
