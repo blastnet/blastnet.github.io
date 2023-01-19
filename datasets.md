@@ -168,5 +168,26 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     </td>
   </tr>
 
+  <tr>
+    <td>Transcritical Channel Flow N2 Turbulence DNS</td>
+    <td>&#8226; Jack Guo <BR>&#8226; Matthias Ihme</td>
+    <!-- <td>T [K]; 300 , P [atm]: 1; Y: (CH4, O2), Inert </sub></td> -->
+    <td>
+        N<sub>x</sub> = 385 <BR>
+        N<sub>y</sub> = 257 <BR>
+        N<sub>z</sub> = 257 <BR>
+        N<sub>&#632;</sub> = 6 <BR>
+        Size = 17 GB 
+    </td>
+    <td style="text-align:center">0</td>
+    <td>
+      <a href="https://www.kaggle.com/datasets/jguo96/transcritical-n2-channel-dns">Kaggle</a><BR>
+      <a href="./assets/img/guo2022.png">.png</a><BR>
+      <a href="https://doi.org/10.1017/jfm.2021.1157">DOI</a><BR>
+      <a href="./assets/bib/guo2022.bib">.bib</a><BR>
+      <a href="./assets/json/guo2022_info.json">info.json</a>
+    </td>
+  </tr>
+
 </table>
 
