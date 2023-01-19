@@ -181,7 +181,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     <td style="text-align:center">0</td>
     <td>
       <a href="https://www.kaggle.com/datasets/jguo96/transcritical-n2-channel-dns">Kaggle</a><BR>
-      <a href="./assets/img/guo2022.gif">.gif</a><BR>
+      <a href="./assets/img/guo2022.mp4">.mp4</a><BR>
       <a href="https://doi.org/10.1017/jfm.2021.1157">DOI</a><BR>
       <a href="./assets/bib/guo2022.bib">.bib</a><BR>
       <a href="./assets/json/guo2022_info.json">info.json</a>
