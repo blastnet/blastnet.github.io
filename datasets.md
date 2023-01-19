@@ -167,7 +167,6 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
       <a href="./assets/json/jiang2021_info.json">info.json</a>
     </td>
   </tr>
-
   <tr>
     <td>Transcritical Channel Flow N2 Turbulence DNS</td>
     <td>&#8226; Jack Guo <BR>&#8226; Matthias Ihme</td>
@@ -188,6 +187,5 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
       <a href="./assets/json/guo2022_info.json">info.json</a>
     </td>
   </tr>
-
 </table>
 
