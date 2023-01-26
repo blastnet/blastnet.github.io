@@ -187,5 +187,25 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
       <a href="./assets/json/guo2022_info.json">info.json</a>
     </td>
   </tr>
+  <tr>
+    <td>Vitiated H2-air Freely Propagating Flame DNS (Case 17)</td>
+    <td>&#8226; Bruno Savard </td>
+    <!-- <td>T [K]; 300 , P [atm]: 1; Y: (CH4, O2), Inert </sub></td> -->
+    <td>
+        N<sub>x</sub> = 1792 <BR>
+        N<sub>y</sub> = 128 <BR>
+        N<sub>z</sub> = 128 <BR>
+        N<sub>&#632;</sub> = 6 + 9 <BR>
+        Size = 30 GB 
+    </td>
+    <td style="text-align:center">0</td>
+    <td>
+      <a href="https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-17">Kaggle</a><BR>
+      <a href="./assets/img/savard2019.png">.png</a><BR>
+      <a href="https://doi.org/10.1016/j.combustflame.2019.07.020">DOI</a><BR>
+      <a href="./assets/bib/savard2019.bib">.bib</a><BR>
+      <a href="./assets/json/savard2019_info.json">info.json</a>
+    </td>
+  </tr>
 </table>
 
