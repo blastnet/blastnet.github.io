@@ -12,7 +12,7 @@ To cite BLASTNet, please use the following:
 
 Cite this website/datasets:
 ```
-W. T. Chung, K. S. Jung, J. H. Chen, M. Ihme, J. Guo,  D. Brouzet, M. Talei & B. Jiang. BLASTNet Simulation Dataset, 2022. https://blastnet.github.io/.
+W. T. Chung, K. S. Jung, J. H. Chen, M. Ihme, J. Guo,  D. Brouzet, M. Talei, B. Jiang & B. Savard. BLASTNet Simulation Dataset, 2022. https://blastnet.github.io/.
 ```
 
 Cite our Appl. Energy. Combust. Sci. journal article:
@@ -32,7 +32,7 @@ Cite this website/datasets:
 @misc{BLASTWeb,
     title = {B{LASTNet} Simulation Dataset},
     year = {2022},
-    author = {Wai Tong Chung and Matthias Ihme and Ki Sung Jung and Jacqueline H. Chen and Jack Guo and Davy Brouzet and Mohsen Talei and Bin Jiang},
+    author = {Wai Tong Chung and Matthias Ihme and Ki Sung Jung and Jacqueline H. Chen and Jack Guo and Davy Brouzet and Mohsen Talei and Bin Jiang and Bruno Savard},
     doi={https://doi.org/10.5281/zenodo.7242864},
     note = {\url{https://blastnet.github.io/}}
 }

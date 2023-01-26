@@ -43,6 +43,7 @@ We thank the following people for contributing and curating this network-of-data
 | Davy Brouzet | Stanford University  | June 6 2022 |
 | Mohsen Talei | University of Melbourne | June 6 2022 |
 | Bin Jiang | University of Melbourne | Nov 18 2022 |
+| Bruno Savard | Polytechnique Montréal | Jan 26 2023 |
 
 
 
