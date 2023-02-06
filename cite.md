@@ -8,7 +8,7 @@ description: Citing BLASTNet and individual data sources
 
 To cite BLASTNet, please cite (i) the dataset and (ii) either the Appl. Energy. Combust. Sci. or ICML W. paper:
 
-Cite this website/datasets [Links: [Paper](https://doi.org/10.5281/zenodo.7242864) | [.bib](./assets/bib/blastnet.bib)]:
+Cite this website/datasets [Links: [Zenodo DOI](https://doi.org/10.5281/zenodo.7242864) | [.bib](./assets/bib/blastnet.bib)]:
 ```
 W. T. Chung, K. S. Jung, J. H. Chen, M. Ihme, J. Guo,  D. Brouzet, M. Talei, B. Jiang & B. Savard. BLASTNet Simulation Dataset, 2022. https://blastnet.github.io/.
 ```
