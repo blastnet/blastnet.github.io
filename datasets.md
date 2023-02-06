@@ -125,7 +125,6 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
       <a href="./assets/bib/jung2021.bib">.bib</a><BR>
       <a href="./assets/json/jung2021_full_info.json">info.json</a>
     </td>
-  </tr>
     </tr>
     <tr>
     <td>Slot Burner Diluted H2-air Lifted Flame DNS (Half Domain)</td>
