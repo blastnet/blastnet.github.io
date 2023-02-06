@@ -5,20 +5,22 @@ description: Bearable Large Accessible Scientific Training Network-of-Datasets
 ---
 
 
-# A Network-of-Datasets for Scientific Big Data
-
-![approach](./assets/img/approach.png)
 
 # About
-This Bearable Large Accessible Scientific Training Network-of-Datasets (BLASTNet) is composed of:
+Click [here](./cite.html) for detailed papers on this work!
+
+To summarise, this Bearable Large Accessible Scientific Training Network-of-Datasets (BLASTNet) is composed of:
 * Involvement from the scientific community.
 * Public Machine Learning (ML) repositories such as Kaggle.
-* Lossy compression techniques for managing >100 GB data.
+* Lossless/lossy compression techniques for managing >100 GB data.
 * An easily-accessible webpage. (You're browsing it right now!)
 
 Right now, our efforts are focused on community outreach for [contributions](./contribute.html) from 100 different reacting and non-reacting flow physics simulations. 
 
 We are also interested in experimental measurements and all kinds of data from other fields so please [contact us](./contact.html) if you're interested in collaborating.
+
+Our network of datasets approach:
+![approach](./assets/img/approach.png)
 
 # Sharing and Compressing
 
