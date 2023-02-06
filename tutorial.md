@@ -4,9 +4,13 @@ title: Tutorials
 description: Tutorials for reading and compressing files.
 ---
 
-# Quick-start Colab
+# Quick-start
 
-[Click here](https://colab.research.google.com/drive/1_dk1IPQsOK-Dxq9VYSci4lB_LOyVCb5c?usp=sharing) for a quick-start tutorial on how to use Kaggle, as well as reading and writing basic data formats from BLASTNet.  
+[Click here](https://www.kaggle.com/code/waitongchung/smallhit-browsedata) for a quick-start tutorial on accessing BLASTNet data. **Make sure to click "Copy & Edit"** to run the code on Kaggle's cloud computing platform. This is the quickest way to interact with our datasets.
+
+[Click here](https://github.com/blastnet/kaggle_tutorials) for a complete repo of Kaggle tutorials for the BLASTNet datasets.
+
+[Click here](https://colab.research.google.com/drive/1_dk1IPQsOK-Dxq9VYSci4lB_LOyVCb5c?usp=sharing) for a Google Colab quick-start tutorial on how to use Kaggle, as well as reading and writing basic data formats from BLASTNet. This is useful when you want to use your own workstation with BLASTNet
 
 <!-- ___ -->
 
