@@ -6,7 +6,9 @@ description: Tutorials for reading and compressing files.
 
 # Quick-start
 
-[Click here](https://www.kaggle.com/code/waitongchung/smallhit-browsedata) for a quick-start tutorial on accessing BLASTNet data. **Make sure to click "Copy & Edit"** to run the code on Kaggle's cloud computing platform. This is the quickest way to interact with our datasets.
+[Click here](https://www.kaggle.com/code/waitongchung/smallhit-browsedata) for a quick-start tutorial on browsing BLASTNet data. **Make sure to click "Copy & Edit"** to run the code on Kaggle's cloud computing platform. This is the quickest way to interact with our datasets.
+
+[Click here](https://www.kaggle.com/code/waitongchung/smallhit-tfmultigpu) when you're ready train on multi-GPUs with TensorFlow. **Make sure to click "Copy & Edit"** to run the code on Kaggle's cloud computing platform.
 
 [Click here](https://github.com/blastnet/kaggle_tutorials) for a complete repo of Kaggle tutorials for the BLASTNet datasets.
 
