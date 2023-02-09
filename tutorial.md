@@ -6,19 +6,27 @@ description: Tutorials for reading and compressing files.
 
 # Quick-start
 
+[Click here](https://github.com/blastnet/kaggle_tutorials) for a complete repo of Kaggle tutorials for the BLASTNet datasets.
+
+### Browsing Data
+
 [Click here](https://www.kaggle.com/code/waitongchung/smallhit-browsedata) for a quick-start tutorial on browsing BLASTNet data. **Make sure to click "Copy & Edit"** to run the code on Kaggle's cloud computing platform. This is the quickest way to interact with our datasets.
+
+
+### Training and Testing ML Models
 
 [Click here](https://www.kaggle.com/code/waitongchung/smallhit-tfmultigpu) when you're ready train on multi-GPUs with TensorFlow. **Make sure to click "Copy & Edit"** to run the code on Kaggle's cloud computing platform.
 
-[Click here](https://github.com/blastnet/kaggle_tutorials) for a complete repo of Kaggle tutorials for the BLASTNet datasets.
 
-[Click here](https://colab.research.google.com/drive/1_dk1IPQsOK-Dxq9VYSci4lB_LOyVCb5c?usp=sharing) for a Google Colab quick-start tutorial on how to use Kaggle, as well as reading and writing basic data formats from BLASTNet. This is useful when you want to use your own workstation with BLASTNet
+### Using your own workstation
+
+[Click here](https://colab.research.google.com/drive/1_dk1IPQsOK-Dxq9VYSci4lB_LOyVCb5c?usp=sharing) for a Google Colab quick-start tutorial on how to use Kaggle, as well as reading and writing basic data formats from BLASTNet. This is useful when you want to use your own workstation with BLASTNet.
 
 <!-- ___ -->
 
 
-# Detailed Tutorials
-* [Kaggle Command Line API (How to share and download data?)](#kaggle-command-line-api)
+# Misc Tutorials
+* [Kaggle Command Line API (How to download and contribute data?)](#kaggle-command-line-api)
 * [SZ2 Lossy Compression (How to compress and decompress data?)](#sz2-lossy-compression)
 <!-- * [BLASTNet Data Formats (How to read and write data?)](#blastnet-data-formats) -->
 
