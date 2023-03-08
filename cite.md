@@ -10,7 +10,7 @@ To cite BLASTNet, please cite (i) the dataset and (ii) either the Appl. Energy. 
 
 Cite this website/datasets [Links: [Zenodo DOI](https://doi.org/10.5281/zenodo.7242864) | [.bib](./assets/bib/blastnet.bib)]:
 ```
-W. T. Chung, M. Ihme, K. S. Jung, J. H. Chen, J. Guo,  D. Brouzet, M. Talei, B. Jiang & B. Savard. BLASTNet Simulation Dataset, 2022. https://blastnet.github.io/.
+W. T. Chung, M. Ihme, K. S. Jung, J. H. Chen, J. Guo,  D. Brouzet, M. Talei, B. Jiang & B. Savard. BLASTNet Simulation Dataset (Version 1.2), 2023. https://blastnet.github.io/. 
 ```
 
 Cite our Appl. Energy. Combust. Sci. journal article [Links: [Paper](https://doi.org/10.1016/j.jaecs.2022.100087) | [.bib](./assets/bib/aecs.bib)]:
