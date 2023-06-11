@@ -140,7 +140,12 @@ schemadotorg:
     "description": "Reacting forced HIT uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/forced-hit-ch4-air-ffcm",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Alexei Y. Poludnenko"],
+    "creator":  {
+                  "@type": "Person",
+                  "givenName": "Alexei",
+                  "familyName": "Poludnenko",
+                  "name": "Alexei Y. Poludnenko"
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864" 
   },
   {
@@ -253,341 +258,341 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 2.45 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-2",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 3",
 
-    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 2.45",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-3 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 2.45 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-3",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 4",
 
-    "description": "Freely-propagating flame Kau = 13, Uin/SL = 2.45",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-4 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 13, Uin/SL = 2.45 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-4",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 5",
 
-    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-5 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 3.67 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-5",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 6",
 
-    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-6 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 3.67 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-6",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 7",
 
-    "description": "Freely-propagating flame Kau = 13, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-7 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 13, Uin/SL = 3.67 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-7",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 8",
 
-    "description": "Freely-propagating flame Kau = 19, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-8 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 19, Uin/SL = 3.67 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-8",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 9",
 
-    "description": "Freely-propagating flame Kau = 36, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-9 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 36, Uin/SL = 3.67 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-9",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 11",
 
-    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-11 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 4.63 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-11",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 12",
 
-    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-12 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 4.63 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-12",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 13",
 
-    "description": "Freely-propagating flame Kau = 13, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-13 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 13, Uin/SL = 4.63 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-13",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 17",
 
-    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 5.51",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-17 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 5.51 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-17",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 18",
 
-    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 5.51",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-18 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 5.51 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-18",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 19",
 
-    "description": "Freely-propagating flame Kau = 19, Uin/SL = 5.51",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-19 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 19, Uin/SL = 5.51 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-19",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 22",
 
-    "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-22 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 3.67 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-22",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 23",
 
-    "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-23 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 3.67 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-23",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 24",
 
-    "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-24 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 3.67 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-24",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 26",
 
-    "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-26 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 4.63 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-26",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 27",
 
-    "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-27 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 4.63 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-27",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 28",
 
-    "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-28 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 4.63 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-28",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 30",
 
-    "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 5.51",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-30 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 5.51 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-30",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
     "name": "Vitiated H2-air Freely Propagating Flame DNS 32",
 
-    "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 5.51",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-32 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 5.51 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-32",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": [{
+    "creator": {
                   "@type": "Person",
                   "sameAs": "https://orcid.org/0000-0002-6989-8942",
                   "givenName": "Bruno",
                   "familyName": "Savard",
                   "name": "Bruno Savard"
-                }],
+                },
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   }
 ]
