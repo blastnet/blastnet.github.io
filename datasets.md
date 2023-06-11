@@ -118,7 +118,20 @@ schemadotorg:
     "description": "Inert HIT uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/inert-ch4o2-hit-dns",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Wai Tong Chung","Matthias Ihme"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6447-4008",
+                  "givenName": "Wai Tong",
+                  "familyName": "Chung",
+                  "name": "Wai Tong Chung"
+                },
+                {
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-4158-7050",
+                  "givenName": "Matthias",
+                  "familyName": "Ihme",
+                  "name": "Matthias Ihme"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864" 
   },
   {
@@ -136,7 +149,19 @@ schemadotorg:
     "description": "Reacting jet flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-bfer",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Davy Brouzet","Mohsen Talei"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0003-1447-2538",
+                  "givenName": "Davy",
+                  "familyName": "Brouzet",
+                  "name": "Davy Brouzet"
+                },{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0001-5923-2461",
+                  "givenName": "Mohsen",
+                  "familyName": "Talei",
+                  "name": "Mohsen Talei"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -145,7 +170,19 @@ schemadotorg:
     "description": "Reacting jet flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-coffee",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Davy Brouzet","Mohsen Talei"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0003-1447-2538",
+                  "givenName": "Davy",
+                  "familyName": "Brouzet",
+                  "name": "Davy Brouzet"
+                },{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0001-5923-2461",
+                  "givenName": "Mohsen",
+                  "familyName": "Talei",
+                  "name": "Mohsen Talei"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864" 
   },
   {
@@ -154,7 +191,20 @@ schemadotorg:
     "description": "Inert transcritical channel flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/jguo96/transcritical-n2-channel-dns",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Jack Guo","Matthias Ihme"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0003-4090-9289",
+                  "givenName": "Jack",
+                  "familyName": "Guo",
+                  "name": "Jack Guo"
+                  },
+                {
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-4158-7050",
+                  "givenName": "Matthias",
+                  "familyName": "Ihme",
+                  "name": "Matthias Ihme"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864" 
   },
   {
@@ -163,7 +213,18 @@ schemadotorg:
     "description": "Slot Burner uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/full-lifted-flame-dns-li",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Ki Sung Jung","Jacqueline H. Chen"],
+    "creator": [{
+                  "@type": "Person",
+                  "givenName": "Ki Sung",
+                  "familyName": "Jung",
+                  "name": "Ki Sung Jung"
+                },
+                {
+                  "@type": "Person",
+                  "givenName": "Jacqueline",
+                  "familyName": "Chen",
+                  "name": "Jacqueline H. Chen"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -172,7 +233,18 @@ schemadotorg:
     "description": "Reacting channel flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/premixed-flame-wall-ch4-air-dns-gri",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bin Jiang","Mohsen Talei"],
+    "creator": [{
+                  "@type": "Person",
+                  "givenName": "Bin",
+                  "familyName": "Jiang",
+                  "name": "Bin Jiang"
+                },{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0001-5923-2461",
+                  "givenName": "Mohsen",
+                  "familyName": "Talei",
+                  "name": "Mohsen Talei"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -181,7 +253,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 2.45 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-2",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -191,7 +269,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 2.45",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-3 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -201,7 +285,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 13, Uin/SL = 2.45",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-4 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -211,7 +301,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-5 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -221,7 +317,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-6 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -231,7 +333,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 13, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-7 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -249,7 +357,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 36, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-9 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -259,7 +373,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-11 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -269,7 +389,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-12 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -279,7 +405,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 13, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-13 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -289,7 +421,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 5.51",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-17 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -299,7 +437,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 5.51",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-18 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -309,7 +453,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 19, Uin/SL = 5.51",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-19 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -319,7 +469,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-22 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -329,7 +485,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-23 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -339,7 +501,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-24 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -349,7 +517,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-26 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -359,7 +533,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-27 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -369,7 +549,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-28 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -379,7 +565,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 5.51",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-30 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
@@ -389,7 +581,13 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 5.51",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-32 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "creator": ["Bruno Savard"],
+    "creator": [{
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                }],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   }
 ]
