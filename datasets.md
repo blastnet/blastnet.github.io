@@ -176,197 +176,218 @@ schemadotorg:
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 2",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
-    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 2.45",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 2",
+    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 2.45 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-2",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 3",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 3",
+
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 2.45",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-3",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-3 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 4",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 4",
+
     "description": "Freely-propagating flame Kau = 13, Uin/SL = 2.45",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-4",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-4 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 5",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 5",
+
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-5",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-5 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 6",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 6",
+
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-6",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-6 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 7",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 7",
+
     "description": "Freely-propagating flame Kau = 13, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-7",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-7 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 8",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 8",
+
     "description": "Freely-propagating flame Kau = 19, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-8",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-8 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 9",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 9",
+
     "description": "Freely-propagating flame Kau = 36, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-9",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-9 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 11",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 11",
+
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-11",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-11 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 12",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 12",
+
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-12",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-12 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 13",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 13",
+
     "description": "Freely-propagating flame Kau = 13, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-13",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-13 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 17",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 17",
+
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 5.51",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-17",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-17 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 18",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 18",
+
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 5.51",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-18",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-18 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 19",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 19",
+
     "description": "Freely-propagating flame Kau = 19, Uin/SL = 5.51",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-19",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-19 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 22",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 22",
+
     "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-22",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-22 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 23",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 23",
+
     "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-23",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-23 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 24",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 24",
+
     "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 3.67",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-24",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-24 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 26",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 26",
+
     "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-26",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-26 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 27",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 27",
+
     "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-27",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-27 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 28",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 28",
+
     "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 4.63",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-28",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-28 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 30",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 30",
+
     "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 5.51",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-30",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-30 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
-    "@type": "Vitiated H2-air Freely Propagating Flame DNS 32",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "@type": "Dataset",
+    "name": "Vitiated H2-air Freely Propagating Flame DNS 32",
+
     "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 5.51",
-    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-32",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-32 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator": ["Bruno Savard"],
     "identifier": "https://doi.org/10.5281/zenodo.7242864"
