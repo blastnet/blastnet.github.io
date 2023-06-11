@@ -354,6 +354,14 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 19, Uin/SL = 3.67 uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-8",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": {
+                  "@type": "Person",
+                  "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                  "givenName": "Bruno",
+                  "familyName": "Savard",
+                  "name": "Bruno Savard"
+                },
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
