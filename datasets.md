@@ -1,12 +1,325 @@
 ---
 layout: default
-title: Datasets
-description: Browse for datasets here
+title: BLASTNet Simulation Dataset
+description: 3D high-fidelity reacting and non-reacting compressible turbulent flow simulation data.
+schemadotorg:
+ "@context": http://schema.org/
+ "@type": "Dataset"
+ name: "BLASTNet Simulation Dataset"
+ alternateName: ["BLASTNet", "BLASTNet Dataset"]
+ description: "BLASTNet is a 2.2 TB network-of-datasets containing 744 full-domain samples from 34 high-fidelity direct numerical simulations. It aims to addresses the current limited availability of 3D high-fidelity reacting and non-reacting compressible turbulent flow simulation data."
+ url: https://blastnet.github.io/datasets.html
+ sameAs: https://blastnet.github.io/
+ identifier: https://doi.org/10.5281/zenodo.7709676
+ citation : ["https://doi.org/10.1016/j.jaecs.2022.100087","https://doi.org/10.48550/arXiv.2207.12546"]
+ creator: [
+  {
+    "@type": "Person",
+    "sameAs": "https://orcid.org/0000-0002-6447-4008",
+    "givenName": "Wai Tong",
+    "familyName": "Chung",
+    "name": "Wai Tong Chung"
+  },
+  {
+    "@type": "Person",
+    "sameAs": "https://orcid.org/0000-0001-5160-4451",
+    "givenName": "Bassem",
+    "familyName": "Akoush",
+    "name": "Bassem Akoush"
+  },
+  {
+    "@type": "Person",
+    "sameAs": "https://orcid.org/0000-0001-9670-7147",
+    "givenName": "Pushan",
+    "familyName": "Sharma",
+    "name": "Pushan Sharma"
+  },
+  {
+    "@type": "Person",
+    "givenName": "Alex",
+    "familyName": "Tamkin",
+    "name": "Alex Tamkin"
+  },
+  {
+    "@type": "Person",
+    "givenName": "Ki Sung",
+    "familyName": "Jung",
+    "name": "Ki Sung Jung"
+  },
+  {
+    "@type": "Person",
+    "givenName": "Jacqueline",
+    "familyName": "Chen",
+    "name": "Jacqueline H. Chen"
+  },
+  {
+    "@type": "Person",
+    "sameAs": "https://orcid.org/0000-0003-4090-9289",
+    "givenName": "Jack",
+    "familyName": "Guo",
+    "name": "Jack Guo"
+  },
+  {
+    "@type": "Person",
+    "sameAs": "https://orcid.org/0000-0003-1447-2538",
+    "givenName": "Davy",
+    "familyName": "Brouzet",
+    "name": "Davy Brouzet"
+  },
+  {
+    "@type": "Person",
+    "sameAs": "https://orcid.org/0000-0001-5923-2461",
+    "givenName": "Mohsen",
+    "familyName": "Talei",
+    "name": "Mohsen Talei"
+  },
+  {
+    "@type": "Person",
+    "sameAs": "https://orcid.org/0000-0002-6989-8942",
+    "givenName": "Bruno",
+    "familyName": "Savard",
+    "name": "Bruno Savard"
+  },
+  {
+    "@type": "Person",
+    "givenName": "Alexei",
+    "familyName": "Poludnenko",
+    "name": "Alexei Y. Poludnenko"
+  },
+  {
+    "@type": "Person",
+    "sameAs": "https://orcid.org/0000-0002-4158-7050",
+    "givenName": "Matthias",
+    "familyName": "Ihme",
+    "name": "Matthias Ihme"
+  }
+]
+ keywords: ["BLASTNet","DNS","Dataset","Flow physics","Computational Fluid Dynamics", "Partial Differential Equations", "Turbulent Reacting Flows", "Direct Numerical Simulation", "Fluid Mechanics", "Combustion"]
+ license: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+ version: 2.0
+ isAccessibleForFree: true
+ distribution: [
+         {
+            "@type":"DataDownload",
+            "encodingFormat":".sh",
+            "contentUrl":"https://blastnet.github.io/assets/bash/batch_download.sh"
+         }
+      ]
+ hasPart: [
+  {
+    "@type": "Dataset",
+    "name": "Inert CH4O2 HIT DNS",
+    "description": "Inert HIT",
+    "url": "https://www.kaggle.com/datasets/waitongchung/inert-ch4o2-hit-dns",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Dataset",
+    "name": "CH4-air flame interaction with Forced HIT DNS",
+    "description": "Reacting forced HIT",
+    "url": "https://www.kaggle.com/datasets/waitongchung/forced-hit-ch4-air-ffcm",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Dataset",
+    "name": "Round jet Premixed CH4-Air BFER DNS",
+    "description": "Reacting jet flow",
+    "url": "https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-bfer",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Dataset",
+    "name": "Round jet Premixed CH4-Air COFFEE DNS",
+    "description": "Reacting jet flow",
+    "url": "https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-coffee",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Dataset",
+    "name": "Round jet Premixed CH4-Air BFER DNS",
+    "description": "Reacting jet flow",
+    "url": "https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-coffee",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Dataset",
+    "name": "TRANSCRITICAL N2 CHANNEL TURBULENT DNS",
+    "description": "Inert transcritrical channel flow",
+    "url": "https://www.kaggle.com/datasets/jguo96/transcritical-n2-channel-dns",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Dataset",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Reacting channel flow",
+    "url": "https://www.kaggle.com/datasets/waitongchung/premixed-flame-wall-ch4-air-dns-gri",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Dataset",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Reacting channel flow",
+    "url": "https://www.kaggle.com/datasets/waitongchung/premixed-flame-wall-ch4-air-dns-gri",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 2",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 2.45",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-2",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 3",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 2.45",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-3",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 4",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 13, Uin/SL = 2.45",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-4",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 5",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 3.67",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-5",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 6",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 3.67",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-6",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 7",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 13, Uin/SL = 3.67",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-7",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 8",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 19, Uin/SL = 3.67",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-8",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 9",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 36, Uin/SL = 3.67",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-9",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 11",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 4.63",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-11",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 12",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 4.63",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-12",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 13",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 13, Uin/SL = 4.63",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-13",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 17",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 5.51",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-17",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 18",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 5.51",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-18",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 19",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 19, Uin/SL = 5.51",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-19",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 22",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 3.67",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-22",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 23",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 3.67",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-23",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 24",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 3.67",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-24",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 26",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 4.63",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-26",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 27",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 4.63",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-27",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 28",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 4.63",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-28",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 30",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 5.51",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-30",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
+    "@type": "Vitiated H2-air Freely Propagating Flame DNS 32",
+    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
+    "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 5.51",
+    "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-32",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  }
+]
 ---
 
 <script src="./assets/js/table.js"></script>
-
-# BLASTNet Simulation Datasets
 
 To download all cases via [Kaggle API](./tutorial.html), download [this bash script](./assets/bash/batch_download.sh).
 
