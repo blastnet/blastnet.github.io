@@ -10,7 +10,7 @@ schemadotorg:
  description: "BLASTNet is a 2.2 TB network-of-datasets containing 744 full-domain samples from 34 high-fidelity direct numerical simulations. It aims to addresses the current limited availability of 3D high-fidelity reacting and non-reacting compressible turbulent flow simulation data."
  url: https://blastnet.github.io/datasets.html
  sameAs: https://blastnet.github.io/
- identifier: https://doi.org/10.5281/zenodo.7709676
+ identifier: https://doi.org/10.5281/zenodo.72428646
  citation : ["https://doi.org/10.1016/j.jaecs.2022.100087","https://doi.org/10.48550/arXiv.2207.12546"]
  creator: [
   {
@@ -118,20 +118,26 @@ schemadotorg:
     "description": "Inert HIT uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/inert-ch4o2-hit-dns",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Wai Tong Chung","Matthias Ihme"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864" 
   },
   {
     "@type": "Dataset",
     "name": "CH4-air flame interaction with Forced HIT DNS",
     "description": "Reacting forced HIT uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/forced-hit-ch4-air-ffcm",
-    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Alexei Y. Poludnenko"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864" 
   },
   {
     "@type": "Dataset",
     "name": "Round jet Premixed CH4-Air BFER DNS",
     "description": "Reacting jet flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-bfer",
-    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Davy Brouzet","Mohsen Talei"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
@@ -139,20 +145,26 @@ schemadotorg:
     "description": "Reacting jet flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-coffee",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  },
-  {
-    "@type": "Dataset",
-    "name": "Round jet Premixed CH4-Air BFER DNS",
-    "description": "Reacting jet flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
-    "url": "https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-coffee",
-    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Davy Brouzet","Mohsen Talei"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864" 
   },
   {
     "@type": "Dataset",
     "name": "TRANSCRITICAL N2 CHANNEL TURBULENT DNS",
-    "description": "Inert transcritrical channel flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "description": "Inert transcritical channel flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/jguo96/transcritical-n2-channel-dns",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Jack Guo","Matthias Ihme"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864" 
+  },
+  {
+    "@type": "Dataset",
+    "name": "Slot Burner Diluted H2-air Lifted Flame DNS (Full Domain)",
+    "description": "Slot Burner uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
+    "url": "https://www.kaggle.com/datasets/waitongchung/full-lifted-flame-dns-li",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Ki Sung Jung","Jacqueline H. Chen"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Dataset",
@@ -160,13 +172,8 @@ schemadotorg:
     "description": "Reacting channel flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
     "url": "https://www.kaggle.com/datasets/waitongchung/premixed-flame-wall-ch4-air-dns-gri",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  },
-  {
-    "@type": "Dataset",
-    "name": "Premixed Flame-wall Interaction CH4 Air DNS",
-    "description": "Reacting channel flow uploaded as part of Bearable Large Accessible Scientific Network-of-Datasets",
-    "url": "https://www.kaggle.com/datasets/waitongchung/premixed-flame-wall-ch4-air-dns-gri",
-    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bin Jiang","Mohsen Talei"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 2",
@@ -174,6 +181,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 2.45",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-2",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 3",
@@ -181,6 +190,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 2.45",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-3",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 4",
@@ -188,6 +199,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 13, Uin/SL = 2.45",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-4",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 5",
@@ -195,6 +208,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-5",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 6",
@@ -202,6 +217,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-6",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 7",
@@ -209,6 +226,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 13, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-7",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 8",
@@ -223,6 +242,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 36, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-9",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 11",
@@ -230,6 +251,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-11",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 12",
@@ -237,6 +260,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-12",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 13",
@@ -244,6 +269,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 13, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-13",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 17",
@@ -251,6 +278,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 2.4, Uin/SL = 5.51",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-17",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 18",
@@ -258,6 +287,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 6.8, Uin/SL = 5.51",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-18",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 19",
@@ -265,6 +296,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 19, Uin/SL = 5.51",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-19",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 22",
@@ -272,6 +305,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-22",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 23",
@@ -279,6 +314,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-23",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 24",
@@ -286,6 +323,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 3.67",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-24",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 26",
@@ -293,6 +332,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-26",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 27",
@@ -300,6 +341,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 4.8, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-27",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 28",
@@ -307,6 +350,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 4.63",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-28",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 30",
@@ -314,6 +359,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 1.7, Uin/SL = 5.51",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-30",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   },
   {
     "@type": "Vitiated H2-air Freely Propagating Flame DNS 32",
@@ -321,6 +368,8 @@ schemadotorg:
     "description": "Freely-propagating flame Kau = 8.9, Uin/SL = 5.51",
     "url": "https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-32",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "creator": ["Bruno Savard"],
+    "identifier": "https://doi.org/10.5281/zenodo.7242864"
   }
 ]
 ---
