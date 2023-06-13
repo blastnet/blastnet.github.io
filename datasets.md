@@ -112,6 +112,102 @@ schemadotorg:
          }
       ]
  hasPart: [
+{"@type": "Dataset",
+    "name": "BLASTNet Momentum128 3D SR Dataset",
+    "description": "A processed subset of BLASTNet 2.0 for 3D volumetric super-resolution of turbulent flows",
+    "url": "https://www.kaggle.com/datasets/waitongchung/blastnet-momentum-3d-sr-dataset",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "identifier": "https://doi.org/10.5281/zenodo.7242864",
+    "alternateName": ["Momentum128","Momentum128 3D SR Dataset"],
+    "keywords": ["BLASTNet","DNS","Dataset","Flow physics","Computational Fluid Dynamics", "Partial Differential Equations", "Turbulent Reacting Flows", "Direct Numerical Simulation", "Fluid Mechanics", "Combustion", "Super-resolution"],
+    "creator": [{
+                "@type": "Person",
+                "sameAs": "https://orcid.org/0000-0002-6447-4008",
+                "givenName": "Wai Tong",
+                "familyName": "Chung",
+                "name": "Wai Tong Chung"
+              },
+              {
+                "@type": "Person",
+                "sameAs": "https://orcid.org/0000-0001-5160-4451",
+                "givenName": "Bassem",
+                "familyName": "Akoush",
+                "name": "Bassem Akoush"
+              },
+              {
+                "@type": "Person",
+                "sameAs": "https://orcid.org/0000-0001-9670-7147",
+                "givenName": "Pushan",
+                "familyName": "Sharma",
+                "name": "Pushan Sharma"
+              },
+              {
+                "@type": "Person",
+                "givenName": "Alex",
+                "familyName": "Tamkin",
+                "name": "Alex Tamkin"
+              },
+              {
+                "@type": "Person",
+                "givenName": "Ki Sung",
+                "familyName": "Jung",
+                "name": "Ki Sung Jung"
+              },
+              {
+                "@type": "Person",
+                "givenName": "Jacqueline",
+                "familyName": "Chen",
+                "name": "Jacqueline H. Chen"
+              },
+              {
+                "@type": "Person",
+                "sameAs": "https://orcid.org/0000-0003-4090-9289",
+                "givenName": "Jack",
+                "familyName": "Guo",
+                "name": "Jack Guo"
+              },
+              {
+                "@type": "Person",
+                "sameAs": "https://orcid.org/0000-0003-1447-2538",
+                "givenName": "Davy",
+                "familyName": "Brouzet",
+                "name": "Davy Brouzet"
+              },
+              {
+                "@type": "Person",
+                "givenName": "Bin",
+                "familyName": "Jiang",
+                "name": "Bin Jiang"
+              },
+              {
+                "@type": "Person",
+                "sameAs": "https://orcid.org/0000-0001-5923-2461",
+                "givenName": "Mohsen",
+                "familyName": "Talei",
+                "name": "Mohsen Talei"
+              },
+              {
+                "@type": "Person",
+                "sameAs": "https://orcid.org/0000-0002-6989-8942",
+                "givenName": "Bruno",
+                "familyName": "Savard",
+                "name": "Bruno Savard"
+              },
+              {
+                "@type": "Person",
+                "givenName": "Alexei",
+                "familyName": "Poludnenko",
+                "name": "Alexei Y. Poludnenko"
+              },
+              {
+                "@type": "Person",
+                "sameAs": "https://orcid.org/0000-0002-4158-7050",
+                "givenName": "Matthias",
+                "familyName": "Ihme",
+                "name": "Matthias Ihme"
+              }
+            ]
+},
 {
     "@type": "Dataset",
     "name": "Inert CH4O2 HIT DNS",
