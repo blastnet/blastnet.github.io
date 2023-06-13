@@ -863,24 +863,44 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     </td>
   </tr>
   <tr>
-    <td>Vitiated H2-air Freely Propagating Flame DNS (Case 17)</td>
+    <td>Vitiated H2-air Freely Propagating Flame DNS</td>
     <td>&#8226; Bruno Savard </td>
     <!-- <td>T [K]; 300 , P [atm]: 1; Y: (CH4, O2), Inert </sub></td> -->
     <td>
-        N<sub>x</sub> = 1792 <BR>
-        N<sub>y</sub> = 128 <BR>
-        N<sub>z</sub> = 128 <BR>
-        N<sub>&#632;</sub> = 6 + 9 <BR>
+        <a href="./savard.html">22 configs</a><BR>
+        N<sub>&#632;</sub> = 6 + 9  <BR>
+        Size = 1.9 TB 
+    </td>
+    <!-- <td style="text-align:center">0</td> -->
+    <td>
+      <a href="./savard.html">Kaggle Links</a><BR>
+      <a href="./assets/img/savard2019.png">.png</a><BR>
+      <a href="https://doi.org/10.1016/j.combustflame.2019.07.020">DOI</a><BR>
+      <a href="./assets/bib/savard2019.bib">.bib</a><BR>
+      <a href="./savard.html">info.json Links</a>
+    </td>
+  </tr>
+  <tr>
+    <td>CH4-air flame interaction with Forced HIT DNS</td>
+    <td>&#8226; Alexei Y. Poludnenko </td>
+    <!-- <td>T [K]; 300 , P [atm]: 1; Y: (CH4, O2), Inert </sub></td> -->
+   <td>
+        N<sub>x</sub> = 257 <BR>
+        N<sub>y</sub> = 257 <BR>
+        N<sub>z</sub> = 4097 <BR>
+        N<sub>&#632;</sub> = 6 + 21<BR>
         Size = 30 GB 
     </td>
     <!-- <td style="text-align:center">0</td> -->
     <td>
-      <a href="https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-17">Kaggle</a><BR>
-      <a href="./assets/img/savard2019.png">.png</a><BR>
-      <a href="https://doi.org/10.1016/j.combustflame.2019.07.020">DOI</a><BR>
-      <a href="./assets/bib/savard2019.bib">.bib</a><BR>
-      <a href="./assets/json/savard2019_info.json">info.json</a>
+      <a href="https://www.kaggle.com/datasets/waitongchung/forced-hit-ch4-air-ffcm">Kaggle</a><BR>
+      <a href="./assets/img/savard2019.png">.png</a><BR> 
+      <a href="https://doi.org/10.1016/j.combustflame.2009.11.018">DOI</a><BR>
+      <a href="./assets/bib/poludnenko2010.bib">.bib</a><BR>
+      <a href="./assets/json/poludnenko_info.json">info.json</a>
     </td>
   </tr>
 </table>
+
+
 
