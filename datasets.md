@@ -702,11 +702,23 @@ schemadotorg:
 ]
 ---
 
+
 <script src="./assets/js/table.js"></script>
 
-To download all cases via [Kaggle API](./tutorial.html), download [this bash script](./assets/bash/batch_download.sh).
+**BLASTNet Momentum128 3D SR Dataset**
 
-Search for cases, contributors, and whether the data has been compressed.
+The BLASTNet Momentum128 3D SR is extracted from BLASTNet 2.0 to mitigate constraints in memory and grid properties:
+1. This is done by selecting to 2000 sub-volumes (of size $128^3$)of density and velocity fields from uniform-grid regions that act as labels.
+2. We perform 8, 16 and 32x Favre-filtering to create the features.
+3. Bash script for downloading via the [Kaggle API](./tutorial.html) is provided [here](./assets/bash/mom_download.sh).
+4. You can also access the Kaggle repo [here](https://www.kaggle.com/datasets/waitongchung/blastnet-momentum-3d-sr-dataset).
+
+**BLASTNet 2.0**
+
+BLASTNet 2.0 contains **2.2 TB, 734 full-domain samples, and 34 configurations** of reacting and non-reacting flow data from Direct Numerical Simulations:
+1. To download all cases in BLASTNet 2.0 via the [Kaggle API](./tutorial.html), download [this bash script](./assets/bash/batch_download.sh). 
+2. Tutorials for reading the data are provided [here](./tutorial.html).
+3. Search for the Kaggle repos to these configurations below.
 
 Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>species</sub>.
 
@@ -726,9 +738,9 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     <td>&#8226; Wai Tong Chung <BR>&#8226; Matthias Ihme</td>
     <!-- <td>T [K]; 300 , P [atm]: 1; Y: (CH4, O2), Inert </sub></td> -->
     <td>
-        N<sub>x</sub> = 128 <BR>
-        N<sub>y</sub> = 128 <BR>
-        N<sub>z</sub> = 128 <BR>
+        N<sub>x</sub> = 129 <BR>
+        N<sub>y</sub> = 129 <BR>
+        N<sub>z</sub> = 129 <BR>
         N<sub>&#632;</sub> = 6 + 2  <BR>
         Size = 6 GB 
     </td>
