@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tutorials
-description: Tutorials for reading and compressing files.
+description: Tutorials for accessing data.
 ---
 
 # Quick-start
@@ -25,9 +25,9 @@ description: Tutorials for reading and compressing files.
 <!-- ___ -->
 
 
-# Misc Tutorials
+<!-- # Misc Tutorials
 * [Kaggle Command Line API (How to download and contribute data?)](#kaggle-command-line-api)
-* [SZ2 Lossy Compression (How to compress and decompress data?)](#sz2-lossy-compression)
+* [SZ2 Lossy Compression (How to compress and decompress data?)](#sz2-lossy-compression) -->
 <!-- * [BLASTNet Data Formats (How to read and write data?)](#blastnet-data-formats) -->
 
 <!-- ___ -->
@@ -89,15 +89,15 @@ To upload an entire dataset:
 	```bash
 	kaggle datasets version  -h
 	```
-___
+<!-- ___ -->
 
 
 [Back to Top](#list-of-tutorials)
 
-___
+<!-- ___ -->
 
 
-# SZ2 Lossy Compression
+<!-- # SZ2 Lossy Compression
 
 If a single snapshot of your data is more than 100 GB, consider lossy compresison via [SZ2](https://github.com/szcompressor/SZ). 
 
@@ -136,7 +136,7 @@ ___
 
 [Back to Top](#list-of-tutorials)
 
-___
+___ -->
 
 
 <!-- # BLASTNet Data Formats -->

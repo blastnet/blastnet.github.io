@@ -5,10 +5,11 @@ description: Contact us and get support
 ---
 
 # Get Support
-Join our [Google Groups](https://groups.google.com/g/blastnetdata).
+Report any issues you find in our GitHub issues page at [https://github.com/blastnet/blastnet.github.io/issues](https://github.com/blastnet/blastnet.github.io/issues).
 
 
 # Contact us
-Email us at [blast.net.data@gmail.com](mailto:blast.net.data@gmail.com).
+For pressing matters, you can email [wtchung@stanford.edu](mailto:wtchung@stanford.edu).
+We also have a group-wide email [blast.net.data@gmail.com](mailto:blast.net.data@gmail.com).
 
 
