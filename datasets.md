@@ -906,7 +906,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     <!-- <td style="text-align:center">0</td> -->
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/forced-hit-ch4-air-ffcm">Kaggle</a><BR>
-      <a href="./assets/img/savard2019.png">.png</a><BR> 
+      <a href="./assets/img/poludnenko.png">.png</a><BR> 
       <a href="https://doi.org/10.1016/j.combustflame.2009.11.018">DOI</a><BR>
       <a href="./assets/bib/poludnenko2010.bib">.bib</a><BR>
       <a href="./assets/json/poludnenko_info.json">info.json</a>
