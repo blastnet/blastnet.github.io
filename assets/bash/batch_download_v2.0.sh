@@ -1,0 +1,31 @@
+#!/bin/bash
+
+kaggle datasets download -d waitongchung/inert-ch4o2-hit-dns
+kaggle datasets download -d waitongchung/forced-hit-ch4-air-ffcm
+kaggle datasets download -d waitongchung/round-jet-premixed-bfer
+kaggle datasets download -d waitongchung/round-jet-premixed-coffee
+kaggle datasets download -d jguo96/transcritical-n2-channel-dns
+kaggle datasets download -d waitongchung/premixed-flame-wall-ch4-air-dns-gri
+kaggle datasets download -d waitongchung/full-lifted-flame-dns-li
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-2
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-3
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-4
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-5
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-6
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-7
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-8
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-9
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-11
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-12
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-13
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-17
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-18
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-19
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-22
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-23
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-24
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-26
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-27
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-28
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-30
+kaggle datasets download -d waitongchung/free-propagating-h2-vit-air-li-case-32
