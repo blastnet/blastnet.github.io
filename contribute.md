@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Contribute
+title: Contribute & Collaborate
 description: Find out how to contribute to BLASTNet.
 ---
 
-# Submit your Kaggle Link
+The best way to start contributing and collaborating with us is to send an email to [wtchung@stanford.edu](mailto:wtchung@stanford.edu).
 
-Please click on [this link](https://forms.gle/VYMWvuNjFqPMJjwo6) to access a form for submitting your metadata and Kaggle link.
+We also have a [google forms](https://forms.gle/VYMWvuNjFqPMJjwo6) that provides a checklist on your contribute data.
 
 Before doing this checkout the standards and formats below.
 

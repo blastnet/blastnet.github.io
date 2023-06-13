@@ -716,9 +716,9 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     <th style="width:30%;"><input type="text"  size="20" id="myInput" onkeyup="myFunction()" placeholder="Description..."></th>
     <!-- <th style="width:60%;">TPY</th> -->
     <th style="width:25%;"><input type="text"  size="15" id="myInputTwo" onkeyup="myFunctionAuthor()" placeholder="Contributors..."></th>
-    <th style="width:25%;">Size</th>
+    <th style="width:20%;">Size</th>
     <!-- <th style="width:60%;">Article</th> -->
-    <th style="width:5%;"><input type="text"  size="7" id="myInputThree" onkeyup="myFunctionLossy()" placeholder="%Lossy..."></th>
+    <!-- <th style="width:5%;"><input type="text"  size="7" id="myInputThree" onkeyup="myFunctionLossy()" placeholder="%Lossy..."></th> -->
     <th style="width:20%;">Links</th>
   </tr>
   <tr>
@@ -732,7 +732,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
         N<sub>&#632;</sub> = 6 + 2  <BR>
         Size = 6 GB 
     </td>
-    <td style="text-align:center">0</td>
+    <!-- <td style="text-align:center">0</td> -->
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/inert-ch4o2-hit-dns">Kaggle</a><BR>
       <a href="./assets/img/chung2022.png">.png</a><BR>
@@ -753,7 +753,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
         N<sub>&#632;</sub> = 6 + 6  <BR>
         Size = 58 GB 
     </td>
-    <td style="text-align:center">0</td>
+    <!-- <td style="text-align:center">0</td> -->
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-bfer">Kaggle</a><BR>
       <a href="./assets/img/brouzet2021.png">.png</a><BR>
@@ -773,7 +773,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
         N<sub>&#632;</sub> = 6 + 6  <BR>
         Size = 52 GB 
     </td>
-    <td style="text-align:center">0</td>
+    <!-- <td style="text-align:center">0</td> -->
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-coffee">Kaggle</a><BR>
       <a href="./assets/img/brouzet2021.png">.png</a><BR>
@@ -793,7 +793,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
         N<sub>&#632;</sub> = 6 + 9  <BR>
         Size = 93 GB 
     </td>
-    <td style="text-align:center">0</td>
+    <!-- <td style="text-align:center">0</td> -->
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/full-lifted-flame-dns-li">Kaggle</a><BR>
       <a href="./assets/img/jung2021.png">.png</a><BR>
@@ -813,7 +813,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
         N<sub>&#632;</sub> = 6 + 9  <BR>
         Size = 5 GB 
     </td>
-    <td style="text-align:center">0</td>
+    <!-- <td style="text-align:center">0</td> -->
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/half-lifted-flame-dns-li">Kaggle</a><BR>
       <a href="./assets/img/jung2021.png">.png</a><BR>
@@ -833,7 +833,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
         N<sub>&#632;</sub> = 6 + 23  <BR>
         Size = 89 GB 
     </td>
-    <td style="text-align:center">0</td>
+    <!-- <td style="text-align:center">0</td> -->
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/premixed-flame-wall-ch4-air-dns-gri">Kaggle</a><BR>
       <a href="./assets/img/jiang2021.jpeg">.jpeg</a><BR>
@@ -853,7 +853,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
         N<sub>&#632;</sub> = 6 <BR>
         Size = 17 GB 
     </td>
-    <td style="text-align:center">0</td>
+    <!-- <td style="text-align:center">0</td> -->
     <td>
       <a href="https://www.kaggle.com/datasets/jguo96/transcritical-n2-channel-dns">Kaggle</a><BR>
       <a href="./assets/img/guo2022.mp4">.mp4</a><BR>
@@ -873,7 +873,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
         N<sub>&#632;</sub> = 6 + 9 <BR>
         Size = 30 GB 
     </td>
-    <td style="text-align:center">0</td>
+    <!-- <td style="text-align:center">0</td> -->
     <td>
       <a href="https://www.kaggle.com/datasets/waitongchung/free-propagating-h2-vit-air-li-case-17">Kaggle</a><BR>
       <a href="./assets/img/savard2019.png">.png</a><BR>
