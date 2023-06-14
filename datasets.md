@@ -715,7 +715,7 @@ The BLASTNet Momentum128 3D SR is extracted from BLASTNet 2.0 to mitigate constr
 
 **BLASTNet 2.0**
 
-BLASTNet 2.0 contains **2.2 TB, 734 full-domain samples, and 34 configurations** of reacting and non-reacting flow data from Direct Numerical Simulations:
+BLASTNet 2.0 contains **2.2 TB, 744 full-domain samples, and 34 configurations** of reacting and non-reacting flow data from Direct Numerical Simulations:
 1. To download all cases in BLASTNet 2.0 via the [Kaggle API](./tutorial.html), download [this bash script](./assets/bash/batch_download.sh). 
 2. Tutorials for reading the data are provided [here](./tutorial.html).
 3. Search for the Kaggle repos to these configurations below.

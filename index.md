@@ -15,7 +15,7 @@ Summary of the data are avalable [here](./datasets.html)!
 
 **Mission**
 
-BLASTNet 2.0 was developed to provide the researchers in  reacting and non-reacting flow physics communities with high-fidelity simulation datasets in a convenient format for ML applications. With **2.2 TB, 734 full-domain samples, and 34 configurations**, BLASTNet can effectively address these gaps and aid in fostering open/fair ML development within reacting and non-reacting flow physics communities.
+BLASTNet 2.0 was developed to provide the researchers in  reacting and non-reacting flow physics communities with high-fidelity simulation datasets in a convenient format for ML applications. With **2.2 TB, 744 full-domain samples, and 34 configurations**, BLASTNet can effectively address these gaps and aid in fostering open/fair ML development within reacting and non-reacting flow physics communities.
 
 **Application**
 
