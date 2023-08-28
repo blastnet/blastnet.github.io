@@ -912,6 +912,26 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
       <a href="./assets/json/poludnenko_info.json">info.json</a>
     </td>
   </tr>
+  <tr>
+    <td>Canonical Decaying Homogeneous Isotropic Turbulence DNS</td>
+    <td>&#8226; Qing Wang <BR>&#8226; Shantanu Shahane <BR>&#8226; Yifan Chen</td>
+    <!-- <td>T [K]; 300 , P [atm]: 1; Y: (CH4, O2), Inert </sub></td> -->
+   <td>
+        N<sub>x</sub> = 2040 <BR>
+        N<sub>y</sub> = 2040 <BR>
+        N<sub>z</sub> = 2048 <BR>
+        N<sub>&#632;</sub> = 5  <BR>
+        Size = 2.6 TB 
+    </td>
+    <!-- <td style="text-align:center">0</td> -->
+    <td>
+      <a href="./shantanu.html">Kaggle Links</a><BR>
+      <!-- <a href="./assets/img/shantanu.png">.png</a><BR> -->
+      <a href="https://doi.org/10.1016/j.cpc.2022.108292">DOI</a><BR>
+      <a href="./assets/bib/shantanu.bib">.bib</a><BR>
+      <a href="./shantanu.html">info.json Links</a>
+    </td>
+  </tr>
 </table>
 
 

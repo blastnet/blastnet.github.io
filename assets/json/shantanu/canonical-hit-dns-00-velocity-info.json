@@ -1,0 +1,41 @@
+{
+    "global": {
+        "dataset_id": "bassemakoush/canonical-hit-dns-00-velocity",
+        "Nxyz": [
+            2040,
+            2040,
+            2048
+        ],
+        "snapshots": 1,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1"
+        ],
+        "pressure field": "https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-00-pressure",
+        "compression": "None",
+        "grid": {
+            "Lx": 10.24,
+            "Ly": 10.24,
+            "Lz": 10.24,
+            "unit": "m"
+        },
+        "bc": "Periodic in x-, y-, and z-directions.",
+        "ic": "Decaying HIT with Re_t = 309, integral lengthscale of 2m and Kolmogorov lengthscale of 0.002m",
+        "doi": "https://doi.org/10.1016/j.cpc.2022.108292",
+        "contributors": "Qing Wang, Shantanu Shahane, Yifan Chen",
+        "description": "Decaying Homogeneous Isotropic Turbulence DNS"
+    },
+    "local": [
+        {
+            "id": 0,
+            "time [s]": 0.04,
+            "tke [m2s-2]": 25.884382,
+            "diss_rate [m2s-3]": 65.70531,
+            "RHO_kgm-3": 1.0,
+            "UX_ms-1 filename": "./data/UX_ms-1_id000.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id000.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id000.dat"
+        }
+    ]
+}
