@@ -32,6 +32,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-01-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-01-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-01-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-01-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
     <tr>
         <td align="center"> 2 </td>
@@ -40,6 +41,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-02-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-02-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-02-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-02-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
     <tr>
         <td align="center"> 3 </td>
@@ -48,6 +50,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-03-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-03-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-03-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-03-pressure-info.json">info.json<sub>P</sub></a>
+        </td>   
     </tr>
     <tr>
         <td align="center"> 4 </td>
@@ -56,6 +59,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-04-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-04-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-04-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-04-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
     <tr>
         <td align="center"> 5 </td>
@@ -63,14 +67,18 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">120</td>
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-05-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-05-pressure">Kaggle<sub>P</sub></a><BR>
-        <a href="./assets/json/shantanu/canonical-hit-dns-05-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-05-pressure-info.json">info.json<sub>P</sub></a>    </tr>
+        <a href="./assets/json/shantanu/canonical-hit-dns-05-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-05-pressure-info.json">info.json<sub>P</sub></a> 
+        </td>       
+    </tr>
     <tr>
         <td align="center"> 6 </td>
         <td align="center">TKE = 3.4790, &epsilon; = 3.2468</td>
         <td align="center">120</td>
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-06-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-06-pressure">Kaggle<sub>P</sub></a><BR>
-        <a href="./assets/json/shantanu/canonical-hit-dns-06-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-06-pressure-info.json">info.json<sub>P</sub></a>    </tr>
+        <a href="./assets/json/shantanu/canonical-hit-dns-06-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-06-pressure-info.json">info.json<sub>P</sub><a>    
+        </td>
+    </tr>
     <tr>
         <td align="center"> 7 </td>
         <td align="center">TKE = 1.9369, &epsilon; = 1.2832</td>
@@ -78,6 +86,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-07-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-07-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-07-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-07-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
     <tr>
         <td align="center"> 8 </td>
@@ -85,7 +94,9 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">120</td>
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-08-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-08-pressure">Kaggle<sub>P</sub></a><BR>
-        <a href="./assets/json/shantanu/canonical-hit-dns-08-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-08-pressure-info.json">info.json<sub>P</sub></a>    </tr>
+        <a href="./assets/json/shantanu/canonical-hit-dns-08-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-08-pressure-info.json">info.json<sub>P</sub><a>    
+        </td>
+    </tr>
     <tr>
         <td align="center"> 9 </td>
         <td align="center">TKE = 0.6658, &epsilon; = 0.2389</td>
@@ -93,6 +104,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-09-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-09-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-09-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-09-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
     <tr>
         <td align="center"> 10 </td>
@@ -101,6 +113,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-10-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-10-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-10-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-10-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
     <tr>
         <td align="center"> 11 </td>
@@ -109,6 +122,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-11-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-11-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-11-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-11-pressure-info.json">info.json<sub>P</sub></a>
+        </td>    
     </tr>
     <tr>
         <td align="center"> 12 </td>
@@ -117,6 +131,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-12-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-12-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-12-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-12-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
     <tr>
         <td align="center"> 13 </td>
@@ -125,6 +140,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-13-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-13-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-13-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-13-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
     <tr>
         <td align="center"> 14 </td>
@@ -133,6 +149,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-14-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-14-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-14-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-14-pressure-info.json">info.json<sub>P</sub></a>   
+        </td>
     </tr>
     <tr>
         <td align="center"> 15 </td>
@@ -140,7 +157,8 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">120</td>
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-15-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-15-pressure">Kaggle<sub>P</sub></a><BR>
-        <a href="./assets/json/shantanu/canonical-hit-dns-15-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-15-pressure-info.json">info.json<sub>P</sub></a>    
+        <a href="./assets/json/shantanu/canonical-hit-dns-15-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-15-pressure-info.json">info.json<sub>P</sub></a>
+        </td> 
     </tr>
     <tr>
         <td align="center"> 16 </td>
@@ -149,6 +167,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-16-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-16-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-16-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-16-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
     <tr>
         <td align="center"> 17 </td>
@@ -157,6 +176,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-17-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-17-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-17-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-17-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
     <tr>
         <td align="center"> 18 </td>
@@ -165,6 +185,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-18-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-18-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-18-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-18-pressure-info.json">info.json<sub>P</sub></a>
+        </td>    
     </tr>
     <tr>
         <td align="center"> 19 </td>
@@ -173,6 +194,7 @@ description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence 
         <td align="center">
         <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-19-velocity">Kaggle<sub>V</sub></a>, <a href="https://www.kaggle.com/datasets/bassemakoush/canonical-hit-dns-19-pressure">Kaggle<sub>P</sub></a><BR>
         <a href="./assets/json/shantanu/canonical-hit-dns-19-velocity-info.json">info.json<sub>V</sub></a>, <a href="./assets/json/shantanu/canonical-hit-dns-19-pressure-info.json">info.json<sub>P</sub></a>
+        </td>
     </tr>
 </table>
 
