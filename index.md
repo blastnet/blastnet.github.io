@@ -50,6 +50,11 @@ We thank the following people for contributing and curating this network-of-data
 | Bassem Akoush | Stanford University | June 7 2023 |
 | Pushan Sharma | Stanford University | June 7 2023 |
 | Alex Tamkin | Stanford University | June 7 2023 |
+| Qing Wang | Google | August 29 2023 |
+| Shantanu Shahane | Google | August 29 2023 |
+| Yifan Chen | Google | August 29 2023 |
+
+
 
 
 
