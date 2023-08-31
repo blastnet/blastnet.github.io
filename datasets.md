@@ -926,7 +926,7 @@ Size of scalars N<sub>&#632;</sub> is provided in terms 6 (U,T,P,&rho;) + N<sub>
     <!-- <td style="text-align:center">0</td> -->
     <td>
       <a href="./shantanu.html">Kaggle Links</a><BR>
-      <!-- <a href="./assets/img/shantanu.png">.png</a><BR> -->
+      <a href="./assets/img/shantanu2022.png">.png</a><BR>
       <a href="https://doi.org/10.1016/j.cpc.2022.108292">DOI</a><BR>
       <a href="./assets/bib/shantanu.bib">.bib</a><BR>
       <a href="./shantanu.html">info.json Links</a>

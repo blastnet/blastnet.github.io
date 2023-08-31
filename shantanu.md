@@ -1,7 +1,7 @@
 ---
 layout: default
 title: More Dataset Details
-description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence DNS from Shantanu et. al.
+description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence DNS from Wang et. al.
 ---
 
 <script src="./assets/js/table.js"></script>
