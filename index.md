@@ -26,6 +26,8 @@ This data is useful for fluid flows in a wide range of ML applications tied to a
 
 **Distribution**
 
+Our ML resources are shared via github and Kaggle. Specifically, code is shared via github, while data and models are shared via Kaggle.
+
 To circumvent Kaggle storage constraints, we partition our data into a network of <100 GB subsets, with each subset containing  a separate simulation configuration. This partitioned data can then be uploaded as separate datasets on Kaggle. To download all cases via [Kaggle API](./tutorial.html), download [this bash script](./assets/bash/batch_download.sh). Summary of the data are avalable [here](./datasets.html)!
 
 Our network of datasets approach:
