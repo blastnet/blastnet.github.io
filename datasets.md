@@ -707,16 +707,16 @@ schemadotorg:
 
 **BLASTNet Momentum128 3D SR Dataset**
 
-The BLASTNet Momentum128 3D SR is extracted from BLASTNet 2.0 to mitigate constraints in memory and grid properties:
+The BLASTNet Momentum128 3D SR is extracted from BLASTNet Simulation Dataset 2.0 to mitigate constraints in memory and grid properties:
 1. This is done by selecting to 2000 sub-volumes (of size 128<sup>3</sup>) of density and velocity fields from uniform-grid regions that act as labels.
 2. We perform 8, 16 and 32x Favre-filtering to create the features.
 3. Bash script for downloading via the [Kaggle API](./tutorial.html) is provided [here](./assets/bash/mom_download.sh).
 4. You can also access the Kaggle repo [here](https://www.kaggle.com/datasets/waitongchung/blastnet-momentum-3d-sr-dataset).
 
-**BLASTNet 2.0**
+**BLASTNet Simulation Dataset**
 
-BLASTNet 2.0 contains **2.2 TB, 744 full-domain samples, and 34 configurations** of reacting and non-reacting flow data from Direct Numerical Simulations:
-1. To download all cases in BLASTNet 2.0 via the [Kaggle API](./tutorial.html), download [this bash script](./assets/bash/batch_download.sh). 
+The BLASTNet Simulation Dataset currently contains **4.8 TB, >700 full-domain samples, and 35 configurations** of reacting and non-reacting flow data from Direct Numerical Simulations:
+1.  Download all cases via the [Kaggle API](./tutorial.html) by executing [this bash script](./assets/bash/batch_download.sh). 
 2. Tutorials for reading the data are provided [here](./tutorial.html).
 3. Search for the Kaggle repos to these configurations below.
 
