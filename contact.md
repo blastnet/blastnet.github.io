@@ -9,7 +9,6 @@ Report any issues you find in our GitHub issues page at [https://github.com/blas
 
 
 # Contact us
-For pressing matters or collaborations/contributions, you can email [wtchung@stanford.edu](mailto:wtchung@stanford.edu).
-We also have a group-wide email [blast.net.data@gmail.com](mailto:blast.net.data@gmail.com).
+For pressing matters or collaborations/contributions, you can email [mihme@stanford.edu, wtchung@stanford.edu, and blast.net.ml@gmail.com](mailto:mihme@stanford.edu,wtchung@stanford.edu,blast.net.ml@gmail.com).
 
 
