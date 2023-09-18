@@ -4,7 +4,7 @@ title: Contribute & Collaborate
 description: Find out how to contribute to BLASTNet.
 ---
 
-The best way to start contributing and collaborating with us is to send an email to [wtchung@stanford.edu](mailto:wtchung@stanford.edu).
+The best way to start contributing and collaborating with us is to send an email to [wtchung@stanford.edu](mailto:wtchung@stanford.edu) for onboarding instructions.
 
 We also have a [google forms](https://forms.gle/VYMWvuNjFqPMJjwo6) that provides a checklist on your contribute data.
 

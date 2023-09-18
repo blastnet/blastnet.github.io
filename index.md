@@ -18,7 +18,7 @@ Summary of the data are avalable [here](./datasets.html)!
 <!-- BLASTNet 2.0 was developed to provide the researchers in  reacting and non-reacting flow physics communities with high-fidelity simulation datasets in a convenient format for ML applications. With **2.2 TB, 744 full-domain samples, and 34 configurations**, BLASTNet can effectively address these gaps and aid in fostering open/fair ML development within reacting and non-reacting flow physics communities. -->
 BLASTNet aims to address gaps in open machine learning (ML) within the sciences, specifically fluid mechanics by providing researchers in reacting and non-reacting flow physics communities with (mostly) externally contributed open-source ML resources. 
 
-These contributions now include (i) 4.8 TB of high-fidelity simulation datasets that have been processed in a convenient format for ML applications, (ii) >13,000 lines of code that aid the training and evaluating of these models, and >100 pre-trained weights in flow physics problems.
+These contributions now include (i) 4.8 TB of high-fidelity simulation datasets that have been processed in a convenient format for ML applications, (ii) >13,000 lines of code that aid the training and evaluating of these models, (iii) >100 pre-trained weights in flow physics problems, and (iv) regular workshop events that disseminate ML for flow physics via seminars and competitions.
 
 **Application**
 
