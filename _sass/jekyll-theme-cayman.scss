@@ -29,7 +29,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.5;
   color: $body-text-color;
 }
@@ -130,7 +130,7 @@ a {
   margin-bottom: 0.1rem;
 
   @include large {
-    font-size: 3.25rem;
+    font-size: 5.25rem;
   }
 
   @include medium {
@@ -148,7 +148,7 @@ a {
   opacity: 1;
 
   @include large {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   @include medium {
@@ -156,7 +156,7 @@ a {
   }
 
   @include small {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -168,10 +168,10 @@ a {
   }
 
   @include large {
-    max-width: 64rem;
+    max-width: 110rem;
     padding: 2rem 6rem;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   @include medium {

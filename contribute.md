@@ -75,6 +75,29 @@ metadata['local'] = [
 
 ```
 
+# Authors and Contributors
+
+We thank the following people for contributing and curating this network-of-datasets:
+
+| Name      | Affilliation | Date Joined |
+| ----------| -----------  | ---------- |
+| [Wai Tong Chung](https://waitong94.github.io/) | Stanford University   | June 6 2022 |
+| [Matthias Ihme](https://web.stanford.edu/group/ihmegroup/cgi-bin/MatthiasIhme/people/matthias-ihme/) | Stanford University, SLAC National Laboratory  | June 6 2022 |
+| [Ki Sung Jung](https://scholar.google.com/citations?hl=en&user=BrRefdgAAAAJ)   | Sandia National Laboratory   | June 6 2022 |
+| [Jacqueline H. Chen](https://scholar.google.com/citations?user=-YNowMsAAAAJ&hl=en) | Sandia National Laboratory   | June 6 2022 |
+| [Jack Guo](https://www.linkedin.com/in/jackguo1/) | Stanford University   | June 6 2022 |
+| [Davy Brouzet](https://www.linkedin.com/in/davy-brouzet/) | Stanford University  | June 6 2022 |
+| [Mohsen Talei](https://people.eng.unimelb.edu.au/mohsent/) | University of Melbourne | June 6 2022 |
+| Bin Jiang | University of Melbourne | Nov 18 2022 |
+| [Bruno Savard](https://www.polymtl.ca/expertises/en/savard-bruno) | Polytechnique Montréal | Jan 26 2023 |
+| [Alexei Y. Poludnenko](https://me.engr.uconn.edu/blog/faculty/poludnenko-alexei/) | University of Connecticut  | June 7 2023 |
+| [Bassem Akoush](https://www.linkedin.com/in/bassem-akoush/) | Stanford University | June 7 2023 |
+| [Pushan Sharma](https://www.linkedin.com/in/pushan-sharma-0b327588/) | Stanford University | June 7 2023 |
+| [Alex Tamkin](https://www.alextamkin.com) | Stanford University | June 7 2023 |
+| [Qing Wang](https://scholar.google.com/citations?user=kuPsonIAAAAJ&hl=en) | Google | August 29 2023 |
+| [Shantanu Shahane](https://www.linkedin.com/in/shantanu-shahane) | Google | August 29 2023 |
+| [Yifan Chen](https://www.linkedin.com/in/yi-fan-chen-1489666/) | Google | August 29 2023 |
+
 
 
 

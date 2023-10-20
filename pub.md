@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Cite Us
-description: Citing BLASTNet and individual source publications
+title: Publications
+description:  Related Work
 ---
 
-# Cite Us
+# Current Publications
 
 When using this dataset, please cite: (i) our NeurIPS paper (ii) our dataset:
 
