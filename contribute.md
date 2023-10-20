@@ -4,7 +4,7 @@ title: Contribute & Collaborate
 description: Find out how to contribute to BLASTNet.
 ---
 
-The best way to start contributing and collaborating with us is to send an email to [mihme@stanford.edu, wtchung@stanford.edu, and blast.net.ml@gmail.com](mailto:mihme@stanford.edu,wtchung@stanford.edu,blast.net.ml@gmail.com) for onboarding instructions.
+The best way to start contributing and collaborating with us is to send an email to [blast.net.ml@gmail.com](mailto:blast.net.ml@gmail.com) for onboarding instructions.
 
 We also have a [google forms](https://forms.gle/VYMWvuNjFqPMJjwo6) that provides a checklist on your contribute data.
 
