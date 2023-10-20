@@ -8,7 +8,7 @@ description: Bearable Large Accessible Scientific Training Network-of-Datasets
 
 Fully detailed [here](./pub.html) with citing instructions.
 1. [BLASTNet Zenodo](https://zenodo.org/records/8034232)
-2. [2023 NeurIPS paper](https://arxiv.org/)
+2. [2023 NeurIPS paper](https://arxiv.org/abs/2309.13457)
 3. [2022 AECS Paper](https://www.sciencedirect.com/science/article/pii/S2666352X22000309?via%3Dihub)
 4. [2022 ICML W. Paper](https://openreview.net/forum?id=LxGTZM7L6qn)
 
