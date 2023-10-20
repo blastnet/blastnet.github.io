@@ -10,7 +10,7 @@ We demonstrate the utility of BLASTNet 2.0 data for open and fair evaluation of 
 * Curate BLASTNet 2.0, a diverse public 3D compressible turbulent flow DNS dataset.
 * Benchmark performance and cost of five 3D ML approache for  SR  with this publicly accessible dataset.
 * Show that SR model performance can scale with the logarithm of model size and cost.
-* Demonstrate the persisting benefits of a popular physics-based  gradient loss term~\cite{yu2022gradient} with increasing model size.
+* Demonstrate the persisting benefits of a popular physics-based  gradient loss term with increasing model size.
 
 
 This is summarized in the figure below:
