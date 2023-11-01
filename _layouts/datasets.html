@@ -39,6 +39,7 @@
 
     <main id="content" class="main-content" role="main">
       {{ content }}
+      {% include image-gallery.html folder="/assets/img" %}
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
