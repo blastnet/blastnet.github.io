@@ -1,5 +1,5 @@
 ---
-layout: datasets
+layout: default
 title: BLASTNet Simulation Dataset
 description: 3D high-fidelity reacting and non-reacting compressible turbulent flow simulation data.
 schemadotorg:
