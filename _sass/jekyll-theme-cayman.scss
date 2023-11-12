@@ -24,6 +24,33 @@
 * {
   box-sizing: border-box;
 }
+/* styles.css */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: -100em 0em; /* Adjust the gap between images as needed */
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  padding-top: 60%; /* Set a fixed height, adjust as needed */
+}
+
+.gallery-item img {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 80%;
+  object-fit: contain; /* Maintain aspect ratio while covering the container */
+}
+.gallery-item p {
+  text-align: center;
+  margin-top: 0em;
+  font-style: italic;
+}
 
 body {
   padding: 0;

@@ -1,29 +1,11 @@
 ---
 layout: default
-title: Freely-Propagating Flame
-description: Vitiated H2-air Freely Propagating Flame DNS
+title: More Dataset Details
+description: Details on the H2-Air DNS from Savard et. al.
 ---
 
-<div style="text-align: center;">
-    <img src="/assets/img/savard2019.png" alt="Image 1" style="max-width: 100%;">
-</div>
+<script src="./assets/js/table.js"></script>
 
-# Description
-
-This DNS configuration presents a statistically-planar, freely-propagating flame. BLASTNet contains 22 parametric variations of this configuration that differ by three essential parameters involving turbulence: (i) turbulence intensity, characterized by the RMS velocity u′, (ii) inflow velocity, Uin , and (iii) integral length scale, l<sub>I</sub>.  These configurations represent a series of hydrogen-premixed turbulent flames in autoignitive reheat combustion conditions that provide rich information on regimes of turbulent spontaneous ignition and turbulent deflagration.
-
-The turbulent flames are initialized with an ignition front. For the initial flat spontaneous ignition front, the thermo-chemical conditions are chosen to be representative of those at the end of the first stage of a heavy-duty gas turbine sequential combustor, but at a lower pressure of 1 atm for all configurations. The mixture of fuel and products of first stage hydrogen-air combustion at an equivalence ratio of 0.43 and initial temperature of 773 K is used at the inlet of the domain. This mixture is equivalent to an equivalence ratio of 0.35 and Tu = 990 K, and its ignition delay time (τign,0) and laminar flame speed (SL) are identified to be 0.55 ms and 14.7 ms−1, respectively. The reference laminar flame thickness, lf , is evaluated to be 0.66 mm. After initialization, the ignition front is superimposed on a turbulent flow-field using a one-to-one correspondence in x-space (Figure 14). Depending on varying Uin and u′, the flame may stabilize at a position far away from the inlet (a turbulent spontaneous ignition front) or the introduction of turbulence may trigger the transition to a deflagration, where the flame front propagates towards the inlet.
-
-The width of the domain in the y- and z-directions is Ly = Lz = 5.26l<sub>I</sub>, and the length in the streamwise direction is Lx, which is different for individual configuration. For all configurations, the simulations are run until a statistically steady state is achieved.
-The low Mach number form of the governing equations is solved using the energy conservative, finite difference code NGA and high turbulence simulations are enabled by the linear velocity forcing method. NGA is second-order accurate in both space and time, and it uses a semi-implicit Crank-Nicolson time integration scheme. A third-order bounded QUICK scheme, BQUICK, is used for scalar transport. Ideal gas law is used as the EoS for a mixture of perfect gases. A detailed chemical mechanism for hydrogen combustion with 9 species and 21 reactions is used for all configurations.
-
-
-# Quick Info
-* <a href="https://doi.org/10.1016/j.combustflame.2019.07.020">DOI</a>
-* <a href="./assets/bib/savard2019.bib">.bib</a>
-* Contributor: Bruno Savard
-
-# Links to different cases
 
 <table align="center">
     <tr class="header">

@@ -1,11 +1,17 @@
 ---
 layout: default
-title: More Dataset Details
-description: Details on the Canonical Decaying Homogeneous Isotropic Turbulence DNS from Wang et. al.
+title: Freely-Propagating Flame
+description: Vitiated H2-air Freely Propagating Flame DNS
 ---
 
-<script src="./assets/js/table.js"></script>
+<div style="text-align: center;">
+    <img src="/assets/img/shantanu2022.png" alt="Image 1" style="max-width: 100%;">
+</div>
 
+
+# Links to different cases
+
+<script src="./assets/js/table.js"></script>
 
 <table align="center">
     <tr class="header">
