@@ -8,6 +8,13 @@ description: Vitiated H2-air Freely Propagating Flame DNS
     <img src="/assets/img/shantanu2022.png" alt="Image 1" style="max-width: 100%;">
 </div>
 
+# Description
+TBA
+# Quick Info
+* Contributors: Qing Wang, Shantanu Shahane, Yifan Chen
+* N<sub>x</sub> = 2040, N<sub>y</sub> = 2040, N<sub>z</sub> = 2048, N<sub>&#632;</sub> = 4
+* <a href="https://doi.org/10.1016/j.cpc.2022.108292">DOI</a>
+* <a href="./assets/bib/shatanau.bib">.bib</a>
 
 # Links to different cases
 

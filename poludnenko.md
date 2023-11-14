@@ -17,7 +17,7 @@ The DNS calculation is performed using the code Athena-RFX, which implements hig
 
 # Quick Info
 * <a href="https://www.kaggle.com/datasets/waitongchung/forced-hit-ch4-air-ffcm">Kaggle Link</a>
-* Contributors:  Jack Guo, Matthias Ihme
+* Contributors:  Alexei Y. Poludnenko
 * N<sub>x</sub> = 257, N<sub>y</sub> = 257, N<sub>z</sub> = 4097, N<sub>&#632;</sub> = 6 + 21
 * Size = 30 GB 
 * <a href="https://doi.org/10.1016/j.combustflame.2009.11.018">DOI</a><BR>
