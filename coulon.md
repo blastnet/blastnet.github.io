@@ -17,4 +17,4 @@ This DNS corresponds to a slot burner turbulent flame, where burnt gases at equi
 * Size = 83 GB 
 * <a href="https://doi.org/10.1016/j.combustflame.2023.112933">DOI</a><BR>
 * <a href="./assets/bib/coulon2023.bib">.bib</a><BR>
-* <a href="./assets/json/coulon_info.json">info.json</a>
+* <a href="./assets/json/coulon2023_info.json">info.json</a>
