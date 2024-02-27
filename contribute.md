@@ -97,8 +97,8 @@ We thank the following people for contributing and curating this network-of-data
 | [Qing Wang](https://scholar.google.com/citations?user=kuPsonIAAAAJ&hl=en) | Google | August 29 2023 |
 | [Shantanu Shahane](https://www.linkedin.com/in/shantanu-shahane) | Google | August 29 2023 |
 | [Yifan Chen](https://www.linkedin.com/in/yi-fan-chen-1489666/) | Google | August 29 2023 |
-| [Victor Coulon](https://scholar.google.com/citations?user=m-0PX4AAAAAJ&hl=fr) | CERFACS| Febraury 27 2024|
-| [Corentin Lapeyre](https://scholar.google.fr/citations?user=a8DKDycAAAAJ&hl=fr)| CERFACS|Febraury 27 2024|
+| [Victor Coulon](https://scholar.google.com/citations?user=m-0PX4AAAAAJ&hl=fr) | CERFACS| February 27 2024|
+| [Corentin Lapeyre](https://scholar.google.fr/citations?user=a8DKDycAAAAJ&hl=fr)| CERFACS|February 27 2024|
 
 
 
