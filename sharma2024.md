@@ -10,9 +10,9 @@ description: Circular Burner Diluted Partially-Premixed H2-air Lifted Flame in 2
 
 # Description
 
-This configuration involves 8 parametric variations of lifted hydrogen jet flame in heated co-flow air. The central circular jet with $D = 1.92\mathrm{ mm}$ consists of a mixture of 65\% of hydrogen and 35\% of nitrogen by volume with an inlet temperature of $400\mathrm{ K}$. The jet is surrounded by a co-flow of heated air at $1100\mathrm{ K}$ and 1 bar pressure. 
-The jet Reynolds number is varied between 5000 to 11000. The computational domain size is $12.5D \times 15.6D$. A detailed hydrogen-air chemical mechanism composed of 9 species and 21 elementary reactions is employed in this study.
-A uniform grid size of $15\mathrm{\mu m}$ is placed in both axial and spanwise direction, resulting in a grid size of $1600\times2000$. Two additional inert mixing cases are also added corresponding to jet Reynolds number of 5000 and 10000.
+This configuration involves 8 parametric variations of lifted hydrogen jet flame in heated co-flow air. The central circular jet with D = 1.92mm consists of a mixture of 65% of hydrogen and 35% of nitrogen by volume with an inlet temperature of 400K. The jet is surrounded by a co-flow of heated air at 1100K and 1 bar pressure. 
+The jet Reynolds number is varied between 5000 to 11000. The computational domain size is 12.5D x 15.6D. A detailed hydrogen-air chemical mechanism composed of 9 species and 21 elementary reactions is employed in this study.
+A uniform grid size of 15 μm is placed in both axial and spanwise direction, resulting in a grid size of 1600 x 2000. Two additional inert mixing cases are also added corresponding to jet Reynolds number of 5000 and 10000.
 
 A compressible unstructured finite-volume solver is used to numerically solve the conservation laws for mass, momentum, total energy, and chemical species. 
 The convective fluxes are discretized using a sensor-based hybrid scheme, where a high-order, non-dissipative scheme is combined with a low-order scheme to describe interfaces and flow field discontinuities. 
