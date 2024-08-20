@@ -27,10 +27,10 @@ This DNS configuration simulates non-reacting forced homogeneous isotropic turbu
     <th style="width:2%;">ID</th>
     <th style="width:10%;">Conditions</th>
       <!-- <th style="width:60%;">TPY</th> -->
-      <th style="width:8%;">Grid</th>
-      <th style="width:10%;">Size (GB)</th>
+    <th style="width:8%;">Grid</th>
+    <th style="width:10%;">Size (GB)</th>
       <!-- <th style="width:60%;">Article</th> -->
-      <th style="width:8%;">Links</th>
+    <th style="width:8%;">Links</th>
     </tr>
     <tr>       
         <td align="center"> 0 </td>
@@ -52,7 +52,7 @@ This DNS configuration simulates non-reacting forced homogeneous isotropic turbu
         <a href="./assets/json/gauding2022/passive-fhit-dns-r1-info.json">info.json</a>,
         </td>
     </tr>
-        <tr>       
+    <tr>       
         <td align="center"> 2 </td>
         <td align="center">Re<sub>&lambda;</sub> = 184</td>
         <td align="center">1024<sup>3</sup></td>
@@ -62,7 +62,7 @@ This DNS configuration simulates non-reacting forced homogeneous isotropic turbu
         <a href="./assets/json/gauding2022/passive-fhit-dns-r2-info.json">info.json</a>,
         </td>
     </tr>
-        <tr>       
+    <tr>       
         <td align="center"> 3 </td>
         <td align="center">Re<sub>&lambda;</sub> = 218</td>
         <td align="center">2048<sup>3</sup></td>
@@ -72,7 +72,7 @@ This DNS configuration simulates non-reacting forced homogeneous isotropic turbu
         <a href="./assets/json/gauding2022/passive-fhit-dns-r3-info.json">info.json</a>,
         </td>
     </tr>
-        <tr>       
+    <tr>       
         <td align="center"> 4 </td>
         <td align="center">Re<sub>&lambda;</sub> = 331</td>
         <td align="center">2048<sup>3</sup></td>
@@ -81,6 +81,7 @@ This DNS configuration simulates non-reacting forced homogeneous isotropic turbu
         <a href="https://www.kaggle.com/datasets/bassemakoush/passive-fhit-dns-r4">Kaggle</a>, 
         <a href="./assets/json/gauding2022/passive-fhit-dns-r4-info.json">info.json</a>,
         </td>
+    </tr>
     <!-- </tr>
         <tr>       
         <td align="center"> 5 </td>
@@ -92,8 +93,6 @@ This DNS configuration simulates non-reacting forced homogeneous isotropic turbu
         <a href="./assets/json/gauding2022/passive-fhit-dns-r5-info.json">info.json</a>,
         </td>
     </tr> -->
-
-
 </table>
 
 
