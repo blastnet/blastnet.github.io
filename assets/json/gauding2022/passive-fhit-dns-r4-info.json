@@ -1,0 +1,38 @@
+{
+    "global": {
+        "dataset_id": "bassemakoush/passive-fhit-dns-r4",
+        "Nxyz": [
+            2048,
+            2048,
+            2048
+        ],
+        "snapshots": 1,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "Y"
+        ],
+        "compression": null,
+        "grid": {
+            "Lx": 6.28,
+            "Ly": 6.28,
+            "Lz": 6.28,
+            "unit": "m"
+        },
+        "bc": "Periodic in x-, y-, and z-directions.",
+        "ic": "Forced HIT with Re_t = 331, integral lengthscale of velocity field of 0.81 and Kolmogorov lengthscale of 0.003m. U is statistically steady, large-scale spectral forcing is used. nu = 0.001, k = 14.35, epsilon = 12.55.",
+        "doi": "https://doi.org/10.1017/jfm.2022.367",
+        "contributors": "Michael Gauding",
+        "description": "Passive scalar transport in forced homogeneous isotropic turbulence DNS"
+    },
+    "local": [
+        {
+            "id": 0,
+            "UX_ms-1 filename": "./data/UX_ms-1_id000.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id000.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id000.dat",
+            "Y filename": "./data/Y_id000.dat"
+        }
+    ]
+}

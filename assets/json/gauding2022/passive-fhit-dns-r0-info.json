@@ -1,0 +1,107 @@
+{
+    "global": {
+        "dataset_id": "bassemakoush/passive-fhit-dns-r0",
+        "Nxyz": [
+            512,
+            512,
+            512
+        ],
+        "snapshots": 11,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "Y"
+        ],
+        "compression": null,
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "bc": "Periodic in x-, y-, and z-directions.",
+        "ic": "Forced HIT with Re_t = 88, integral lengthscale of velocity field of 0.82 and Kolmogorov lengthscale of 0.018m. U is statistically steady, large-scale spectral forcing is used. nu = 0.01, k = 11.12, epsilon = 10.75.",
+        "doi": "https://doi.org/10.1017/jfm.2022.367",
+        "contributors": "Michael Gauding",
+        "description": "Passive scalar transport in forced homogeneous isotropic turbulence DNS"
+    },
+    "local": [
+        {
+            "id": 0,
+            "UX_ms-1 filename": "./data/UX_ms-1_id000.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id000.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id000.dat",
+            "Y filename": "./data/Y_id000.dat"
+        },
+        {
+            "id": 1,
+            "UX_ms-1 filename": "./data/UX_ms-1_id001.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id001.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id001.dat",
+            "Y filename": "./data/Y_id001.dat"
+        },
+        {
+            "id": 2,
+            "UX_ms-1 filename": "./data/UX_ms-1_id002.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id002.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id002.dat",
+            "Y filename": "./data/Y_id002.dat"
+        },
+        {
+            "id": 3,
+            "UX_ms-1 filename": "./data/UX_ms-1_id003.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id003.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id003.dat",
+            "Y filename": "./data/Y_id003.dat"
+        },
+        {
+            "id": 4,
+            "UX_ms-1 filename": "./data/UX_ms-1_id004.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id004.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id004.dat",
+            "Y filename": "./data/Y_id004.dat"
+        },
+        {
+            "id": 5,
+            "UX_ms-1 filename": "./data/UX_ms-1_id005.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id005.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id005.dat",
+            "Y filename": "./data/Y_id005.dat"
+        },
+        {
+            "id": 6,
+            "UX_ms-1 filename": "./data/UX_ms-1_id006.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id006.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id006.dat",
+            "Y filename": "./data/Y_id006.dat"
+        },
+        {
+            "id": 7,
+            "UX_ms-1 filename": "./data/UX_ms-1_id007.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id007.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id007.dat",
+            "Y filename": "./data/Y_id007.dat"
+        },
+        {
+            "id": 8,
+            "UX_ms-1 filename": "./data/UX_ms-1_id008.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id008.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id008.dat",
+            "Y filename": "./data/Y_id008.dat"
+        },
+        {
+            "id": 9,
+            "UX_ms-1 filename": "./data/UX_ms-1_id009.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id009.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id009.dat",
+            "Y filename": "./data/Y_id009.dat"
+        },
+        {
+            "id": 10,
+            "UX_ms-1 filename": "./data/UX_ms-1_id010.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id010.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id010.dat",
+            "Y filename": "./data/Y_id010.dat"
+        }
+    ]
+}

@@ -706,44 +706,48 @@ schemadotorg:
 # 1. BLASTNet Simulation Dataset
 <div class="gallery">
   <div class="gallery-item">
-    <a href="/assets/img/chung2022.png" data-lightbox="gallery" data-title="Image 1"><img src="/assets/img/ico_chung2022.png" alt="Image 1"></a>
+    <a href="/assets/img/chung2022.png" data-lightbox="gallery" data-title="1. Non-reacting HIT"><img src="/assets/img/ico_chung2022.png" alt="Image 1"></a>
     <p><a href="chung2022.html"><BR><BR><BR><BR><BR>Non-reacting HIT<BR>(1 Case)</a></p>
   </div>
   <div class="gallery-item">
-    <a href="/assets/img/jung2021.png" data-lightbox="gallery" data-title="Image 2"><img src="/assets/img/ico_jung2021.png" alt="Image 3"></a>
+    <a href="/assets/img/jung2021.png" data-lightbox="gallery" data-title="2. Slot Burne"><img src="/assets/img/ico_jung2021.png" alt="Image 3"></a>
     <p><a href="jung2021.html"><BR><BR><BR><BR><BR>Slot Burner<BR>(1 Case)</a></p>
   </div>
   <div class="gallery-item">
-    <a href="/assets/img/savard2019.png" data-lightbox="gallery" data-title="Image 2"><img src="/assets/img/ico_savard2019.png" alt="Image 4"></a>
+    <a href="/assets/img/savard2019.png" data-lightbox="gallery" data-title="3. Freely Propagating Flame"><img src="/assets/img/ico_savard2019.png" alt="Image 4"></a>
     <p><a href="savard.html"><BR><BR><BR><BR><BR>Freely Propagating Flame<BR>(22 Cases)</a></p>
   </div>
   <div class="gallery-item">
-    <a href="/assets/img/guo2022.png" data-lightbox="gallery" data-title="Image 2"><img src="/assets/img/ico_guo2022.png" alt="Image 4"></a>
+    <a href="/assets/img/guo2022.png" data-lightbox="gallery" data-title="4. Non-reacting Channel"><img src="/assets/img/ico_guo2022.png" alt="Image 4"></a>
     <p><a href="guo2022.html"><BR><BR><BR><BR><BR>Non-reacting Channel<BR>(6 Cases)</a></p>
   </div>
   <div class="gallery-item">
-    <a href="/assets/img/jiang2021.jpeg" data-lightbox="gallery" data-title="Image 2"><img src="/assets/img/ico_jiang2021.png" alt="Image 4"></a>
+    <a href="/assets/img/jiang2021.jpeg" data-lightbox="gallery" data-title="5. Reacting Channel"><img src="/assets/img/ico_jiang2021.png" alt="Image 4"></a>
     <p><a href="jiang2021.html"><BR><BR><BR><BR><BR>Reacting Channel<BR>(1 Case)</a></p>
   </div>
   <div class="gallery-item">
-    <a href="/assets/img/poludnenko.png" data-lightbox="gallery" data-title="Image 2"><img src="/assets/img/ico_poludnenko.png" alt="Image 4"></a>
+    <a href="/assets/img/poludnenko.png" data-lightbox="gallery" data-title="6. Reacting HIT"><img src="/assets/img/ico_poludnenko.png" alt="Image 4"></a>
     <p><a href="poludnenko.html"><BR><BR><BR><BR><BR>Reacting HIT<BR>(1 Case)</a></p>
   </div>
   <div class="gallery-item">
-    <a href="/assets/img/brouzet2021.png" data-lightbox="gallery" data-title="Image 2"><img src="/assets/img/ico_brouzet2021.png" alt="Image 3"></a>
+    <a href="/assets/img/brouzet2021.png" data-lightbox="gallery" data-title="7. Reacting Jets"><img src="/assets/img/ico_brouzet2021.png" alt="Image 3"></a>
     <p><a href="brouzet2021.html"><BR><BR><BR><BR><BR>Reacting Jets<BR>(2 Cases)</a></p>
   </div>
   <div class="gallery-item">
-    <a href="/assets/img/shantanu2022.png" data-lightbox="gallery" data-title="Image 2"><img src="/assets/img/ico_shantanu2022.png" alt="Image 4"></a>
+    <a href="/assets/img/shantanu2022.png" data-lightbox="gallery" data-title="8. Incompressible HIT"><img src="/assets/img/ico_shantanu2022.png" alt="Image 4"></a>
     <p><a href="shantanu.html"><BR><BR><BR><BR><BR>Incompressible HIT<BR>(1 Case)</a></p>
   </div>
   <div class="gallery-item">
-    <a href="/assets/img/coulon2023.jpg" data-lightbox="gallery" data-title="Image 2"><img src="/assets/img/ico_coulon2023.png" alt="Image 4"></a>
+    <a href="/assets/img/coulon2023.jpg" data-lightbox="gallery" data-title="9. NH3/H2/Air Premixed Flame"><img src="/assets/img/ico_coulon2023.png" alt="Image 4"></a>
     <p><a href="coulon.html"><BR><BR><BR><BR><BR>NH3/H2/Air Premixed Flame<BR>(1 Case)</a></p>
   </div>
   <div class="gallery-item">
-    <a href="/assets/img/sharma2024.png" data-lightbox="gallery" data-title="Image 2"><img src="/assets/img/ico_sharma2024.png" alt="Image 4"></a>
-    <p><a href="sharma2024.html"><BR><BR><BR><BR><BR>H2/Air Reacting jet flame<BR>(10 Case)</a></p>
+    <a href="/assets/img/sharma2024.png" data-lightbox="gallery" data-title="10. H2/Air Reacting jet flame"><img src="/assets/img/ico_sharma2024.png" alt="Image 4"></a>
+    <p><a href="sharma2024.html"><BR><BR><BR><BR><BR>H2/Air Reacting jet flame<BR>(10 Cases)</a></p>
+  </div>
+  <div class="gallery-item">
+    <a href="/assets/img/gauding2022.png" data-lightbox="gallery" data-title="11. Forced HIT"><img src="/assets/img/ico_gauding2022.png" alt="Image 4"></a>
+    <p><a href="gauding2022.html"><BR><BR><BR><BR><BR>Forced HIT<BR>(6 Cases)</a></p>
   </div>
 </div>
 
