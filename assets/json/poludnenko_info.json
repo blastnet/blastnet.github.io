@@ -1,1 +1,105 @@
-{"global": {"dataset_id": "forced-hit-ch4-air-ffcm", "Nxyz": [257, 257, 4097], "snapshots": 1, "variables": ["RHO_kgm-3", "T_K", "P_Pa", "YH2", "YO", "YO2", "YOH", "YH2O", "YHO2", "YH2O2", "YCO2", "YCH2", "YCH3", "YCH4", "YHCO", "YCH2O", "YCH3O", "YC2H2", "YC2H4", "YC2H4", "YC2H6", "YH2CC", "YN2", "X_m.dat", "Y_m.dat", "Z_m.dat", "UX_ms-1", "UY_ms-1", "UZ_ms-1"], "compression": "None", "grid": {"x": "./grid/X_m.dat", "y": "./grid/Y_m.dat", "z": "./grid/Z_m.dat"}, "bc": {"description": "Inflow and outflow in z-, and periodic in  y- and z-directions", "Tin [K]": 700, "Energy injection rate at inflow [erg/cm^3*s]": 1065680.207351567, "Inlet mixture": "Premixed CH4-air at 1.0 equivalence ratio"}, "ic": {"Pamb [Pa]": 3039750.0, "Re_t at fuel[-]": 118.5, "Laminar flame speed [cm]": 23.515801607012328, "Integral lengthscale [cm]": 0.01959615482971054, "Ka [-]": 9.96939461811048, "Urms [cm/s]": 245.8222290510004, "Integral velocity [cm/s]": 141.9255301153889, "Integral length [cm]": 0.01959615482971054, "Kolmogorov length at fuel [cm]": 0.0006461493026345818}, "doi": "https://doi.org/10.1016/j.combustflame.2010.09.002", "contributors": "Alexei Y. Poludnenko", "description": " DNS of methane/air flame interaction with Forced HIT", "chem_thermo_tran": {"description": "FRC and Mixture-Averaged Transport", "cantera_cti": "./chem_thermo_tran/ffcm21.cti"}}, "local": [{"id": 0, "RHO_kgm-3 filename": "./data/RHO_kgm-3_id000.dat", "T_K filename": "./data/T_K_id000.dat", "P_Pa filename": "./data/P_Pa_id000.dat", "YH2 filename": "./data/YH2_id000.dat", "YO filename": "./data/YO_id000.dat", "YO2 filename": "./data/YO2_id000.dat", "YOH filename": "./data/YOH_id000.dat", "YH2O filename": "./data/YH2O_id000.dat", "YHO2 filename": "./data/YHO2_id000.dat", "YH2O2 filename": "./data/YH2O2_id000.dat", "YCO2 filename": "./data/YCO2_id000.dat", "YCH2 filename": "./data/YCH2_id000.dat", "YCH3 filename": "./data/YCH3_id000.dat", "YCH4 filename": "./data/YCH4_id000.dat", "YHCO filename": "./data/YHCO_id000.dat", "YCH2O filename": "./data/YCH2O_id000.dat", "YCH3O filename": "./data/YCH3O_id000.dat", "YC2H2 filename": "./data/YC2H2_id000.dat", "YC2H4 filename": "./data/YC2H4_id000.dat", "YC2H6 filename": "./data/YC2H6_id000.dat", "YH2CC filename": "./data/YH2CC_id000.dat", "YN2 filename": "./data/YN2_id000.dat", "X_m.dat filename": "./data/X_m.dat_id000.dat", "Y_m.dat filename": "./data/Y_m.dat_id000.dat", "Z_m.dat filename": "./data/Z_m.dat_id000.dat", "UX_ms-1 filename": "./data/UX_ms-1_id000.dat", "UY_ms-1 filename": "./data/UY_ms-1_id000.dat", "UZ_ms-1 filename": "./data/UZ_ms-1_id000.dat"}]}
+{
+    "global": {
+        "dataset_id": "waitongchung/forced-hit-ch4-air-ffcm",
+        "Nxyz": [
+            257,
+            257,
+            4097
+        ],
+        "snapshots": 1,
+        "variables": [
+            "RHO_kgm-3",
+            "T_K",
+            "P_Pa",
+            "YH2",
+            "YO",
+            "YO2",
+            "YOH",
+            "YH2O",
+            "YHO2",
+            "YH2O2",
+            "YCO2",
+            "YCH2",
+            "YCH3",
+            "YCH4",
+            "YHCO",
+            "YCH2O",
+            "YCH3O",
+            "YC2H2",
+            "YC2H4",
+            "YC2H4",
+            "YC2H6",
+            "YH2CC",
+            "YN2",
+            "X_m.dat",
+            "Y_m.dat",
+            "Z_m.dat",
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "bc": {
+            "description": "Inflow and outflow in z-, and periodic in  y- and z-directions",
+            "Tin [K]": 700,
+            "Energy injection rate at inflow [erg/cm^3*s]": 1065680.207351567,
+            "Inlet mixture": "Premixed CH4-air at 1.0 equivalence ratio"
+        },
+        "ic": {
+            "Pamb [Pa]": 3039750.0,
+            "Re_t at fuel[-]": 118.5,
+            "Laminar flame speed [cm]": 23.515801607012328,
+            "Integral lengthscale [cm]": 0.01959615482971054,
+            "Ka [-]": 9.96939461811048,
+            "Urms [cm/s]": 245.8222290510004,
+            "Integral velocity [cm/s]": 141.9255301153889,
+            "Integral length [cm]": 0.01959615482971054,
+            "Kolmogorov length at fuel [cm]": 0.0006461493026345818
+        },
+        "doi": "https://doi.org/10.1016/j.combustflame.2010.09.002",
+        "contributors": "Alexei Y. Poludnenko",
+        "description": " DNS of methane/air flame interaction with Forced HIT",
+        "chem_thermo_tran": {
+            "description": "FRC and Mixture-Averaged Transport",
+            "cantera_cti": "./chem_thermo_tran/ffcm21.cti"
+        }
+    },
+    "local": [
+        {
+            "id": 0,
+            "RHO_kgm-3 filename": "./data/RHO_kgm-3_id000.dat",
+            "T_K filename": "./data/T_K_id000.dat",
+            "P_Pa filename": "./data/P_Pa_id000.dat",
+            "YH2 filename": "./data/YH2_id000.dat",
+            "YO filename": "./data/YO_id000.dat",
+            "YO2 filename": "./data/YO2_id000.dat",
+            "YOH filename": "./data/YOH_id000.dat",
+            "YH2O filename": "./data/YH2O_id000.dat",
+            "YHO2 filename": "./data/YHO2_id000.dat",
+            "YH2O2 filename": "./data/YH2O2_id000.dat",
+            "YCO2 filename": "./data/YCO2_id000.dat",
+            "YCH2 filename": "./data/YCH2_id000.dat",
+            "YCH3 filename": "./data/YCH3_id000.dat",
+            "YCH4 filename": "./data/YCH4_id000.dat",
+            "YHCO filename": "./data/YHCO_id000.dat",
+            "YCH2O filename": "./data/YCH2O_id000.dat",
+            "YCH3O filename": "./data/YCH3O_id000.dat",
+            "YC2H2 filename": "./data/YC2H2_id000.dat",
+            "YC2H4 filename": "./data/YC2H4_id000.dat",
+            "YC2H6 filename": "./data/YC2H6_id000.dat",
+            "YH2CC filename": "./data/YH2CC_id000.dat",
+            "YN2 filename": "./data/YN2_id000.dat",
+            "X_m.dat filename": "./data/X_m.dat_id000.dat",
+            "Y_m.dat filename": "./data/Y_m.dat_id000.dat",
+            "Z_m.dat filename": "./data/Z_m.dat_id000.dat",
+            "UX_ms-1 filename": "./data/UX_ms-1_id000.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id000.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id000.dat"
+        }
+    ]
+}

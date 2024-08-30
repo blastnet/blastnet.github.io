@@ -1,1 +1,62 @@
-{"global": {"dataset_id": "waitongchung/round-jet-premixed-bfer", "Nxyz": [1832, 721, 721], "snapshots": 1, "variables": ["UX_ms-1", "UY_ms-1", "UZ_ms-1", "P_Pa", "T_K", "RHO_kgm-3", "YO2", "YCH4", "YCO2", "YCO", "YN2", "YH2O"], "compression": "None", "grid": {"x": "./grid/X_m.dat", "y": "./grid/Y_m.dat", "z": "./grid/Z_m.dat"}, "bc": "Inflow-outflow (with sponge) in x-, with non-reflecting outflow in y- and z-directions.", "ic": {"U": "Taylors hypothesis with Re_t = 58.8 and integral lengthscale of 5.7E-4 m, Re_j = 5300, Ma = 0.36, Diameter = 1.85e-3 m", "Tinlet [K]": 700, "Pamb [Pa]": 101325, "Mixture": "CH4-air Equivalence ratio = 1"}, "doi": "https://doi.org/10.1017/jfm.2020.1184", "contributors": "Davy Brouzet and Mohsen Talei", "description": "Turbulent Round jet BFER CH4-air Premixed Flame DNS", "chem_thermo_tran": {"cantera_cti": "./chem_thermo_tran/2S_CH4_BFER.cti"}, "notes": "Sponge layers removed from this data."}, "local": [{"id": 0, "UX_ms-1 filename": "./data/UX_ms-1_id000.dat", "UY_ms-1 filename": "./data/UY_ms-1_id000.dat", "UZ_ms-1 filename": "./data/UZ_ms-1_id000.dat", "P_Pa filename": "./data/P_Pa_id000.dat", "T_K filename": "./data/T_K_id000.dat", "RHO_kgm-3 filename": "./data/RHO_kgm-3_id000.dat", "YO2 filename": "./data/YO2_id000.dat", "YCO2 filename": "./data/YCO2_id000.dat", "YCO filename": "./data/YCO_id000.dat", "YCH4 filename": "./data/YCH4_id000.dat", "YH2O filename": "./data/YH2O_id000.dat", "YN2 filename": "./data/YN2_id000.dat"}]}
+{
+    "global": {
+        "dataset_id": "waitongchung/round-jet-premixed-bfer",
+        "Nxyz": [
+            1832,
+            721,
+            721
+        ],
+        "snapshots": 1,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "P_Pa",
+            "T_K",
+            "RHO_kgm-3",
+            "YO2",
+            "YCH4",
+            "YCO2",
+            "YCO",
+            "YN2",
+            "YH2O"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "bc": "Inflow-outflow (with sponge) in x-, with non-reflecting outflow in y- and z-directions.",
+        "ic": {
+            "U": "Taylors hypothesis with Re_t = 58.8 and integral lengthscale of 5.7E-4 m, Re_j = 5300, Ma = 0.36, Diameter = 1.85e-3 m",
+            "Tinlet [K]": 700,
+            "Pamb [Pa]": 101325,
+            "Mixture": "CH4-air Equivalence ratio = 1"
+        },
+        "doi": "https://doi.org/10.1017/jfm.2020.1184",
+        "contributors": "Davy Brouzet and Mohsen Talei",
+        "description": "Turbulent Round jet BFER CH4-air Premixed Flame DNS",
+        "chem_thermo_tran": {
+            "cantera_cti": "./chem_thermo_tran/2S_CH4_BFER.cti"
+        },
+        "notes": "Sponge layers removed from this data."
+    },
+    "local": [
+        {
+            "id": 0,
+            "UX_ms-1 filename": "./data/UX_ms-1_id000.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id000.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id000.dat",
+            "P_Pa filename": "./data/P_Pa_id000.dat",
+            "T_K filename": "./data/T_K_id000.dat",
+            "RHO_kgm-3 filename": "./data/RHO_kgm-3_id000.dat",
+            "YO2 filename": "./data/YO2_id000.dat",
+            "YCO2 filename": "./data/YCO2_id000.dat",
+            "YCO filename": "./data/YCO_id000.dat",
+            "YCH4 filename": "./data/YCH4_id000.dat",
+            "YH2O filename": "./data/YH2O_id000.dat",
+            "YN2 filename": "./data/YN2_id000.dat"
+        }
+    ]
+}
