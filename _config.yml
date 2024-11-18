@@ -14,3 +14,7 @@ github:
   event_url: ./event.html
   bench_url: ./bench.html
   link_url: ./link.html
+
+kramdown:
+  input: GFM
+  math_engine: mathjax
