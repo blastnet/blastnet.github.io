@@ -1,0 +1,49 @@
+{
+    "global": {
+        "dataset_id": "blastnet/canonical-rbc-dns-c0r3",
+        "Nxyz": [
+            2049,
+            2049,
+            1025
+        ],
+        "snapshots": 2,
+        "variables": [
+            "UX",
+            "UY",
+            "UZ",
+            "P",
+            "T"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "bc": "Periodic in x-, y-directions, bounded by no-slip walls along z-direction.",
+        "ic": "Natural thermal convection in a cuboidal box of aspect ratio 4 at fixed Prandtl number = 0.7 and Rayleigh number = 1.00E+05 with nu = 0.00264575131 and kappa = 0.00377964473. ",
+        "description": "DNS of Rayleigh Benard convection at moderate to high Rayleigh numbers. All the variables reported in this dataset are in the dimensionless form. For more information about the normalization, we refer the user to the dataset webpage on BLASTNet.",
+        "doi": "https://doi.org/10.1017/jfm.2024.853",
+        "contributors": "Roshan Samuel, Mathis Bode"
+    },
+    "local": [
+        {
+            "id": 6,
+            "time": 3850,
+            "UX filename": "./data/UX_id006.dat",
+            "UY filename": "./data/UY_id006.dat",
+            "UZ filename": "./data/UZ_id006.dat",
+            "P filename": "./data/P_id006.dat",
+            "T filename": "./data/T_id006.dat"
+        },
+        {
+            "id": 7,
+            "time": 3900,
+            "UX filename": "./data/UX_id007.dat",
+            "UY filename": "./data/UY_id007.dat",
+            "UZ filename": "./data/UZ_id007.dat",
+            "P filename": "./data/P_id007.dat",
+            "T filename": "./data/T_id007.dat"
+        }
+    ]
+}
