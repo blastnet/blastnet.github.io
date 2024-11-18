@@ -5,7 +5,7 @@ description: Rayleigh-Bénard Convection DNS
 ---
 
 <div style="text-align: center;">
-    <img src="/assets/img/roshan2024.png" alt="Image 1" style="max-width: 100%;">
+    <img src="/assets/img/roshan2024.png" alt="Image 1" style="max-width: 70%;">
 </div>
 
 # Description
@@ -14,7 +14,9 @@ convection. It consists of a thin layer of fluid confined between a pair of para
 cooler than the bottom plate, and when this temperature difference is sufficiently high, a convective flow arises.This phenomenon can be simulated numerically by solving the incompressible Navier-Stokes equations under the
 Boussinesq approximation:  
 
-$\frac{\partial \mathbf{u}^*}{\partial t^*} + \mathbf{u}^* \cdot \nabla \mathbf{u}^* = -\frac{1}{\rho_0} \nabla p^* + \nu \nabla^2 \mathbf{u}^* + \alpha g T^* \hat{\mathbf{z}}$
+$$
+\frac{\partial \mathbf{u}^*}{\partial t^*} + \mathbf{u}^* \cdot \nabla \mathbf{u}^* = -\frac{1}{\rho_0} \nabla p^* + \nu \nabla^2 \mathbf{u}^* + \alpha g T^* \hat{\mathbf{z}}
+$$
 
 $$\frac{\partial T^*}{\partial t^*} + \mathbf{u}^* \cdot \nabla T^* = \kappa \nabla^2 T^* $$
 
