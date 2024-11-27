@@ -99,8 +99,10 @@ We thank the following people for contributing and curating this network-of-data
 | [Yifan Chen](https://www.linkedin.com/in/yi-fan-chen-1489666/) | Google | August 29 2023 |
 | [Victor Coulon](https://scholar.google.com/citations?user=m-0PX4AAAAAJ&hl=fr) | CERFACS| February 27 2024|
 | [Corentin Lapeyre](https://scholar.google.fr/citations?user=a8DKDycAAAAJ&hl=fr)| CERFACS|February 27 2024|
+| [Michael Gauding](https://www.itv.rwth-aachen.de/institut/mitarbeiter/michael-gauding/)| RWTH Aachen University|November 22 2024|
+| [Roshan Samuel](https://roshansamuel.github.io)| Technische Universität Ilmenau | November 22 2024|
+| [Mathis Bode](https://www.fz-juelich.de/profile/bode_m)| Jülich Supercomputing Centre | November 22 2024 |
 
 
-
-
-
+# Funding
+![nsf logo](./assets/img/nsf.png) <!-- {: .center-image} -->
