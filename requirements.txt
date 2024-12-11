@@ -1,0 +1,4 @@
+kaggle>=1.6
+numpy>=1.2
+requests-cache>=1.2.1
+pygithub>=2.4.0

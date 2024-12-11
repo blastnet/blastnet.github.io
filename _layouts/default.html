@@ -1,55 +1,36 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+---
+---
+
+<!doctype html>
+{% include copyright.html %}
+<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
   <head>
-    <meta charset="UTF-8">
-
-{% seo %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link href="/assets/lightbox2-2.11.4/dist/css/lightbox.css" rel="stylesheet" />
-    <script src="/assets/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.js"></script>
-    {% include head-custom.html %}
-    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+    {% include head.html %}
+    {% include head/custom.html %}
   </head>
-  <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.about_url }}" class="btn">About</a>
-        <a href="{{ site.github.link_url }}" class="btn">Quick Links</a>
-        <a href="{{ site.github.data_url }}" class="btn">Datasets</a>
-        <a href="{{ site.github.bench_url }}" class="btn">Benchmarks</a>
-        <a href="{{ site.github.tutorial_url }}" class="btn">Tutorials</a>
-        <a href="{{ site.github.contribute_url }}" class="btn">Contribute</a>
-        <a href="{{ site.github.event_url }}" class="btn">Events</a>
-        <a href="{{ site.github.cite_url }}" class="btn">Publications</a>
-        <a href="{{ site.github.contact_url }}" class="btn">Contact Us</a>
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
+    {% include_cached skip-links.html %}
+    {% include_cached masthead.html %}
 
-      {% endif %}
-    </header>
-
-    <main id="content" class="main-content" role="main">
+    <div class="initial-content">
       {{ content }}
+      {% include after-content.html %}
+    </div>
 
-      <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits">Get support at our <a href="https://github.com/blastnet/blastnet.github.io/issues">GitHub Issues page</a>.<BR>
-          For urgent issues, email <a href="mailto:blast.net.ml@gmail.com">blast.net.ml@gmail.com</a>.
-        </span>
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
       </footer>
-    </main>
+    </div>
+
+    {% include scripts.html %}
   </body>
 </html>

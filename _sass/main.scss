@@ -1,0 +1,42 @@
+article.page,.archive {
+	float:left!important;
+	width:100%!important;
+}
+
+/* Copyright comment */
+@import "stylesheets/copyright";
+
+/* Variables */
+@import "stylesheets/variables";
+
+/* Mixins and functions */
+@import "stylesheets/vendor/breakpoint/breakpoint";
+@include breakpoint-set("to ems", true);
+@import "stylesheets/vendor/magnific-popup/magnific-popup"; // Magnific Popup
+@import "stylesheets/vendor/susy/susy";
+@import "stylesheets/mixins";
+
+/* Core CSS */
+@import "stylesheets/reset";
+@import "stylesheets/base";
+@import "stylesheets/forms";
+@import "stylesheets/tables";
+@import "stylesheets/animations";
+
+/* Components */
+@import "stylesheets/buttons";
+@import "stylesheets/notices";
+@import "stylesheets/masthead";
+@import "stylesheets/navigation";
+@import "stylesheets/footer";
+@import "stylesheets/search";
+@import "stylesheets/syntax";
+
+/* Utility classes */
+@import "stylesheets/utilities";
+
+/* Layout specific */
+@import "stylesheets/page";
+@import "stylesheets/archive";
+@import "stylesheets/sidebar";
+@import "stylesheets/print";

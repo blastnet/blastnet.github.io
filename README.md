@@ -1,116 +1,72 @@
-# The Cayman theme
+# New and Improved BLASTNet site
 
-[![.github/workflows/ci.yaml](https://github.com/pages-themes/cayman/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/cayman/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-cayman.svg)](https://badge.fury.io/rb/jekyll-theme-cayman)
+Built using [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) and [Jekyll](https://jekyllrb.com). 
 
-*Cayman is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/cayman), or even [use it today](#usage).*
+## Documentation for BLASTNet maintainers and contributors
 
-![Thumbnail of Cayman](thumbnail.png)
+This repository contains all the code for the blastnet.github.io website. Most of the Minimal Mistakes features and layouts are not used (and will likely never be used) and so they have been removed for a smoother and lighter build experience. Yet, some new features like the data counters have also been added. Therefore, please read this documentation carefully.
 
-## Usage
+## Steps to add new dataset to BlastNet
 
-To use the Cayman theme:
+1. Upload all data to Kaggle
+2. Create the dataset page (see [below](#dataset-pages)) in the `_datasets` directory and upload the relevant files
+    - Make sure images are uploaded correspondingly in the `assets/img` folder
+    - Make sure the `.bib` file is uploaded to the assets/bib folder
+    - For consistency, recommend to name the files `authorYYYY.md', `authorYYYY.bib`, `authorYYYY.png` etc.
+3. Commit the changes and push to the main branch. For people without push access, create a pull request.
+4. Run the `Update Gist` workflow to update the statistics on the backend (optional).
+5. The site will rebuild automatically.
 
-1. Add the following to your site's `_config.yml`:
+If you'd like to preview, you can also clone the repository to your local machine, make the above changes, and build the website using `bundle exec jekyll serve` (assuming you have a working Jekyll installation - if not, install Jekyll, then run `bundle install` before building). If it looks good, clean up the repository by running `bundle exec jekyll clean` (so that the built files are not also uploaded). Then, you can commit the changes and open a pull request. 
 
-    ```yml
-    remote_theme: pages-themes/cayman@v0.2.0
-    plugins:
-    - jekyll-remote-theme # add this line to the plugins list if you already have one
-    ```
+## Statistics workflow
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+Using Github actions, we can pipe Kaggle API data to a JSON file hosted on Github's Gist. The JSON file is processed via Javascript Fetch API and processed client-side. This method reduces the number of deployments. It's akin to making a fake server-side API interface. See `kaggle_json.py` for more details on how the data is ported to the JSON file. Currently, the JSON file is refreshed once every hour, and we are monitoring the number of Kaggle API calls to ensure that we are not rate-limited (because it will break the JSON file).
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
+**IMPORTANT:** Make sure the Kaggle API key, Kaggle username, and Github PAT (which should give Gist read and write access) are all stored as repository secrets. To confirm, go to `Settings --> Secrets and variables --> Actions` and check that `Repository secrets` has (at least) 3 items: `GIST_TOKEN`, `KAGGLE_APIKEY`, `KAGGLE_USERNAME`. Otherwise, the JSON update will break!
 
-## Customizing
+**BUG:** Sometimes the Kaggle API stops working and everything returns a zero output. This is unintended. As a fallback, old data will currently be used. Working on a fix.
 
-### Configuration variables
+## Dataset pages
 
-Cayman will respect the following variables, if set in your site's `_config.yml`:
+This site makes heavy use of Jekyll collections. Custom `datasets` layout is created (based on the `single` layout) and using the collections keyword, the `datasets.md` page in `_pages` collects all the dataset pages in the `_datasets` folder into the gallery, without needing to manually create a new link as was done on the previous version of the BLASTNet site. As such, the preamble of each dataset page is very important, and it's important also to have all the dataset pages in the `_datasets` folder. An example preamble is shown below:
 
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
+```yaml
+---
+layout: datapage
+excerpt: (5 cases)
+title: Rayleigh-Bénard Convection
+description: Rayleigh-Bénard Convection DNS
+header:
+  teaser: /assets/img/ico_roshan2024.png
+  image: /assets/img/roshan2024.png
+---
 ```
+For each new dataset, count the number of cases and update the excerpt. Then, update the title and description as per normal. Header teaser corresponds to the icon displayed in the gallery (this keyword needs to be set or the gallery will not display correctly) and header image corresponds to the banner for the specific dataset; either set the keyword or include the banner as an image on the page using `![image](./assets/img/roshan2024.png)`. Additionally, for banner images that have a square-ish or vertical aspect ratio, it is possible to put the banner image in the sidebar like:
+```html
+<div class="sidebar__right" style="text-align: center; top: 160px;">
+    <img src="./assets/img/gauding2022.png" alt="Image 1">
+</div>
 
-Additionally, you may choose to set the following optional variables:
-
-```yml
-show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
 ```
+Note that the `top` style property needs to be adjusted based on the table of contents height (may take trial and error; currently we are working on fixing this).
 
-### Stylesheet
+The statistics at the top of the page (views, downloads, size) should be generated automatically during the next cron scheduled update, otherwise, you can manually run the update workflow by going to `Actions --> Update Gist --> Run workflow`. 
 
-If you'd like to add your own custom styles:
+Dataset description and other text can be written using Github-flavored markdown, HTML, a mixture of the two, and even LaTex (powered by MathJax). To insert equations into the page, use double `$$` like `$$y=mx+c$$` for a block equation, or single `$` like `$y=mx+c$` for an inline equation.
 
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
+**IMPORTANT:** If using inline equations in a paragraph, please wrap the paragraph in `{::nomarkdown}` and `{:/}` tags.
 
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+Once the new dataset is pushed to the repository, the website should automatically rebuild and deploy. The view/download statistics may only be available after an hour or so, unless the `Update Gist` workflow is run manually.
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+## Site pages
 
-### Layouts
+Adding new pages (for example, maybe new FlameAI) or editing the existing ones is simple - all the pages are rendered by markdown files located in `_pages` (except for the homepage, which is in the root folder and called `index.md`). General pages use the `single` layout; the dataset page uses the `datasets` custom layout and the homepage uses the `splash` layout, which has been significantly modified from the Minimal Mistakes file. ~~Yes, I know hardcoding is bad practice; no, I don't care.~~ The layout should be specified in the preamble using the `layout:` keyword. To add a new page or external link to the navigation menu, go to `_data/navigation.yml` and add a new entry under `main`. 
 
-If you'd like to change the theme's HTML layout:
+## To-do list
+- Clean up the unused Minimal Mistakes code
+- Design a better color scheme
+- Better manipulation of the Kaggle API so that we can update more frequently
+- Update the Python script to only update the JSON if there are actual updates (perhaps add the ability to read the JSON file and match the values) --> this can reduce the number of updates to the Gist and reduce clutter
+- Think about whether we want to do a manual size calculation at every update or just cache the size permanently. Pros of cache: Much lower load, size shouldn't change by a lot anyway. Cons of cache: Less accurate; each subdataset has different number of downloads so the homepage total counter will also be inaccurate; does not capture versioning.
 
-1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/pages-themes/cayman/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html).
-2. For more extensive changes, [copy the original template](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-3. Create a file called `/_layouts/default.html` in your site
-4. Paste the default layout content copied in the first step
-5. Customize the layout as you'd like
-
-### Customizing Google Analytics code
-
-Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
-
-### Overriding GitHub-generated URLs
-
-Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
-
-1. Look at [the template source](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
-2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
-    ```yml
-    github:
-      zip_url: http://example.com/download.zip
-      another_url: another value
-    ```
-3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
-
-*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
-
-For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
-
-## Roadmap
-
-See the [open issues](https://github.com/pages-themes/cayman/issues) for a list of proposed features (and known issues).
-
-## Project philosophy
-
-The Cayman theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
-
-## Contributing
-
-Interested in contributing to Cayman? We'd love your help. Cayman is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
-
-### Previewing the theme locally
-
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
-
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/cayman`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
-
-### Running tests
-
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.

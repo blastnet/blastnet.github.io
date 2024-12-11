@@ -1,0 +1,208 @@
+/* ==========================================================================
+   Blastnet skin
+   ========================================================================== */
+
+@import "stylesheets/vendor/breakpoint/breakpoint";
+@include breakpoint-set("to ems", true);
+
+$mobile: 640px !default;
+
+/* Colors */
+$dark-gray: #53565a !default;
+$background-color: #ffffff !default;
+$text-color: #2e2d29 !default;
+$muted-text-color: $dark-gray !default;
+$primary-color: #b83a4b !default;
+$secondary-color: #8c1515 !default;
+$border-color: mix(#fff, $dark-gray, 75%) !default;
+$footer-background-color: $text-color !default;
+$link-color: mix(#000, $secondary-color, 10%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+/* notices */
+$notice-background-mix: 75% !default;
+
+/* solarized syntax highlighting (base16) */
+//$base00: #fdf6e3 !default;
+$base00: mix(#fff, $border-color, 80%) !default;
+$base01: #eee8d5 !default;
+$base02: #93a1a1 !default;
+$base03: #839496 !default;
+$base04: #657b83 !default;
+$base05: #586e75 !default;
+$base06: #073642 !default;
+$base07: #002b36 !default;
+$base08: #dc322f !default;
+$base09: #cb4b16 !default;
+$base0a: #b58900 !default;
+$base0b: #859900 !default;
+$base0c: #2aa198 !default;
+$base0d: #268bd2 !default;
+$base0e: #6c71c4 !default;
+$base0f: #d33682 !default;
+
+/* custom styles */
+.page__footer {
+  color: #fff !important; // override
+}
+
+.page__footer-follow .social-icons .svg-inline--fa,
+.page__footer-follow .social-icons .fas,
+.page__footer-follow .social-icons .fab {
+  color: inherit;
+}
+
+.page__hero--overlay .btn.btn--counter {
+  padding-left:0;
+  padding-top:0;
+  padding-bottom:0;
+  border:0px solid transparent;
+  text-align:left;
+  margin-top:-1em;
+  font-size:1.2em;
+
+  &#kaggle_size::after {
+    content:" total data";
+  }
+
+  &#kaggle_size span::after {
+    display:none; 
+    content:"";
+  }
+
+  @include breakpoint(max-width $mobile){
+    &#kaggle_stat {
+      font-size:0px;
+    }
+
+    &#kaggle_stat::after {
+      content:" downloaded";
+      font-size:1.2rem;
+      margin-left:3.36rem;
+      text-shadow:0 0 0 transparent;
+    }
+
+    &#kaggle_stat:hover::after {
+      text-shadow:1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    em, em ~ span {
+      display:none;
+    }
+  }
+
+  em {font-style:normal;}
+
+  span {
+    white-space:nowrap;
+    background-color:#fff;
+    padding:0.5em;
+    margin-top:1em;
+    margin-right:1px;
+    display:inline-block;
+    position:relative;
+    border-radius:4px;
+    text-shadow:0 0 0 transparent;
+    border:1px solid transparent;
+    box-shadow:1px 1px 4px rgba(0,0,0,0.5);
+    color:black;
+    mix-blend-mode:screen;
+
+    @include breakpoint(max-width $mobile) {
+      font-size:1.2rem;
+    }
+
+    &::after {
+      content:"";
+      position:absolute;
+      bottom:0;
+      right:0;
+      margin-bottom:-1.5em; /* 1em+0.5em padding */
+      text-shadow:1px 1px 4px rgba(0,0,0,0.5);
+      color:white;
+      mix-blend-mode:normal;
+      text-transform:uppercase;
+      font-size:0.625em;
+      font-weight:normal;
+
+      @include breakpoint(max-width $mobile){
+        bottom:auto;
+	margin-bottom:auto;
+	font-size:1em;
+	right:auto;
+	left:100%;
+	margin-left:0.5em;
+	font-weight:bold;
+	text-shadow:1px 1px 4px rgba(0,0,0,0.5);
+      }
+    }
+
+    &:nth-last-of-type(4)::after {content:"kilo";}
+    &:nth-last-of-type(7)::after {content:"mega";}
+    &:nth-last-of-type(10)::after {content:"giga";}
+    &:nth-last-of-type(13)::after {content:"tera";}
+    &:nth-last-of-type(16)::after {content:"peta";}
+
+    /* tbh these aren't even in the python file yet...... */
+    &:nth-last-of-type(19)::after {content:"exa";}
+    &:nth-last-of-type(22)::after {content:"zetta";}
+    &:nth-last-of-type(25)::after {content:"yotta";}
+    
+    &:last-of-type {
+      margin-right:0.25em;
+    } 
+
+    @include breakpoint(max-width $mobile){
+      &:nth-last-of-type(3n+4)::after {
+        white-space:nowrap;
+        background-color:#fff;
+        padding:0.5em;
+        margin:calc(-1px - 0.5em) 1px auto 0.36em;
+        display:inline-block;
+        border-radius:4px;
+        text-shadow:0 0 0 transparent;
+        border:1px solid transparent;
+        box-shadow:1px 1px 4px rgba(0,0,0,0.5);
+        color:black;
+        mix-blend-mode:screen;
+      }
+
+      &:nth-last-of-type(4)::after {content:"KB";}
+      &:nth-last-of-type(7)::after {content:"MB";}
+      &:nth-last-of-type(10)::after {content:"GB";}
+      &:nth-last-of-type(13)::after {content:"TB";}
+      &:nth-last-of-type(16)::after {content:"PB";}
+
+      /* tbh these aren't even in the python file yet...... */
+      &:nth-last-of-type(19)::after {content:"EB";}
+      &:nth-last-of-type(22)::after {content:"ZB";}
+      &:nth-last-of-type(25)::after {content:"YB";}
+    }
+  }
+
+  &:hover {
+    background-color:initial;
+    color:white;
+    text-shadow:1px 1px 4px rgba(0,0,0,0.5);
+
+    span {
+      background:rgba(0,0,0,0.3);
+      color:white;
+      text-shadow:1px 1px 4px rgba(0,0,0,0.5);
+      mix-blend-mode:normal;
+      border-color:white;
+    }
+  }
+}
+
+.btn--primary:visited {
+  background: initial;
+  color: initial;
+}
+
+.btn--primary:hover {
+  background-color: $secondary-color!important;
+  color: #fff!important;
+}

@@ -1,0 +1,51 @@
+# main links
+main:
+  - title: "Datasets"
+    url: /datasets
+  - title: "Benchmarks"
+    url: /bench
+  - title: "Tutorials"
+    url: /tutorial
+  - title: "Contribute"
+    url: /contribute
+  - title: "Events"
+    url: /event
+  - title: "Publications"
+    url: /pub
+
+links:
+  - title: Publications
+    description: 'Fully detailed <a href="/pub">here</a> with citing instructions.'
+    children:
+      - title: "BLASTNet Zenodo"
+        url: https://zenodo.org/records/8034232
+      - title: "2023 NeurIPS paper"
+        url: https://arxiv.org/abs/2309.13457
+      - title: "2022 AECS paper"
+        url: https://www.sciencedirect.com/science/article/pii/S2666352X22000309?via%3Dihub
+      - title: "2022 ICML W. paper"
+        url: https://openreview.net/forum?id=LxGTZM7L6qn
+
+  - title: Data
+    description: 'Fully detailed <a href="/datasets">here</a>.'
+    children:
+      - title: "Download all (Kaggle API)"
+        url: /assets/bash/batch_download_v2.1.sh
+      - title: "Download Momentum128 3D SR"
+        url: /assets/bash/mom_download.sh
+      - title: "Kaggle repo for Momentum128 3D SR"
+        url: https://www.kaggle.com/datasets/waitongchung/blastnet-momentum-3d-sr-dataset
+
+  - title: Code and Tutorials
+    children:
+      - title: "BLASTNet data formats"
+        url: https://www.kaggle.com/code/waitongchung/smallhit-browsedata
+      - title: "Multi-GPU training with BLASTNet"
+        url: https://www.kaggle.com/code/waitongchung/smallhit-tfmultigpu
+      - title: "GitHub repo for all Kaggle tutorials"
+        url: https://github.com/blastnet/kaggle_tutorials
+      - title: "BLASTNet outside Kaggle envs (CoLab)"
+        url: https://colab.research.google.com/drive/1_dk1IPQsOK-Dxq9VYSci4lB_LOyVCb5c?usp=sharing
+      - title: "Kaggle CLI quick-start"
+        url: https://blastnet.github.io/tutorial.html#kaggle-command-line-api
+
