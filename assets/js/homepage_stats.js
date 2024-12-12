@@ -8,7 +8,7 @@ function formatBytes(numBytes) {
         unitIndex++;
     }
 
-    // Format the output to 3 decimal places
+    // Format the output to 0 decimal places
     return `${numBytes.toFixed(0)} ${units[unitIndex]}`;
 }
 
@@ -27,11 +27,10 @@ async function fetchGistData() {
 		// Print total bytes downloaded
 		const formattedNumber = total_bytes.toLocaleString();
 		const wrappedNumber = Array.from(formattedNumber).map(char => (/\d/.test(char) ? `<span>${char}</span>`:`<em>${char}</em>`)).join('');
-		document.querySelectorAll("#kaggle_stat")[0].innerHTML = wrappedNumber + " bytes downloaded";
+		document.getElementById("kaggle_stat").innerHTML = wrappedNumber+" bytes downloaded";
 
 		// Print total dataset size
 		const formattedSize = formatBytes(total_size);
-		//const wrappedSize = Array.from(formattedSize).map(char => (/\s/.test(char) ? `${char}`:`<span>${char}</span>`)).join('');
 		const wrappedSize = formattedSize.split(/(\s+)/).map(chunk => {
     			if (/^\d+$/.test(chunk))
       				return Array.from(chunk).map(char => `<span>${char}</span>`).join('');
@@ -40,8 +39,24 @@ async function fetchGistData() {
     			else
       				return chunk;
   		}).join('');
-		document.querySelectorAll("#kaggle_size")[0].innerHTML = wrappedSize;
-		document.querySelectorAll("#data_size")[0].innerHTML = formattedSize;
+		document.getElementById("kaggle_size").innerHTML = wrappedSize;
+		document.getElementById("data_size").innerHTML = formattedSize;
+		
+		// Extra formatting thanks matthias
+		let children = Array.from(document.getElementById("kaggle_stat").children);
+		let firstEmIndex = children.findIndex(child => child.tagName.toLowerCase() === 'em');
+		let byteCount = firstEmIndex === -1 
+  		? children.filter(child => child.tagName.toLowerCase() === 'span').length 
+  		: children.slice(0, firstEmIndex).filter(child => child.tagName.toLowerCase() === 'span').length;
+		let sizeCount = document.querySelectorAll("#kaggle_size span").length-1;
+		if (sizeCount < byteCount){
+			let prependZeros = Array(byteCount-sizeCount).fill('<span class="zero">0</span>').join('');
+			document.getElementById("kaggle_size").innerHTML = prependZeros+wrappedSize;
+		} else if (sizeCount > byteCount){
+			let prependZeros = Array(sizeCount-byteCount).fill('<span class="zero">0</span>').join('');
+			document.getElementById("kaggle_stat").innerHTML = prependZeros+wrappedNumber+" bytes downloaded";
+		}
+
 	} catch (error) {
 		console.log("Failed to fetch Gist data:", error);
 	}

@@ -62,6 +62,12 @@ $base0f: #d33682 !default;
   text-align:left;
   margin-top:-1em;
   font-size:1.2em;
+  
+  @include breakpoint(min-width $mobile){
+    span.zero {
+      display:none;
+    }
+  }
 
   &#kaggle_size::after {
     content:" total data";
