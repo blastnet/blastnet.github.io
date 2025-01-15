@@ -17,7 +17,7 @@ def extract_kaggle(file_path):
         kaggle_identifiers = [f"{username}/{dataset}" for username, dataset in matches]
     return kaggle_identifiers
 
-dir = "_datasets"
+dir = "blastnet.github.io/_datasets"
 total_bytes = 0
 total_size = 0
 json_dump = {}
@@ -75,25 +75,33 @@ for filename in os.listdir(dir):
             num_bytes /= factor
             unit_index += 1
         return f"{num_bytes:.3f} {units[unit_index]}"
+    def unformat_bytes(string):
+        units = ['B','KB','MB','GB','TB','PB','EB','ZB','YB']
+        num,unit = string.split(" ")
+        factor = 1000
+        return float(num)*(factor**(units.index(unit)))
 
     # SPECIFIC DATASET STATISTICS TO OUTPUT
     # Take the maximum of views/downloads from each of the sub-datasets
     # More representative than summing, since the same user would likely view multiple sub-datasets
-    ds_size = format_bytes(np.sum(size_in_bytes))
+    ds_size_raw = np.sum(size_in_bytes)
+    ds_size = format_bytes(ds_size_raw)
     ds_views = np.max(views) #np.sum(views)
     ds_downs = np.max(downloads) #np.sum(downloads)
     print(f'{filename} ({ds_size}) processed. {ds_views} views, {ds_downs} downloads.')
 
-    # Use old data as fallback
-    if not ds_size:
+    if not ds_size_raw:
+    	# Use old data as fallback
         kaggle_stats = json.loads(gist.files['kaggle_stats.json'].content)
         kaggle_stats = kaggle_stats[filename]
-
-    # Save as dictionary and throw it to the preamble
-    kaggle_stats = {
-        'size': ds_size,
-        'views': ds_views,
-        'downloads': ds_downs,
+        size_in_bytes = unformat_bytes(kaggle_stats['size'])
+        downloads = kaggle_stats['downloads']
+    else:
+        # Save as dictionary and throw it to the preamble
+        kaggle_stats = {
+            'size': ds_size,
+            'views': ds_views,
+            'downloads': ds_downs,
     }
     json_dump[filename] = kaggle_stats
     total_bytes += int(np.sum(downloads*size_in_bytes))
@@ -102,6 +110,9 @@ for filename in os.listdir(dir):
 if not total_bytes:
     raise Exception("Zero data encountered, exiting")
     exit()
+    #old_data = json.loads(gist.files['kaggle_stats.json'].content)
+    #total_bytes = old_data['total_bytes']
+    #total_size = old_data['total_size']
 
 json_dump['total_bytes'] = total_bytes
 json_dump['total_size'] = total_size
