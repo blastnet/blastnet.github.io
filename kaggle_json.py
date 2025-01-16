@@ -7,17 +7,24 @@ GIST_ID = "c9112c25c5acd400b90741efa81aa411"
 g = Github(GITHUB_TOKEN)
 gist = g.get_gist(GIST_ID)
 
-# Function to extract kaggle identifiers from the file
-def extract_kaggle(file_path):
-    kaggle_identifiers = []
-    kaggle_url_pattern = r'https://www\.kaggle\.com/datasets/([^/]+)/([^"]+)'
-    with open(file_path, 'r') as file:
-        text = file.read()
-        matches = re.findall(kaggle_url_pattern, text)
-        kaggle_identifiers = [f"{username}/{dataset}" for username, dataset in matches]
-    return kaggle_identifiers
+# Format the filesize to unit'ed format
+def format_bytes(num_bytes):
+    units = ['B','KB','MB','GB','TB','PB','EB','ZB','YB']
+    factor = 1000
+    unit_index = 0
+    while num_bytes >= factor and unit_index < len(units)-1:
+        num_bytes /= factor
+        unit_index += 1
+    return f"{num_bytes:.3f} {units[unit_index]}"
 
-dir = "blastnet.github.io/_datasets"
+# Unformat the unit'ed format to the raw filesize (estimate)
+def unformat_bytes(string):
+    units = ['B','KB','MB','GB','TB','PB','EB','ZB','YB']
+    num,unit = string.split(" ")
+    factor = 1000
+    return float(num)*(factor**(units.index(unit)))
+
+dir = "_datasets"
 total_bytes = 0
 total_size = 0
 json_dump = {}
@@ -28,59 +35,71 @@ requests_cache.install_cache('kaggle_cache', expire_after=600)
 api_instance = kaggle.KaggleApi()
 api_instance.authenticate()
 
+# Save array of unique usernames across all files to reduce API call
+usernames = {}
+search_map = {}
+
 # For every file in the datasets folder
 for filename in os.listdir(dir):
     print(f'Currently updating {filename}...')
-    dataset_names = []
 
     # Extract all the kaggle dataset identifiers from the page
     filepath = os.path.join(dir,filename)
     if os.path.isfile(filepath):
-        dataset_names = extract_kaggle(filepath)
-    if not dataset_names:
-        continue
-
+        kaggle_url_pattern = r'https://www\.kaggle\.com/datasets/([^/]+)/([^"]+)'
+        with open(filepath,'r') as file:
+            text = file.read()
+            matches = re.findall(kaggle_url_pattern,text)
+            search_map[filename] = []
+            # Loop through all dataset identifiers in the file
+            for username,dataset in matches:
+                # If owner not yet recorded, scrape ALL datasets from owner
+                if username not in usernames:
+                    new_set = []
+                    cur_len = 20
+                    i = 1
+                    # Pagination length is 20
+                    while cur_len == 20:
+                        new_search = api_instance.dataset_list(search=username,page=i)
+                        new_set.extend(new_search)
+                        cur_len = len(new_search)
+                        i+=1
+                    # Save all the scrapes to the dictionary
+                    # Note items of new_set are Kaggle metadata objects
+                    usernames[username] = new_set
+                    
+                # Record all the identifiers to the filename
+                search_map[filename].append(f'{username}/{dataset}')
+    
+# At this point we have done all the necessary scraping from Kaggle API calls
+for filename in search_map:
+    dataset_names = search_map[filename]
+    
     downloads = []
     views = []
     sizes = []
-
+    
     for dsn in dataset_names:
         print(f'Processing {dsn}...')
         try:
-            # This way is slower but only needs 1 API call per kaggle subdataset
-            # Instead of iterating over all the files multiple times
-            dataset = vars(api_instance.dataset_list(search=dsn)[0])
+            user = dsn.split("/")[0]
+            dataset = vars(next((d for d in usernames[user] if vars(d)['ref'] == dsn)))
             downloads.append(int(dataset['downloadCount']))
             views.append(int(dataset['viewCount']))
             sizes.append(int(dataset['totalBytes']))
             print(f'{dsn} done.')
-
+            
         except Exception as e:
             print(f'{e} when reading {dsn}')
             print(f'Continuing with 0 values...')
             downloads.append(0)
             views.append(0)
             sizes.append(0)
-
+    
     views = np.array(views)
     downloads = np.array(downloads)
     size_in_bytes = np.array(sizes)
-
-    # Format the filesize to unit'ed format
-    def format_bytes(num_bytes):
-        units = ['B','KB','MB','GB','TB','PB','EB','ZB','YB']
-        factor = 1000
-        unit_index = 0
-        while num_bytes >= factor and unit_index < len(units)-1:
-            num_bytes /= factor
-            unit_index += 1
-        return f"{num_bytes:.3f} {units[unit_index]}"
-    def unformat_bytes(string):
-        units = ['B','KB','MB','GB','TB','PB','EB','ZB','YB']
-        num,unit = string.split(" ")
-        factor = 1000
-        return float(num)*(factor**(units.index(unit)))
-
+    
     # SPECIFIC DATASET STATISTICS TO OUTPUT
     # Take the maximum of views/downloads from each of the sub-datasets
     # More representative than summing, since the same user would likely view multiple sub-datasets
@@ -110,13 +129,10 @@ for filename in os.listdir(dir):
 if not total_bytes:
     raise Exception("Zero data encountered, exiting")
     exit()
-    #old_data = json.loads(gist.files['kaggle_stats.json'].content)
-    #total_bytes = old_data['total_bytes']
-    #total_size = old_data['total_size']
 
 json_dump['total_bytes'] = total_bytes
 json_dump['total_size'] = total_size
-
+    
 # Update the gist
 # Need the custom encoder class to convert numpy numbers to json readable ones
 class NpEncoder(json.JSONEncoder):
