@@ -54,6 +54,17 @@ $base0f: #d33682 !default;
   color: inherit;
 }
 
+.page__hero img {
+  width: 70%; 
+  height: auto; 
+}
+
+.page__hero {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+}
+
 .page__hero--overlay .btn.btn--counter {
   padding-left:0;
   padding-top:0;
