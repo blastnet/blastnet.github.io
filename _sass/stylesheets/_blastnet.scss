@@ -55,8 +55,8 @@ $base0f: #d33682 !default;
 }
 
 .page__hero img {
-  width: 70%; 
-  height: auto; 
+  width: 70%;
+  height: auto;
 }
 
 .page__hero {
@@ -222,4 +222,55 @@ $base0f: #d33682 !default;
 .btn--primary:hover {
   background-color: $secondary-color!important;
   color: #fff!important;
+}
+
+/*-- isotope --*/
+
+.filter-group {
+  text-align:center;
+
+  h2 {
+    text-align:left;
+  }
+}
+
+.filter-group a {
+  text-decoration:none;
+
+  &.is-checked:not(.datasets_all) {
+    opacity:0.5;
+  }
+}
+
+.filter-group a {
+  width:24%;
+  height:100px;
+  position:relative;
+  display:inline-block;
+
+  img {
+    display:block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    object-fit:cover;
+    top:0;
+    left:0;
+    border-radius:20px;
+  }
+
+  h3 {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:1;
+    text-shadow:1px 1px 4px rgba(0,0,0,0.5);
+    height:1.5rem;
+    margin:auto;
+    text-align:center;
+    color:white;
+    text-decoration:none;
+  }
 }

@@ -5,6 +5,7 @@ excerpt: (1 case)
 header:
   teaser: /assets/img/ico_jiang2021.png
 description: Premixed Flame-wall Interaction CH4-Air DNS
+categories: reacting
 ---
 
 <div style="text-align: center;">

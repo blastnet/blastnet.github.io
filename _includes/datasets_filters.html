@@ -1,0 +1,53 @@
+<div class="filter-group filter-categories">
+  <a href="#"class="datasets_all"  data-filter="*">
+    <h3>All</h3>
+    <img src="/assets/img/blastnet_banner.png"/>
+  </a>
+  <a href="#" data-filter=".reacting">
+    <h3>Reacting</h3>
+    <img src="/assets/img/filter_reacting.jpeg"/>
+  </a>
+  <a href="#" data-filter=".nonreacting">
+    <h3>Non-reacting</h3>
+    <img src="/assets/img/filter_nonreacting.png"/>
+  </a>
+  <a href="#" data-filter=".experimental">
+    <h3>Experimental</h3>
+    <img src="/assets/img/filter_experimental.png"/>
+  </a>
+  <h2>BLASTNet Simulation Dataset</h2>
+</div>
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+    var content = document.querySelector('.entries-grid');
+    var iso = new Isotope(content,{
+        itemSelector:'.grid__item',
+        layoutMode:'fitRows'
+    });
+    imagesLoaded(content).on('progress',function(){
+        iso.layout();
+    });
+    document.querySelectorAll('.filter-group a').forEach(function(element){
+        element.addEventListener('click',function(e){
+            var filter_class;
+            //var filter_class = element.getAttribute("data-filter");
+            if (element.classList.contains('is-checked'))
+                filter_class = '*';
+            else {
+                filter_class = element.getAttribute('data-filter');
+                document.querySelectorAll('.is-checked').forEach(el => el.classList.remove('is-checked'));
+            }
+	    iso.arrange({
+                filter: filter_class
+            });
+            element.classList.toggle('is-checked');
+            e.preventDefault();
+        });
+    });
+});
+</script>
+

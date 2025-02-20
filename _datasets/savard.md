@@ -5,6 +5,7 @@ excerpt: (22 cases)
 header:
   teaser: /assets/img/ico_savard2019.png
 description: Vitiated H2-air Freely Propagating Flame DNS
+categories: reacting
 ---
 
 <div style="text-align: center;">

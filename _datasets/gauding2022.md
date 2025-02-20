@@ -5,6 +5,7 @@ title: Forced HIT
 description: Passive Scalar HIT DNS
 header:
   teaser: /assets/img/ico_gauding2022.png
+categories: nonreacting
 ---
 
 <div class="sidebar__right" style="text-align: center; top: 160px;">

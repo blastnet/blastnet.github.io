@@ -5,6 +5,7 @@ description: NH3-H2-Air Premixed Flame DNS
 excerpt: (1 case)
 header:
   teaser: /assets/img/ico_coulon2023.png
+categories: reacting
 ---
 
 <div class="sidebar__right" style="top: 130px; text-align: center;">

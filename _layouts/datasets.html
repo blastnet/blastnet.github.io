@@ -4,7 +4,7 @@ layout: archive
 
 <p>{{ page.excerpt }}</p>
 
-<h2>BLASTNet Simulation Dataset</h2>
+{% include datasets_filters.html %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">

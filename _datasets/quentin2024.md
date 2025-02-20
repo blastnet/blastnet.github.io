@@ -6,6 +6,7 @@ description: Premixed Flame H2-Air DNS in Slot Burner
 header:
   teaser: /assets/img/ico_quentin2024.png
 #   image: /assets/img/quentin2024.png
+categories: reacting
 ---
 <div style="text-align: center;">
     <img src="./assets/img/quentin2024.png" alt="Image 1" style="max-width: 100%;">
