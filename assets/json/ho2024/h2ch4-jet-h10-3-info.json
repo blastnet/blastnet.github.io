@@ -1,0 +1,92 @@
+{
+    "global": {
+        "dataset_id": "H10_3",
+        "Nxyz": [
+            1749,
+            486,
+            486
+        ],
+        "snapshots": 1,
+        "time-step [s]": 0.0042138182200631893,
+        "variables": [
+            "RHO_kgm-3",
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "ET_m2s-2",
+            "P_Pa",
+            "YN2",
+            "YH2",
+            "YH",
+            "YO",
+            "YO2",
+            "YOH",
+            "YH2O",
+            "YHO2",
+            "YH2O2",
+            "YCO",
+            "YCO2",
+            "YCH3",
+            "YCH4",
+            "YCH2O",
+            "YC2H4",
+            "YC2H6"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "bc": {
+            "Ujet": "Injected turbulence using Taylors hypothesis with Re_j = 10300, ux_rms/u_centerline = 0.04, l_t = 0.3D, D = 2.3e-3 m",
+            "Ucoflow": "2% of the mean jet velocity",
+            "Tjet [K]": 450,
+            "Tcoflow": "Adiabatic flame temperature",
+            "Pamb [Pa]": 101325,
+            "Mixture": "100% CH4, Equivalence ratio = 1"
+        },
+        "ic": {
+            "UX": "Coflow velocity",
+            "T": "Adiabatic flame temperature",
+            "Pamb [Pa]": 101325,
+            "Mixture": "Burnt gas"
+        },
+        "doi": "https://doi.org/10.1016/j.ijhydene.2024.07.283",
+        "contributors": "Jen Zen Ho and Mohsen Talei",
+        "description": "Turbulent Round jet CH4-air Premixed Flame DNS",
+        "chem_thermo_tran": {
+            "fortran_f90": "./chem_thermo_tran/QSS_NPR_RFFCM.F90",
+            "reaction-less_cti": "./chem_thermo_tran/QSS_RFFCM.cti",
+            "before-QSS_cti": "./chem_thermo_tran/RFFCM.cti"
+        },
+        "notes": "Sponge layers removed from this data. Inlet sponge x_end = 0.7D, outlet sponge x_start = 20D, yz_sponge = 5D. A mechanism with QSS was used for the simulation - this is the Fortran F90 file. In addition, a reaction-less cti file is given for convenience to calculate gas properties, and the reduced mechanism, based on FFCM 1.0, that was used to generate the QSS mechanism is also provided."
+    },
+    "local": [
+        {
+            "id": 0,
+            "RHO_kgm-3 filename": "./data/RHO_kgm-3.dat",
+            "UX_ms-1 filename": "./data/UX_ms-1.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1.dat",
+            "ET_m2s-2 filename": "./data/ET_m2s-2.dat",
+            "P_Pa filename": "./data/P_Pa.dat",
+            "YN2 filename": "./data/YN2.dat",
+            "YH2 filename": "./data/YH2.dat",
+            "YH filename": "./data/YH.dat",
+            "YO filename": "./data/YO.dat",
+            "YO2 filename": "./data/YO2.dat",
+            "YOH filename": "./data/YOH.dat",
+            "YH2O filename": "./data/YH2O.dat",
+            "YHO2 filename": "./data/YHO2.dat",
+            "YH2O2 filename": "./data/YH2O2.dat",
+            "YCO filename": "./data/YCO.dat",
+            "YCO2 filename": "./data/YCO2.dat",
+            "YCH3 filename": "./data/YCH3.dat",
+            "YCH4 filename": "./data/YCH4.dat",
+            "YCH2O filename": "./data/YCH2O.dat",
+            "YC2H4 filename": "./data/YC2H4.dat",
+            "YC2H6 filename": "./data/YC2H6.dat"
+        }
+    ]
+}

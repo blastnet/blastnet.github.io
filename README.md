@@ -6,6 +6,120 @@ Built using [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) an
 
 This repository contains all the code for the blastnet.github.io website. Most of the Minimal Mistakes features and layouts are not used (and will likely never be used) and so they have been removed for a smoother and lighter build experience. Yet, some new features like the data counters have also been added. Therefore, please read this documentation carefully.
 
+## Getting started
+
+In order to build the site, a local installation of [Jekyll](https://jekyllrb.com) and [Ruby](https://www.ruby-lang.org/en/) is required.
+
+### MacOS
+
+MacOS comes preinstalled with Ruby, but it is generally not recommended to use the system Ruby. Therefore, first install `chruby` and `ruby-install` with [Homebrew](https://brew.sh/) (if you don't have Homebrew on your Mac, install that first!).
+```bash
+brew install chruby ruby-install
+```
+
+Now, install a stable version of Ruby (e.g. 3.4.1):
+```bash
+ruby-install ruby 3.4.1
+```
+
+Configure the shell to automatically use `chruby` so that the system Ruby will not cause issues:
+```bash
+echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+echo "chruby ruby-3.4.1" >> ~/.zshrc # run 'chruby' to see actual version
+```
+
+Finally, **quit and relaunch the terminal**, then verify Ruby is working (`ruby -v`) and install Jekyll:
+```bash
+gem install jekyll
+```
+
+### Linux (Debian, Ubuntu, Mint)
+
+Linux OS generally does not come preinstalled with Ruby, so you will need to install it yourself. Personally, I recommend using a Ruby manager like `rvm`, but you can just install the Ruby library and other prerequisites like so:
+```bash
+sudo apt-get install ruby-full build-essential zlib1g-dev
+```
+
+It is recommended to install gems (packages) on a user basis, running these lines of code in terminal will set this up (optional):
+```bash
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+Install Jekyll and Bundler:
+```
+gem install jekyll bundler
+```
+
+### Windows
+
+Install RubyInstaller for Windows from https://rubyinstaller.org/downloads/ and ensure that you tick ridk install at the end to install MSYS2 and development tools. Click Enter twice. If you did not tick, then open a session in Powershell and type:
+```
+ridk install
+```
+
+In Powershell, verify installation with
+```ruby -v
+gem -v
+```
+
+Install Jekyll and the bundler with
+```
+gem install jekyll bundler
+```
+
+---
+
+## Building the site
+
+First, clone the repository:
+```bash
+git clone https://github.com/ihmegroup/website
+```
+
+You can also fork the repository and clone that, if you prefer.
+
+Then, `cd website` and install dependencies:
+```bash
+bundle install
+```
+
+The site is now ready to  be built using the following command:
+```bash
+bundle exec jekyll build
+```
+
+If you'd like to preview, you can also run
+```bash
+bundle exec jekyll serve
+```
+which will build the site and run a daemon on your local machine.
+
+There are some options/flags that this command takes, the most pertinent of which is `--livereload` (which will cause the browser to refresh every time the site is rebuilt, i.e., every time a file is updated). If you run into an error saying the port is unavailable, chances are that you have another instance of Jekyll running already (either because you are also working on another site at the moment, or because you forgot to terminate Jekyll the last time). If you'd like to work on multiple Jekyll sites at the same time, you can specify a different port (e.g. `--port 4001`). The default port is `4000`, so to preview the site in your browser, enter the URL `localhost:4000`.
+
+### Important
+
+Make sure to correctly set the `url` and `baseurl` fields in `_config.yml` before building the webpage. The url should be `fxlab.stanford.edu` and baseurl blank, do not delete it.
+
+---
+
+## Pushing to production
+
+**Never push to production on Fridays!** (jk)
+
+Once the site has been built, all the relevant files will be in the `_site` folder, ready to be uploaded to the Stanford domain. I also recommend cleaning up the CSS to remove unused classes, which speeds up loading time and reduces filesize, this can be done by running
+
+```bash
+purgecss -c purgecss.config.js
+```
+which will replace the CSS files in the `_site/assets/css/` folder with the purged css files.
+
+If using Github pages, simply run `bundle exec jekyll clean` to remove the build files, then commit changes and push to the `main` branch. I do recommend making major code-breaking or other stylistic changes on a development branch or fork, before making a pull request to the main branch.
+
+---
+
 ## Steps to add new dataset to BlastNet
 
 1. Upload all data to Kaggle
