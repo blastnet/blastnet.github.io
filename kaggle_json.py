@@ -1,5 +1,5 @@
 from github import Github
-import github,requests_cache,re,os,kaggle,json,numpy as np
+import traceback,github,requests_cache,re,os,kaggle,json,numpy as np
 
 GITHUB_TOKEN = os.getenv("GIST_TOKEN")
 GIST_ID = "c9112c25c5acd400b90741efa81aa411"
@@ -81,6 +81,7 @@ for filename in search_map:
     
     for dsn in dataset_names:
         print(f'Processing {dsn}...')
+        # Old Kaggle Api <1.7
         try:
             user = dsn.split("/")[0]
             dataset = vars(next((d for d in usernames[user] if vars(d)['ref'] == dsn)))
@@ -88,13 +89,33 @@ for filename in search_map:
             views.append(int(dataset['viewCount']))
             sizes.append(int(dataset['totalBytes']))
             print(f'{dsn} done.')
-            
-        except Exception as e:
-            print(f'{e} when reading {dsn}')
+
+	# New Kaggle Api >=1.7
+        except KeyError:
+            try:
+                user = dsn.split("/")[0]
+                dataset = next((d for d in usernames[user] if d.ref == dsn))
+                downloads.append(int(dataset.download_count))
+                views.append(int(dataset.view_count))
+                sizes.append(int(dataset.total_bytes))
+                print(f'{dsn} done.')
+
+            except Exception:
+                traceback.print_exc()
+                print(f'Error when reading {dsn}')
+                print(f'Continuing with 0 values...')
+                downloads.append(0)
+                views.append(0)
+                sizes.append(0)
+                
+        except Exception:
+            traceback.print_exc()
+            print(f'Error when reading {dsn}')
             print(f'Continuing with 0 values...')
             downloads.append(0)
             views.append(0)
             sizes.append(0)
+
     
     views = np.array(views)
     downloads = np.array(downloads)
@@ -121,7 +142,7 @@ for filename in search_map:
             'size': ds_size,
             'views': ds_views,
             'downloads': ds_downs,
-    }
+        }
     json_dump[filename] = kaggle_stats
     total_bytes += int(np.sum(downloads*size_in_bytes))
     total_size += int(np.sum(size_in_bytes))

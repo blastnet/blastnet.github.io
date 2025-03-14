@@ -4,3 +4,5 @@ Gemfile.lock
 *.gem
 .jekyll-cache
 .jekyll-cache
+*.sqlite
+kaggle_stats.json
