@@ -15,6 +15,7 @@
     <h3>Experimental</h3>
     <img src="/assets/img/filter_experimental.png"/>
   </a>
+  <h3><a href="/visualize">Visualize statistics here</a></h3>
   <h2>BLASTNet Simulation Dataset</h2>
 </div>
 
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded',function(){
     imagesLoaded(content).on('progress',function(){
         iso.layout();
     });
-    document.querySelectorAll('.filter-group a').forEach(function(element){
+    document.querySelectorAll('.filter-group > a').forEach(function(element){
         element.addEventListener('click',function(e){
             var filter_class;
             //var filter_class = element.getAttribute("data-filter");

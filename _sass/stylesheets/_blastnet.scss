@@ -242,11 +242,18 @@ $base0f: #d33682 !default;
   }
 }
 
-.filter-group a {
+.filter-group > a {
   width:24%;
   height:100px;
   position:relative;
   display:inline-block;
+
+  & + h3 {
+    margin-top:0.5em;
+    margin-bottom:0;
+    text-align:center;
+    border-bottom:0px solid transparent;
+  }
 
   img {
     display:block;
@@ -274,3 +281,71 @@ $base0f: #d33682 !default;
     text-decoration:none;
   }
 }
+
+/* visualization form */
+#datasetForm {
+  margin-top:0px;
+  padding:0px;
+
+  label {
+    display:block;
+    padding:0.25rem 0.75rem;
+    color: $dark-gray;
+    font-weight:bold;
+    font-size:0.6875rem;
+    line-height:1.5;
+    border-bottom:1px solid $border-color;
+    transition:background-color 0.4s ease-in-out;
+    cursor:pointer;
+
+    &:hover {
+      text-decoration:underline;
+    }
+
+    .marker-symbol {
+      display:none;
+      width:12px;
+      height:12px;
+      margin-right:0.5em;
+      vertical-align:middle;
+
+      &.circle {
+        border-radius:100%;
+      }
+
+      &.rectRounded {
+        border-radius:3px;
+      }
+
+      &.triangle {
+        width:0;
+	height:0;
+	border-left:6px solid transparent;
+	border-right:6px solid transparent;
+	border-bottom:12px solid;
+	background:none;
+      }
+
+      &.star, &.cross {
+        font-size:12px;
+      }
+
+      &.star::before {
+        content: '★';
+      }
+
+      &.cross::before {
+        content: '✚';
+      }
+    }
+  }
+
+  input[type="checkbox"]{
+    display:none;
+
+    &:checked + label .marker-symbol {
+      display:inline-block!important;
+    }
+  }
+}
+
