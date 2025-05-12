@@ -3,6 +3,7 @@ import traceback,github,requests_cache,re,os,kaggle,json,numpy as np
 
 GITHUB_TOKEN = os.getenv("GIST_TOKEN")
 GIST_ID = "c9112c25c5acd400b90741efa81aa411"
+USE_TRUE_SIZE = True
 
 g = Github(GITHUB_TOKEN)
 gist = g.get_gist(GIST_ID)
@@ -10,7 +11,7 @@ gist = g.get_gist(GIST_ID)
 # Format the filesize to unit'ed format
 def format_bytes(num_bytes):
     units = ['B','KB','MB','GB','TB','PB','EB','ZB','YB']
-    factor = 1000
+    factor = 1024
     unit_index = 0
     while num_bytes >= factor and unit_index < len(units)-1:
         num_bytes /= factor
@@ -21,7 +22,7 @@ def format_bytes(num_bytes):
 def unformat_bytes(string):
     units = ['B','KB','MB','GB','TB','PB','EB','ZB','YB']
     num,unit = string.split(" ")
-    factor = 1000
+    factor = 1024
     return float(num)*(factor**(units.index(unit)))
 
 dir = "_datasets"
@@ -70,7 +71,24 @@ for filename in os.listdir(dir):
                     
                 # Record all the identifiers to the filename
                 search_map[filename].append(f'{username}/{dataset}')
-    
+
+# remove sharma kaggle model
+search_map["sharma2024.md"] = [x for x in search_map["sharma2024.md"] if x !='sharmapushan/pimapnet']
+usernames["sharmapushan"] = [x for x in usernames["sharmapushan"] if x.ref != 'sharmapushan/pimapnet'] 
+
+# read true dataset sizes from json file
+try:
+    datasets_size = json.loads(gist.files['datasets_size.json'].content)
+    print(f"Read {len(datasets_size)} dataset sizes from gist")
+except Exception as e:
+    print(f'Could not read datasets_size.json from gist: {e}')
+    if os.path.exists('datasets_size.json'):
+        with open('datasets_size.json','r') as f:   
+            datasets_size = json.load(f)
+        print('Loading datasets_size.json from local file...')
+    else:
+        raise Exception("No datasets_size.json found")
+
 # At this point we have done all the necessary scraping from Kaggle API calls
 for filename in search_map:
     dataset_names = search_map[filename]
@@ -81,53 +99,55 @@ for filename in search_map:
     
     for dsn in dataset_names:
         print(f'Processing {dsn}...')
-        # Old Kaggle Api <1.7
+        # New Kaggle Api >=1.7
         try:
-            user = dsn.split("/")[0]
-            dataset = vars(next((d for d in usernames[user] if vars(d)['ref'] == dsn)))
-            downloads.append(int(dataset['downloadCount']))
-            views.append(int(dataset['viewCount']))
-            sizes.append(int(dataset['totalBytes']))
+            user, dataset_id = dsn.split("/")
+            dataset = next((d for d in usernames[user] if d.ref == dsn))
+            downloads.append(int(dataset.download_count))
+            views.append(int(dataset.view_count))
+            if USE_TRUE_SIZE:
+                # Use the true size from the json file
+                if dataset_id in datasets_size.keys():
+                    sizes.append(int(datasets_size[dataset_id]))
+                else:
+                    raise Exception(f"Dataset {dataset_id} not found in datasets_size.json")
+            else:
+                sizes.append(int(dataset.total_bytes))
             print(f'{dsn} done.')
-
-	# New Kaggle Api >=1.7
         except KeyError:
+            # Old Kaggle Api <1.7
             try:
                 user = dsn.split("/")[0]
-                dataset = next((d for d in usernames[user] if d.ref == dsn))
-                downloads.append(int(dataset.download_count))
-                views.append(int(dataset.view_count))
-                sizes.append(int(dataset.total_bytes))
+                dataset = vars(next((d for d in usernames[user] if vars(d)['ref'] == dsn)))
+                downloads.append(int(dataset['downloadCount']))
+                views.append(int(dataset['viewCount']))
+                sizes.append(int(dataset['totalBytes']))
                 print(f'{dsn} done.')
-
             except Exception:
                 traceback.print_exc()
-                print(f'Error when reading {dsn}')
-                print(f'Continuing with 0 values...')
+                print(f'Error when reading {dsn}, Continuing with 0 values...')
                 downloads.append(0)
                 views.append(0)
                 sizes.append(0)
                 
         except Exception:
             traceback.print_exc()
-            print(f'Error when reading {dsn}')
-            print(f'Continuing with 0 values...')
+            print(f'Error when reading {dsn}, Continuing with 0 values...')
             downloads.append(0)
             views.append(0)
             sizes.append(0)
 
-    
     views = np.array(views)
     downloads = np.array(downloads)
     size_in_bytes = np.array(sizes)
     
     # SPECIFIC DATASET STATISTICS TO OUTPUT
-    # Take the maximum of views/downloads from each of the sub-datasets
+    # Take the maximum of views from each of the sub-datasets
     # More representative than summing, since the same user would likely view multiple sub-datasets
     ds_size_raw = np.sum(size_in_bytes)
     ds_size = format_bytes(ds_size_raw)
     ds_views = np.max(views) #np.sum(views)
-    ds_downs = np.max(downloads) #np.sum(downloads)
+    ds_downs = np.sum(downloads) #np.max(downloads)
     print(f'{filename} ({ds_size}) processed. {ds_views} views, {ds_downs} downloads.')
 
     if not ds_size_raw:
@@ -144,6 +164,7 @@ for filename in search_map:
             'downloads': ds_downs,
         }
     json_dump[filename] = kaggle_stats
+    # breakpoint()
     total_bytes += int(np.sum(downloads*size_in_bytes))
     total_size += int(np.sum(size_in_bytes))
 
@@ -153,7 +174,9 @@ if not total_bytes:
 
 json_dump['total_bytes'] = total_bytes
 json_dump['total_size'] = total_size
-    
+print(f'Total size: {format_bytes(total_size)}')
+print(f'Total downloaded bytes TB: {total_bytes/1024**4}')
+
 # Update the gist
 # Need the custom encoder class to convert numpy numbers to json readable ones
 class NpEncoder(json.JSONEncoder):
@@ -169,6 +192,7 @@ class NpEncoder(json.JSONEncoder):
 print('Updating {gist}...')
 try:
     gist.edit(files={'kaggle_stats.json': github.InputFileContent(content=json.dumps(json_dump,indent=4,cls=NpEncoder))})
+    gist.edit(files={'datasets_size.json': github.InputFileContent(content=json.dumps(datasets_size,indent=4,cls=NpEncoder))})
 except Exception as e:
     print(f'Could not update {gist}: {e}')
     print(f'Dumping to file...')
