@@ -84,15 +84,4 @@ This DNS configuration simulates non-reacting forced homogeneous isotropic turbu
         <a href="./assets/json/gauding2022/passive-fhit-dns-r4-info.json">info.json</a>,
         </td>
     </tr>
-    <!-- </tr>
-        <tr>       
-        <td align="center"> 5 </td>
-        <td align="center">Re<sub>&lambda;</sub> = 331</td>
-        <td align="center">4096<sup>3</sup></td>
-        <td align="center">25.23</td>
-        <td align="center">
-        <a href="https://www.kaggle.com/datasets/bassemakoush/passive-fhit-dns-r5">Kaggle</a>, 
-        <a href="./assets/json/gauding2022/passive-fhit-dns-r5-info.json">info.json</a>,
-        </td>
-    </tr> -->
 </table>
