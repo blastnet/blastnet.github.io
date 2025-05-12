@@ -1,6 +1,6 @@
 function formatBytes(numBytes) {
     const units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
-    const factor = 1000; // Conversion factor for bytes to the next unit
+    const factor = 1024; // Conversion factor for bytes to the next unit
 
     let unitIndex = 0;
     while (numBytes >= factor && unitIndex < units.length - 1) {
