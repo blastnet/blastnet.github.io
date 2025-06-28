@@ -72,13 +72,13 @@ scalars — at a single instant in time. The three scalars are each subjected to
         <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-u1">Kaggle<sub>U<sub>1</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-u1-info.json">info.json<sub>U<sub>1</sub></sub></a>,
         </div>
         <div>
-        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-U2">Kaggle<sub>U<sub>2</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-u2-info.json">info.json<sub>U<sub>2</sub></sub></a>
+        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-u2">Kaggle<sub>U<sub>2</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-u2-info.json">info.json<sub>U<sub>2</sub></sub></a>
         </div>
         <div>
         <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-v1">Kaggle<sub>V<sub>1</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-v1-info.json">info.json<sub>V<sub>1</sub></sub></a>,
         </div>
         <div>
-        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-p2">Kaggle<sub>V<sub>2</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-v2-info.json">info.json<sub>V<sub>2</sub></sub></a>
+        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-v2">Kaggle<sub>V<sub>2</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-v2-info.json">info.json<sub>V<sub>2</sub></sub></a>
         </div>
         <div>
         <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-w1">Kaggle<sub>W<sub>1</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-w1-info.json">info.json<sub>W<sub>1</sub></sub></a>,
@@ -90,19 +90,19 @@ scalars — at a single instant in time. The three scalars are each subjected to
         <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-y11">Kaggle<sub>Y<sub>1,1</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-y11-info.json">info.json<sub>Y<sub>1,1</sub></sub></a>,
         </div>
         <div>
-        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-Y12">Kaggle<sub>Y<sub>1,2</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-Y12-info.json">info.json<sub>Y<sub>1,2</sub></sub></a>
+        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-y12">Kaggle<sub>Y<sub>1,2</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-y12-info.json">info.json<sub>Y<sub>1,2</sub></sub></a>
         </div>
         <div>
         <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-y21">Kaggle<sub>Y<sub>2,1</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-y21-info.json">info.json<sub>Y<sub>2,1</sub></sub></a>,
         </div>
         <div>
-        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-Y22">Kaggle<sub>Y<sub>2,2</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-Y22-info.json">info.json<sub>Y<sub>2,2</sub></sub></a>
+        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-y22">Kaggle<sub>Y<sub>2,2</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-y22-info.json">info.json<sub>Y<sub>2,2</sub></sub></a>
         </div>
         <div>
         <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-y31">Kaggle<sub>Y<sub>3,1</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-y31-info.json">info.json<sub>Y<sub>3,1</sub></sub></a>,
         </div>
         <div>
-        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-Y32">Kaggle<sub>Y<sub>3,2</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-Y32-info.json">info.json<sub>Y<sub>3,2</sub></sub></a>
+        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re650-y32">Kaggle<sub>Y<sub>3,2</sub></sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re650-y32-info.json">info.json<sub>Y<sub>3,2</sub></sub></a>
         </div>
         <BR>
         </td>
