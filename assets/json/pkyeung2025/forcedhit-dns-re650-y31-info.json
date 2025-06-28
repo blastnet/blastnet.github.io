@@ -1,0 +1,48 @@
+{
+    "global": {
+        "dataset_id": "blastnet/forcedhit-dns-re650-y31",
+        "Nxyz": [
+            4096,
+            4096,
+            2048
+        ],
+        "snapshots": 1,
+        "variables": [
+            "Y3"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "split": "z-axis",
+        "bc": "periodic cube",
+        "numerics": [
+            {
+                "spatial": "Fourier psuedospectral",
+                "temporal": {
+                    "linear_terms": "exact integrating factor",
+                    "nonlinear_terms": "2nd-order Runge-Kutta (predictor-corrector)"
+                },
+                "dealiasing": [
+                    "spherical truncation",
+                    "random phase shifting"
+                ],
+                "forcing": "modified frozen-E(k) (FEK)",
+                "source": "imposed mean gradient",
+                "code": "GESTS"
+            }
+        ],
+        "ic": "",
+        "description": "DNS of forced Homogeneous Isotropic Turbulence at Re = 650, with three passive scalars                                   of Schmidt number unity and imposed mean scalar gradients along each of                                   the three respective coordinate axes.",
+        "doi": "TBD",
+        "contributors": "P.K. Yeung, Daniel Dotson"
+    },
+    "local": [
+        {
+            "id": 0,
+            "Y3 filename": "./data/Y3_id000_z1.dat"
+        }
+    ]
+}
