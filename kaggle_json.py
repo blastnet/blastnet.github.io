@@ -79,7 +79,18 @@ usernames["sharmapushan"] = [x for x in usernames["sharmapushan"] if x.ref != 's
 # read true dataset sizes from json file
 try:
     datasets_size = json.loads(gist.files['datasets_size.json'].content)
-    print(f"Read {len(datasets_size)} dataset sizes from gist")
+    # raise Exception("Gist version of datasets_size.json is not used, please use the local file instead")
+    if os.path.exists('datasets_size.json'):
+        with open('datasets_size.json','r') as f:   
+            local_datasets_size = json.load(f)
+        if datasets_size == local_datasets_size:
+            print(f"Read {len(datasets_size)} dataset sizes from gist")
+        elif len(datasets_size.keys()) <= len(local_datasets_size.keys()):
+            print(f"Read {len(local_datasets_size)} dataset sizes from local file - gist version is different has {len(datasets_size)} entries")
+            datasets_size = local_datasets_size
+        else:
+            raise Exception("Gist version of datasets_size.json has more entries than local file, please check the local file ")
+        
 except Exception as e:
     print(f'Could not read datasets_size.json from gist: {e}')
     if os.path.exists('datasets_size.json'):
