@@ -26,6 +26,9 @@ The stiff chemical source terms are integrated in time using a semi-implicit fou
 For all other non-stiff operators, we utilize a strong stability preserving third-order Runge-Kutta (SSP-RK3) scheme.
 
 ## Quick Info
+* <a href="https://doi.org/10.1016/j.combustflame.2025.114190">DOI</a>
+* <a href="./assets/bib/sharma2024.bib">.bib</a>
+* <a href="https://www.kaggle.com/datasets/sharmapushan/pimapnet">ML model source code</a>
 * Contributor: Pushan Sharma, Wai Tong Chung and Matthias Ihme
 
 ## Links to different cases

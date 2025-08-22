@@ -104,7 +104,8 @@ We thank the following people for contributing and curating this network-of-data
 | [Michael Gauding](https://www.itv.rwth-aachen.de/institut/mitarbeiter/michael-gauding/)| RWTH Aachen University|November 22 2024|
 | [Roshan Samuel](https://roshansamuel.github.io)| Technische Universität Ilmenau | November 22 2024|
 | [Mathis Bode](https://www.fz-juelich.de/profile/bode_m)| Jülich Supercomputing Centre | November 22 2024 |
-
+| [Quentin Malé](https://quentinmale.github.io) | Harvard University |April 15 2025|
+| [Cenk Gazen](https://www.linkedin.com/in/cenk-gazen-4717795) | Google |April 15 2025|
 
 ## Funding
 ![nsf logo](./assets/img/nsf.png) <!-- {: .center-image} -->

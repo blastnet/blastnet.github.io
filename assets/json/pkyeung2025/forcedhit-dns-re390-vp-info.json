@@ -1,0 +1,54 @@
+{
+    "global": {
+        "dataset_id": "blastnet/forcedhit-dns-re390-vp",
+        "Nxyz": [
+            2048,
+            2048,
+            2048
+        ],
+        "snapshots": 1,
+        "variables": [
+            "UX_ms-1",
+            "UZ_ms-1",
+            "UY_ms-1",
+            "P_Pa"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "split": "channel",
+        "bc": "periodic cube",
+        "numerics": [
+            {
+                "spatial": "Fourier psuedospectral",
+                "temporal": {
+                    "linear_terms": "exact integrating factor",
+                    "nonlinear_terms": "2nd-order Runge-Kutta (predictor-corrector)"
+                },
+                "dealiasing": [
+                    "spherical truncation",
+                    "random phase shifting"
+                ],
+                "forcing": "modified frozen-E(k) (FEK)",
+                "source": "imposed mean gradient",
+                "code": "GESTS"
+            }
+        ],
+        "ic": "",
+        "description": "DNS of forced Homogeneous Isotropic Turbulence at Re = 390, with three passive scalars                                   of Schmidt number unity and imposed mean scalar gradients along each of                                   the three respective coordinate axes.",
+        "doi": "TBD",
+        "contributors": "P.K. Yeung, Daniel Dotson"
+    },
+    "local": [
+        {
+            "id": 0,
+            "UX_ms-1 filename": "./data/UX_ms-1_id000.dat",
+            "UZ_ms-1 filename": "./data/UY_ms-1_id000.dat",
+            "UY_ms-1 filename": "./data/UZ_ms-1_id000.dat",
+            "P_Pa filename": "./data/P_Pa_id000.dat"
+        }
+    ]
+}
