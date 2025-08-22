@@ -73,8 +73,8 @@ fetch('/assets/example_statistics.json')
       data: { datasets: [] },
       options: {
         scales: {
-          x: { type: 'linear', title: { display: true, text: 'stat1' } },
-          y: { type: 'linear', title: { display: true, text: 'stat2' } }
+          x: { type: 'linear', title: { display: true, text: 'Variance' } },
+          y: { type: 'linear', title: { display: true, text: 'Mean' } }
         },
 	layout: {
 	  padding: 20
@@ -88,7 +88,7 @@ fetch('/assets/example_statistics.json')
           tooltip: {
             callbacks: {
               label: function(context) {
-                return `x: ${context.parsed.x}, y: ${context.parsed.y}`;
+                return `Variance: ${context.parsed.x}, Mean: ${context.parsed.y}`;
               }
             }
           }
