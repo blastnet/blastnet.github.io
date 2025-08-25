@@ -5,7 +5,11 @@ title: Reacting Jet Flows
 description: Turbulent Round Jet Premixed COFFEE CH4-air Premixed Flame DNS
 header:
   teaser: /assets/img/ico_brouzet2021.png
-categories: reacting
+categories:
+  - reacting
+  - turbulent
+  - threeD
+  - jet
 ---
 
 <div class="sidebar__right" style="top:200px; text-align: center;">

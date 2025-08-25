@@ -5,7 +5,11 @@ title: Forced HIT
 description: Forced Homogeneous Isotropic Turbulence DNS with 3 Passive Scalars
 header:
   teaser: /assets/img/ico_pkyeung2025.png
-categories: nonreacting
+categories: 
+- nonreacting
+- hit
+- threeD
+- turbulent
 ---
 <div style="text-align: center;">
     <img src="./assets/img/pkyeung2025.png" alt="Image 1" style="max-width: 100%;">

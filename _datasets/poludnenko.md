@@ -5,7 +5,11 @@ excerpt: (1 case)
 description: CH4-Air Flame Interaction With Forced HIT DNS
 header:
   teaser: /assets/img/ico_poludnenko.png
-categories: reacting
+categories: 
+- reacting
+- hit
+- threeD
+- turbulent
 ---
 
 ![image](./assets/img/poludnenko.png)

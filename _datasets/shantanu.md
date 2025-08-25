@@ -5,7 +5,11 @@ title: Canonical Decaying HIT
 description: Decaying homogeneous isotropic turbulence DNS
 header:
   teaser: /assets/img/ico_shantanu2022.png
-categories: nonreacting
+categories: 
+- nonreacting
+- hit
+- turbulent
+- threeD
 ---
 
 <div style="text-align: center;">

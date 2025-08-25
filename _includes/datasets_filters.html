@@ -1,54 +1,51 @@
 <aside class="sidebar__right sticky">
-  <nav class="toc">
+  <nav class="filters">
     <header>
       <h4 class="nav__title">
         <i class="fas fa-file-alt"></i>
         Filter Datasets
       </h4>
     </header>
-    <ul class="toc__menu">
-      <li class="filter-group filter-categories" data-filter-group="Reynolds">
-        <a href="#" data-filter=".laminar">Laminar</a>
-	<a href="#" data-filter=".turbulent">Turbulent</a>
+    <ul class="filters__menu">
+      <li class="filter-group">
+        <a href="#" data-filter="" class="show-all is-checked">Show All</a>
       </li>
-      <li class="filter-group filter-categories" data-filter-group="Combustion">
-        <a href="#" data-filter=".reacting">Reacting</a>
-	<a href="#" data-filter=".nonreacting">Non-reacting</a>
+      <li class="filter-group filter-categories excl" data-filter-group="Reynolds">
+        <a href="#" data-filter='' class="is-checked">Flow Type</a>
+        <ul>
+          <li><a href="#" data-filter=".laminar">Laminar</a></li>
+	  <li><a href="#" data-filter=".turbulent">Turbulent</a></li>
+        </ul>
       </li>
-      <li class="filter-group filter-categories" data-filter-group="Dimensionality">
-        <a href="#" data-filter=".2d">2D</a>
-	<a href="#" data-filter=".3d">3D</a>
+      <li class="filter-group filter-categories excl" data-filter-group="Combustion">
+        <a href="#" data-filter='' class="is-checked">Combustion</a>
+        <ul>
+          <li><a href="#" data-filter=".reacting">Reacting</a></li>
+	  <li><a href="#" data-filter=".nonreacting">Non-reacting</a></li>
+        </ul>
       </li>
-      <li class="filter-group filter-categories" data-filter-group="FlowType">
-        <a href="#" data-filter=".hit">HIT</a>
-	<a href="#" data-filter=".pipe">Pipe</a>
-	<a href="#" data-filter=".channel">Channel</a>
-	<a href="#" data-filter=".jet">Jet</a>
-	<a href="#" data-filter=".environmental">Environmental</a>
+      <li class="filter-group filter-categories excl" data-filter-group="Dimensionality">
+        <a href="#" data-filter='' class="is-checked">Dimensionality</a>
+        <ul>
+          <li><a href="#" data-filter=".twoD">2D</a></li>
+	  <li><a href="#" data-filter=".threeD">3D</a></li>
+        </ul>
+      </li>
+      <li class="filter-group filter-categories excl" data-filter-group="FlowType">
+        <a href="#" data-filter='' class="is-checked">Flow Configuration</a>
+        <ul>
+          <li><a href="#" data-filter=".hit">HIT</a></li>
+	  <li><a href="#" data-filter=".pipe">Pipe</a></li>
+	  <li><a href="#" data-filter=".channel">Channel</a></li>
+	  <li><a href="#" data-filter=".jet">Jet</a></li>
+	  <li><a href="#" data-filter=".environmental">Environmental</a></li>
+        </ul>
       </li>
     </ul>
   </nav>
 </aside>
 
 <div class="filter-group filter-categories">
-<!--
-  <a href="#"class="datasets_all"  data-filter="*">
-    <h3>All</h3>
-    <img src="/assets/img/blastnet_banner.png"/>
-  </a>
-  <a href="#" data-filter=".reacting">
-    <h3>Reacting</h3>
-    <img src="/assets/img/filter_reacting.jpeg"/>
-  </a>
-  <a href="#" data-filter=".nonreacting">
-    <h3>Non-reacting</h3>
-    <img src="/assets/img/filter_nonreacting.png"/>
-  </a>
-  <a href="#" data-filter=".experimental">
-    <h3>Experimental</h3>
-    <img src="/assets/img/filter_experimental.png"/>
-  </a>
--->
   <!--<h3><a href="/visualize">Visualize statistics here</a></h3>-->
   <h2>BLASTNet Simulation Dataset</h2>
 </div>
@@ -57,32 +54,171 @@
 <script src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 <script>
+var grid;
 document.addEventListener('DOMContentLoaded',function(){
-    var content = document.querySelector('.entries-grid');
-    var iso = new Isotope(content,{
-        itemSelector:'.grid__item',
-        layoutMode:'fitRows'
-    });
-    imagesLoaded(content).on('progress',function(){
-        iso.layout();
-    });
-    document.querySelectorAll('.filter-group > a').forEach(function(element){
-        element.addEventListener('click',function(e){
-            var filter_class;
-            //var filter_class = element.getAttribute("data-filter");
-            if (element.classList.contains('is-checked'))
-                filter_class = '*';
-            else {
-                filter_class = element.getAttribute('data-filter');
-                document.querySelectorAll('.is-checked').forEach(el => el.classList.remove('is-checked'));
-            }
-	    iso.arrange({
-                filter: filter_class
-            });
-            element.classList.toggle('is-checked');
-            e.preventDefault();
+  var container = document.querySelector('.entries-grid');
+  var filters = {};
+
+  grid = new Isotope(container, {
+    itemSelector: '.grid__item',
+    layoutMode: 'fitRows'
+  });
+
+  imagesLoaded(container).on('progress',function(){
+    grid.layout();
+  });
+
+  var activeClass = "is-checked",
+      comboClass = "combo",
+      exclClass = "excl",
+      resetClass = "show-all";
+
+  var defaults = document.querySelectorAll("a." + activeClass + '[data-filter=""]');
+  
+  document.querySelectorAll(".filter-group a").forEach(function(element) {
+    element.addEventListener("click", function(e) {
+      var thisElement = this;
+      var comboFilter,
+        filterAttr = "data-filter";
+      if (resetClass && !thisElement.classList.contains(resetClass)) {
+        var filterValue = thisElement.getAttribute(filterAttr);
+        var optionSet = thisElement.closest(".filter-group");
+        var group = optionSet.getAttribute("data-filter-group");
+        var filterGroup = filters[group];
+        if (!filterGroup) {
+          filterGroup = filters[group] = [];
+        }
+        var selectAll = optionSet.querySelectorAll("a[" + filterAttr + '=""]');
+        document.querySelectorAll("." + resetClass).forEach(function(element) {
+          element.classList.remove(activeClass);
         });
+        comboFiltering(
+          thisElement,
+          filters,
+          filterAttr,
+          filterValue,
+          optionSet,
+          group,
+          selectAll,
+          activeClass,
+          comboClass,
+          exclClass
+        );
+        comboFilter = getComboFilter(filters);
+        if (!comboFilter.length) document.querySelector("a." + resetClass).classList.add(activeClass);
+        thisElement.classList.toggle(activeClass);
+      } else {
+        filters = {};
+        comboFilter = "";
+        document.querySelectorAll(".filter-group a").forEach(function(element) {
+          element.classList.remove(activeClass);
+        });
+        thisElement.classList.add(activeClass);
+        defaults.forEach(function(element) {
+          element.classList.add(activeClass);
+        });
+      }
+      grid.arrange({filter: comboFilter});
+      e.preventDefault();
     });
+  });
+  grid.arrange(); 
 });
+
+function comboFiltering(
+  element,
+  filters,
+  filterAttr,
+  filterValue,
+  optionSet,
+  group,
+  selectAll,
+  activeClass,
+  comboClass,
+  exclClass
+) {
+  if (!optionSet.classList.contains(exclClass)) {
+    if (!element.classList.contains(activeClass) && filterValue.length) {
+      filters[group].push(filterValue);
+      selectAll.forEach(function(element) {
+        element.classList.remove(activeClass);
+      });
+    } else if (filterValue.length) {
+      if (optionSet.classList.contains(comboClass)) {
+        filters[group][0] = filters[group][0].replace(filterValue, "");
+        if (!filters[group][0].length)
+          filters[group].splice(0, 1);
+      } else {
+        var curIndex = filters[group].indexOf(filterValue);
+        if (curIndex > -1) filters[group].splice(curIndex, 1);
+      }
+      if (!optionSet.querySelectorAll("a." + activeClass + ":not(["+filterAttr+"=''])").length)
+        selectAll.forEach(function(element) {
+          element.classList.add(activeClass);
+        });
+    } else {
+      optionSet.querySelectorAll("a." + activeClass).forEach(function(element) {
+        element.classList.remove(activeClass);
+      });
+      filters[group] = [];
+    }
+    if (optionSet.classList.contains(comboClass) && filters[group].length)
+      filters[group] = [filters[group].join("")];
+  } else {
+    if (!element.classList.contains(activeClass) && filterValue.length) {
+      optionSet.querySelectorAll("a." + activeClass).forEach(function(filterLink) {
+        var removeFilter = filterLink.getAttribute(filterAttr);
+        var removeIndex = filters[group].indexOf(removeFilter);
+        filters[group].splice(removeIndex, 1);
+      });
+      filters[group].push(filterValue);
+      optionSet.querySelectorAll("a." + activeClass).forEach(function(element) {
+        element.classList.remove(activeClass);
+      });
+    } else if (filterValue.length) {
+      var curIndex = filters[group].indexOf(filterValue);
+      if (curIndex > -1) filters[group].splice(curIndex, 1);
+      //if (!optionSet.querySelectorAll("a." + activeClass + ":not(["+filterAttr+"=''])").length){
+      if (!filters[group].length){
+        selectAll.forEach(function(element) {
+          element.classList.add(activeClass);
+        });
+      }
+    } else {
+      optionSet.querySelectorAll("a." + activeClass).forEach(function(element) {
+        element.classList.remove(activeClass);
+      });
+      filters[group] = [];
+    }
+  }
+}
+
+function getComboFilter(filters) {
+  var i = 0;
+  var comboFilters = [];
+
+  for (var prop in filters) {
+    var filterGroup = filters[prop];
+    if (!filterGroup.length) {
+      continue;
+    }
+    if (i === 0) {
+      comboFilters = filterGroup.slice(0);
+    } else {
+      var filterSelectors = [];
+      var groupCombo = comboFilters.slice(0);
+      for (var k = 0, len3 = filterGroup.length; k < len3; k++) {
+        for (var j = 0, len2 = groupCombo.length; j < len2; j++) {
+          filterSelectors.push(groupCombo[j] + filterGroup[k]);
+        }
+      }
+      comboFilters = filterSelectors;
+    }
+    i++;
+  }
+
+  var comboFilter = comboFilters.join(", ");
+  return comboFilter;
+}
 </script>
 
