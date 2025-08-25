@@ -11,7 +11,6 @@ categories:
 - jet
 - threeD
 - turbulent
-- hit
 ---
 <div style="text-align: center;">
     <img src="./assets/img/quentin2024.png" alt="Image 1" style="max-width: 100%;">

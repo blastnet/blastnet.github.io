@@ -178,12 +178,11 @@ function comboFiltering(
     } else if (filterValue.length) {
       var curIndex = filters[group].indexOf(filterValue);
       if (curIndex > -1) filters[group].splice(curIndex, 1);
-      //if (!optionSet.querySelectorAll("a." + activeClass + ":not(["+filterAttr+"=''])").length){
-      if (!filters[group].length){
+      //if (!optionSet.querySelectorAll("a." + activeClass + ":not(["+filterAttr+"=''])").length)
+      if (!filters[group].length)
         selectAll.forEach(function(element) {
           element.classList.add(activeClass);
         });
-      }
     } else {
       optionSet.querySelectorAll("a." + activeClass).forEach(function(element) {
         element.classList.remove(activeClass);

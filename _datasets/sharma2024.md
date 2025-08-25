@@ -8,8 +8,8 @@ header:
 categories: 
 - reacting
 - jet
-- threeD
-- turbulent
+- twoD
+- laminar 
 ---
 
 <div style="text-align: center;">

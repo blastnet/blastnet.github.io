@@ -10,7 +10,6 @@ categories:
 - turbulent
 - threeD
 - jet
-- hit
 ---
 
 <div class="sidebar__right" style="top: 130px; text-align: center;">
