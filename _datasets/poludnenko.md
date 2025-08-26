@@ -10,6 +10,7 @@ categories:
 - hit
 - threeD
 - turbulent
+- numerical
 ---
 
 ![image](./assets/img/poludnenko.png)

@@ -1,4 +1,4 @@
-<aside class="sidebar__right sticky">
+<aside class="sidebar__left sticky">
   <nav class="filters">
     <header>
       <h4 class="nav__title">
@@ -41,13 +41,20 @@
 	  <li><a href="#" data-filter=".environmental">Environmental</a></li>
         </ul>
       </li>
+      <li class="filter-group filter-categories comb" data-filter-group="ML">
+        <a href="#" data-filter=".benchmark">Benchmark Datasets</a>
+      </li>
+      <li class="filter-group filter-categories excl" data-filter-group="DataType">
+	<a href="#" data-filter=".numerical">Numerical Datasets</a>
+	<a href="#" data-filter=".experimental">Experimental Datasets</a>
+      </li>
     </ul>
   </nav>
 </aside>
 
-<div class="filter-group filter-categories">
+<div>
   <!--<h3><a href="/visualize">Visualize statistics here</a></h3>-->
-  <h2>BLASTNet Simulation Dataset</h2>
+  <h2>BLASTNet Datasets</h2>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
@@ -64,12 +71,16 @@ document.addEventListener('DOMContentLoaded',function(){
     layoutMode: 'fitRows'
   });
 
+  window.addEventListener('resize', function(){
+    grid.layout();
+  });
+
   imagesLoaded(container).on('progress',function(){
     grid.layout();
   });
 
   var activeClass = "is-checked",
-      comboClass = "combo",
+      comboClass = "comb",
       exclClass = "excl",
       resetClass = "show-all";
 

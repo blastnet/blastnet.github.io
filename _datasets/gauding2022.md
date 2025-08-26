@@ -9,6 +9,7 @@ categories:
 - nonreacting
 - threeD
 - hit
+- numerical
 - turbulent
 ---
 

@@ -9,6 +9,7 @@ categories:
 - reacting
 - channel
 - threeD
+- numerical
 - turbulent
 ---
 

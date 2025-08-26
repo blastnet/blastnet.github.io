@@ -9,7 +9,8 @@ categories:
 - reacting
 - jet
 - twoD
-- laminar 
+- laminar
+- numerical 
 ---
 
 <div style="text-align: center;">

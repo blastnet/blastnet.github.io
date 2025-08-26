@@ -7,6 +7,7 @@ header:
 description: Compressible Inert CH4-O2 Homogeneous Isotropic Turbulence DNS
 categories: 
 - nonreacting
+- numerical
 - threeD
 - turbulent
 - hit

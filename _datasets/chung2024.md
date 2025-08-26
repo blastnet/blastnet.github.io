@@ -6,6 +6,7 @@ header:
   teaser: /assets/img/ico_chung2022.png
 description: Collection of BLASTNet Simulations
 categories: 
+- numerical
 - nonreacting
 - turbulent
 - threeD
@@ -13,6 +14,7 @@ categories:
 - pipe
 - channel
 - jet
+- benchmark
 ---
 
 ![image](./assets/img/diversity.png)

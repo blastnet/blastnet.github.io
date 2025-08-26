@@ -9,6 +9,7 @@ categories:
 - reacting
 - threeD
 - turbulent
+- numerical
 ---
 
 <div style="text-align: center;">
