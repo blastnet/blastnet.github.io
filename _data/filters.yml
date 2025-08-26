@@ -1,0 +1,40 @@
+- title: "Flow Type"
+  group: "Reynolds"
+  items:
+    - { name: "Laminar", filter: ".laminar" }
+    - { name: "Turbulent", filter: ".turbulent" }
+
+- title: "Combustion"
+  group: "Combustion"
+  items:
+    - { name: "Reacting", filter: ".reacting" }
+    - { name: "Non-reacting", filter: ".nonreacting" }
+
+- title: "Dimensionality"
+  group: "Dimensionality"
+  items:
+    - { name: "2D", filter: ".twoD" }
+    - { name: "3D", filter: ".threeD" }
+
+- title: "Flow Configuration"
+  group: "FlowType"
+  items:
+    - { name: "HIT", filter: ".hit" }
+    - { name: "Pipe", filter: ".pipe" }
+    - { name: "Channel", filter: ".channel" }
+    - { name: "Jet", filter: ".jet" }
+    - { name: "Environmental", filter: ".environmental" }
+
+- title: ""
+  group: "ML"
+  comb: true
+  exclusive: false
+  items: 
+    - { name: "Benchmark Datasets", filter: ".benchmark" }
+
+- title: ""
+  group: "DataType"
+  items:
+    - { name: "Numerical", filter: ".numerical" }
+    - { name: "Experimental", filter: ".experimental" }
+
