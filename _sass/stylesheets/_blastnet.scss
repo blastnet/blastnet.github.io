@@ -226,51 +226,88 @@ $base0f: #d33682 !default;
 
 /*-- isotope --*/
 
-.filter-group {
-  text-align:center;
+.filter-group a {
+  line-height:1.5;
 
-  h2 {
-    text-align:left;
+  &::before {
+    content:"";
+    display:none;
+    width:10px;
+    height:10px;
+    margin-right:0.5em;
+    background:$primary-color;
+    border-radius:100%;
+  }
+
+  &.is-checked::before {
+    display:inline-block;
   }
 }
 
-.filter-group a {
-  text-decoration:none;
+/* visualization form */
+#datasetForm {
+  margin-top:0px;
+  padding:0px;
 
-  &.is-checked:not(.datasets_all) {
-    opacity:0.5;
-  }
-}
-
-.filter-group a {
-  width:24%;
-  height:100px;
-  position:relative;
-  display:inline-block;
-
-  img {
+  label {
     display:block;
-    width:100%;
-    height:100%;
-    position:absolute;
-    object-fit:cover;
-    top:0;
-    left:0;
-    border-radius:20px;
+    padding:0.25rem 0.75rem;
+    color: $dark-gray;
+    font-weight:bold;
+    font-size:0.6875rem;
+    line-height:1.5;
+    border-bottom:1px solid $border-color;
+    transition:background-color 0.4s ease-in-out;
+    cursor:pointer;
+
+    &:hover {
+      text-decoration:underline;
+    }
+
+    .marker-symbol {
+      display:none;
+      width:12px;
+      height:12px;
+      margin-right:0.5em;
+      vertical-align:middle;
+
+      &.circle {
+        border-radius:100%;
+      }
+
+      &.rectRounded {
+        border-radius:3px;
+      }
+
+      &.triangle {
+        width:0;
+	height:0;
+	border-left:6px solid transparent;
+	border-right:6px solid transparent;
+	border-bottom:12px solid;
+	background:none;
+      }
+
+      &.star, &.cross {
+        font-size:12px;
+      }
+
+      &.star::before {
+        content: '★';
+      }
+
+      &.cross::before {
+        content: '✚';
+      }
+    }
   }
 
-  h3 {
-    position:absolute;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    z-index:1;
-    text-shadow:1px 1px 4px rgba(0,0,0,0.5);
-    height:1.5rem;
-    margin:auto;
-    text-align:center;
-    color:white;
-    text-decoration:none;
+  input[type="checkbox"]{
+    display:none;
+
+    &:checked + label .marker-symbol {
+      display:inline-block!important;
+    }
   }
 }
+

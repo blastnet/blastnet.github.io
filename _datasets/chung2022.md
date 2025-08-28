@@ -5,7 +5,12 @@ excerpt: (1 case)
 header:
   teaser: /assets/img/ico_chung2022.png
 description: Compressible Inert CH4-O2 Homogeneous Isotropic Turbulence DNS
-categories: nonreacting
+categories: 
+- nonreacting
+- numerical
+- threeD
+- turbulent
+- hit
 ---
 
 ![image](./assets/img/chung2022.png)

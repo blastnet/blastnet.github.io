@@ -75,6 +75,45 @@
   }
 }
 
+.sidebar__left {
+  margin-bottom: 1em;
+
+  + h1, + h2, + h3, + h4, + h5, + h6 {
+    margin-top:0;
+  }
+
+  @include breakpoint($large) {
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    width: $right-sidebar-width-narrow;
+    margin-inline-start: -1 * $right-sidebar-width-narrow;
+    padding-inline-end: 1em;
+    z-index:10;
+
+    &.sticky {
+      @include clearfix();
+      position: -webkit-sticky;
+      position: sticky;
+      // top: 2em;
+      top: $masthead-height;
+      float: inline-start;
+
+      .toc, .filters {
+        .toc__menu, .filters__menu {
+	  overflow-y: auto;
+	  max-height: calc(100vh - 7em);
+	}
+      }
+    }
+  }
+
+  @include breakpoint($x-large) {
+    width: $right-sidebar-width;
+    margin-inline-start: -1 * $right-sidebar-width;
+  }
+}
+
 .sidebar__right {
   margin-bottom: 1em;
 
@@ -123,6 +162,18 @@
 
   @include breakpoint($x-large) {
     margin-inline-end: 0;
+  }
+}
+
+.splash .sidebar__left {
+  @include breakpoint($large) {
+    position: relative;
+    float: inline-start;
+    margin-inline-start: 0;
+  }
+
+  @include breakpoint($x-large) {
+    margin-inline-start: 0;
   }
 }
 
@@ -354,5 +405,23 @@
   @include breakpoint($x-large) {
     width: initial;
     margin-inline-end: initial;
+  }
+}
+
+.wide .sidebar__left {
+  margin-bottom:1em;
+
+  @include breakpoint($large) {
+    position: initial;
+    top: initial;
+    inset-inline-start: initial;
+    width: initial;
+    margin-inline-start: initial;
+    padding-inline-start: initial;
+    z-index: initial;
+
+    &.sticky {
+      float: none;
+    }
   }
 }

@@ -5,7 +5,12 @@ title: Lifted hydrogen jet flame
 description: Circular Burner Diluted Partially-Premixed H2-air Lifted Flame in 2D configuration
 header:
   teaser: /assets/img/ico_sharma2024.png
-categories: reacting
+categories: 
+- reacting
+- jet
+- twoD
+- laminar
+- numerical 
 ---
 
 <div style="text-align: center;">

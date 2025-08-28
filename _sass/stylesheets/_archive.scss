@@ -18,6 +18,28 @@
   }
 }
 
+// Additional class to flush sidebar to left
+.archive__left {
+  padding-inline-end: initial;
+
+  @include breakpoint($large) {
+    float: inline-start;
+    padding-inline-start: $right-sidebar-width-narrow;
+
+    p.archive__excerpt, h1.archive__title {
+      margin-left: -1 * $right-sidebar-width-narrow;
+    }
+  }
+
+  @include breakpoint($x-large) {
+    padding-inline-start: $right-sidebar-width;
+
+    p.archive__excerpt, h1.archive__title {
+      margin-left: -1 * $right-sidebar-width;
+    }
+  }
+}
+
 .archive__item {
   position: relative;
 
@@ -148,7 +170,7 @@
    Grid view
    ========================================================================== */
 
-.archive {
+.archive:not(.archive__left) {
   .grid__wrapper {
     /* extend grid elements to the right */
 
@@ -158,6 +180,17 @@
 
     @include breakpoint($x-large) {
       margin-inline-end: -1 * $right-sidebar-width;
+    }
+  }
+}
+
+.archive__left {
+  .grid__wrapper {
+    @include breakpoint($large) {
+      margin-inline-start: -1 * $right-sidebar-width-narrow;
+    }
+    @include breakpoint($x-large) {
+      margin-inline-start: -1 * $right-sidebar-width;
     }
   }
 }
@@ -431,13 +464,22 @@
    ========================================================================== */
 
 .wide {
-  .archive {
+  .archive:not(.archive__left) {
     @include breakpoint($large) {
       padding-inline-end: 0;
     }
 
     @include breakpoint($x-large) {
       padding-inline-end: 0;
+    }
+  }
+
+  .archive__left {
+    @include breakpoint($large) {
+      padding-inline-start:0;
+    }
+    @include breakpoint($x-large) {
+      padding-inline-start:0;
     }
   }
 }

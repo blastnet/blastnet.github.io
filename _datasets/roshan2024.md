@@ -6,7 +6,13 @@ description: Rayleigh-Bénard Convection DNS
 header:
   teaser: /assets/img/ico_roshan2024.png
   image: /assets/img/roshan2024.png
-categories: nonreacting
+categories: 
+- nonreacting
+- channel
+- pipe
+- turbulent 
+- threeD
+- numerical
 ---
 
 <!--

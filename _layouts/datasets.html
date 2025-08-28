@@ -1,14 +1,28 @@
 ---
-layout: archive
+layout: default
 ---
 
-<p>{{ page.excerpt }}</p>
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
 
-{% include datasets_filters.html %}
+<div id="main" role="main">
+  {% include sidebar.html %}
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=entries_layout %}
+  <div class="archive archive__left page__content">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 id="page-title" class="archive__title page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</h1>
+    {% endunless %}
+    <p class="archive__excerpt">{{ page.excerpt }}</p>
+
+    {% include datasets_filters.html %}
+
+    {% assign entries_layout = page.entries_layout | default: 'list' %}
+    <div class="entries-{{ entries_layout }}">
+      {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=entries_layout %}
+    </div>
+    {{ content }}
+  </div>
 </div>
-
-{{ content }}

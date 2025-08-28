@@ -2,7 +2,7 @@
 
 Built using [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) and [Jekyll](https://jekyllrb.com). 
 
-## Documentation for BLASTNet maintainers and contributors
+# Documentation for BLASTNet maintainers and contributors
 
 This repository contains all the code for the blastnet.github.io website. Most of the Minimal Mistakes features and layouts are not used (and will likely never be used) and so they have been removed for a smoother and lighter build experience. Yet, some new features like the data counters have also been added. Therefore, please read this documentation carefully.
 
@@ -76,7 +76,7 @@ gem install jekyll bundler
 
 First, clone the repository:
 ```bash
-git clone https://github.com/ihmegroup/website
+git clone https://github.com/blastnet/blastnet.github.io
 ```
 
 You can also fork the repository and clone that, if you prefer.
@@ -101,22 +101,13 @@ There are some options/flags that this command takes, the most pertinent of whic
 
 ### Important
 
-Make sure to correctly set the `url` and `baseurl` fields in `_config.yml` before building the webpage. The url should be `fxlab.stanford.edu` and baseurl blank, do not delete it.
+Make sure to not touch anything in the `_config.yml` file unless you know what you are doing. This file is used by Jekyll to build everything, so making a mistake here will likely break the entire website.
 
 ---
 
 ## Pushing to production
 
-**Never push to production on Fridays!** (jk)
-
-Once the site has been built, all the relevant files will be in the `_site` folder, ready to be uploaded to the Stanford domain. I also recommend cleaning up the CSS to remove unused classes, which speeds up loading time and reduces filesize, this can be done by running
-
-```bash
-purgecss -c purgecss.config.js
-```
-which will replace the CSS files in the `_site/assets/css/` folder with the purged css files.
-
-If using Github pages, simply run `bundle exec jekyll clean` to remove the build files, then commit changes and push to the `main` branch. I do recommend making major code-breaking or other stylistic changes on a development branch or fork, before making a pull request to the main branch.
+The site is built and hosted on Github pages, so it suffices to simply run `bundle exec jekyll clean` to remove the build files, then commit changes and push to the `master` branch. Please try to make major code-breaking or other stylistic changes on a development branch or fork, before making a pull request to the master branch.
 
 ---
 
@@ -154,9 +145,16 @@ description: Rayleigh-Bénard Convection DNS
 header:
   teaser: /assets/img/ico_roshan2024.png
   image: /assets/img/roshan2024.png
+categories:
+- nonreacting
+- channel
+- pipe
+- turbulent
+- threeD
+- numerical
 ---
 ```
-For each new dataset, count the number of cases and update the excerpt. Then, update the title and description as per normal. Header teaser corresponds to the icon displayed in the gallery (this keyword needs to be set or the gallery will not display correctly) and header image corresponds to the banner for the specific dataset; either set the keyword or include the banner as an image on the page using `![image](./assets/img/roshan2024.png)`. Additionally, for banner images that have a square-ish or vertical aspect ratio, it is possible to put the banner image in the sidebar like:
+For each new dataset, count the number of cases and update the excerpt. Add in relevant filter categories under the `categories` keyword as shown above. Then, update the title and description as per normal. Header teaser corresponds to the icon displayed in the gallery (this keyword needs to be set or the gallery will not display correctly) and header image corresponds to the banner for the specific dataset; either set the keyword or include the banner as an image on the page using, for example, `![image](./assets/img/roshan2024.png)`. Additionally, for banner images that have a square-ish or vertical aspect ratio, it is possible to put the banner image in the sidebar like:
 ```html
 <div class="sidebar__right" style="text-align: center; top: 160px;">
     <img src="./assets/img/gauding2022.png" alt="Image 1">
@@ -177,10 +175,7 @@ Once the new dataset is pushed to the repository, the website should automatical
 
 Adding new pages (for example, maybe new FlameAI) or editing the existing ones is simple - all the pages are rendered by markdown files located in `_pages` (except for the homepage, which is in the root folder and called `index.md`). General pages use the `single` layout; the dataset page uses the `datasets` custom layout and the homepage uses the `splash` layout, which has been significantly modified from the Minimal Mistakes file. ~~Yes, I know hardcoding is bad practice; no, I don't care.~~ The layout should be specified in the preamble using the `layout:` keyword. To add a new page or external link to the navigation menu, go to `_data/navigation.yml` and add a new entry under `main`. 
 
-## To-do list
-- Clean up the unused Minimal Mistakes code
-- Design a better color scheme
-- Better manipulation of the Kaggle API so that we can update more frequently
-- Update the Python script to only update the JSON if there are actual updates (perhaps add the ability to read the JSON file and match the values) --> this can reduce the number of updates to the Gist and reduce clutter
-- Think about whether we want to do a manual size calculation at every update or just cache the size permanently. Pros of cache: Much lower load, size shouldn't change by a lot anyway. Cons of cache: Less accurate; each subdataset has different number of downloads so the homepage total counter will also be inaccurate; does not capture versioning.
+## Filters
+
+The datasets summary page contains a list of filters which are generated from the list in `_data/filters.yml`. Filter category keywords from each of the dataset pages should correspond to these. To add more filters or filter groups, modify `_data/filters.yml`.
 

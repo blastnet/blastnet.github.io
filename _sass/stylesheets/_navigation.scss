@@ -530,11 +530,11 @@
 /*
      Table of contents navigation
      ========================================================================== */
-.sticky .toc {
+.sticky .toc, .sticky .filters {
   margin-top:1em;
 }
 
-.toc {
+.toc, .filters {
   font-family: $sans-serif-narrow;
   color: $gray;
   background-color: $background-color;
@@ -552,12 +552,12 @@
   }
 
   // Scrollspy marks toc items as .active when they are in focus
-  .active a {
+  .active a, > ul > li > a {
     @include yiq-contrasted($active-color);
   }
 }
 
-.toc__menu {
+.toc__menu, .filters__menu {
   margin: 0;
   padding: 0;
   width: 100%;
