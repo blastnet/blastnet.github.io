@@ -7,7 +7,6 @@ header:
   teaser: /assets/img/ico_gauding2022.png
 categories: 
 - nonreacting
-- threeD
 - hit
 - numerical
 - turbulent

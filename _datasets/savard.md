@@ -7,7 +7,6 @@ header:
 description: Vitiated H2-air Freely Propagating Flame DNS
 categories: 
 - reacting
-- threeD
 - turbulent
 - numerical
 ---

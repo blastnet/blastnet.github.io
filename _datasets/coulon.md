@@ -8,7 +8,6 @@ header:
 categories: 
 - reacting
 - turbulent
-- threeD
 - jet
 - numerical
 ---

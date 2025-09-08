@@ -9,7 +9,6 @@ categories:
 - numerical
 - nonreacting
 - turbulent
-- threeD
 - hit
 - pipe
 - channel

@@ -8,7 +8,6 @@ header:
 categories: 
 - reacting
 - jet
-- twoD
 - laminar
 - numerical 
 ---

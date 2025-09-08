@@ -10,12 +10,6 @@
     - { name: "Reacting", filter: ".reacting" }
     - { name: "Non-reacting", filter: ".nonreacting" }
 
-- title: "Dimensionality"
-  group: "Dimensionality"
-  items:
-    - { name: "2D", filter: ".twoD" }
-    - { name: "3D", filter: ".threeD" }
-
 - title: "Flow Configuration"
   group: "FlowType"
   items:

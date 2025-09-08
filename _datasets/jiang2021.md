@@ -8,7 +8,6 @@ description: Premixed Flame-wall Interaction CH4-Air DNS
 categories: 
 - reacting
 - channel
-- threeD
 - numerical
 - turbulent
 ---

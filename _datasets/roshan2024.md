@@ -11,7 +11,6 @@ categories:
 - channel
 - pipe
 - turbulent 
-- threeD
 - numerical
 ---
 

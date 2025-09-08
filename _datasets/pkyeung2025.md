@@ -9,7 +9,6 @@ categories:
 - numerical
 - nonreacting
 - hit
-- threeD
 - turbulent
 ---
 <div style="text-align: center;">

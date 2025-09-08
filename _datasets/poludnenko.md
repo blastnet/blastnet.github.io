@@ -8,7 +8,6 @@ header:
 categories: 
 - reacting
 - hit
-- threeD
 - turbulent
 - numerical
 ---
