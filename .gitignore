@@ -6,3 +6,4 @@ Gemfile.lock
 .jekyll-cache
 *.sqlite
 kaggle_stats.json
+**/.DS_Store
