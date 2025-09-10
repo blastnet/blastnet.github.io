@@ -113,7 +113,7 @@ for filename in search_map:
         # New Kaggle Api >=1.7
         try:
             user, dataset_id = dsn.split("/")
-            dataset = next((d for d in usernames[user] if d.ref == dsn))
+            dataset = next((d for d in usernames[user] if d.ref.lower() == dsn.lower()))
             downloads.append(int(dataset.download_count))
             views.append(int(dataset.view_count))
             if USE_TRUE_SIZE:
