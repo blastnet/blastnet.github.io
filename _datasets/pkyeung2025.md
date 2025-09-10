@@ -1,7 +1,7 @@
 ---
 layout: datapage
 excerpt: (2 cases)
-title: Forced HIT
+title: Forced HIT (Re$$_\lambda$$ = 390, 650)
 description: Forced Homogeneous Isotropic Turbulence DNS with 3 Passive Scalars
 header:
   teaser: /assets/img/ico_pkyeung2025.png

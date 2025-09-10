@@ -1,7 +1,7 @@
 ---
 layout: datapage
 excerpt: (6 cases)
-title: Forced HIT
+title: Forced HIT (Re$$_\lambda$$ = 88-331)
 description: Passive Scalar HIT DNS
 header:
   teaser: /assets/img/ico_gauding2022.png
