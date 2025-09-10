@@ -105,9 +105,13 @@ We thank the following people for contributing and curating this network-of-data
 | [Roshan Samuel](https://roshansamuel.github.io)| Technische Universität Ilmenau | November 22 2024|
 | [Mathis Bode](https://www.fz-juelich.de/profile/bode_m)| Jülich Supercomputing Centre | November 22 2024 |
 | [Jen Zen Ho](https://www.linkedin.com/in/jen-zen-ho/)| Stanford University | March 5 2025 |
+| [Jörg Schumacher](https://scholar.google.com/citations?user=6rt9LDUAAAAJ&hl=en)| TU Ilmenau | November 22 2024 |
 | [Quentin Malé](https://quentinmale.github.io) | Harvard University |April 15 2025|
 | [Cenk Gazen](https://www.linkedin.com/in/cenk-gazen-4717795) | Google |April 15 2025|
-
+| [Daniel Dotson](http://daniel.dotsoncentral.com) | Georgia Institute of Technology | September 8 2025|
+| [P.K Yeung](https://ae.gatech.edu/directory/person/pui-kuen-yeung) | Georgia Institute of Technology | September 8 2025|
+| [Myoungkyu Lee](https://www.me.uh.edu/faculty/lee-myoungkyu) | University of Houston| September 10 2025|
+<!-- | [M Rieth] -->
 ## Funding
 ![nsf logo](./assets/img/nsf.png) <!-- {: .center-image} -->
 
