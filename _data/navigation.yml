@@ -30,7 +30,7 @@ links:
     description: 'Fully detailed <a href="/datasets">here</a>.'
     children:
       - title: "Download all (Kaggle API)"
-        url: /assets/bash/batch_download_v2.1.sh
+        url: /assets/bash/batch_download_v3.0.sh
       - title: "Download Momentum128 3D SR"
         url: /assets/bash/mom_download.sh
       - title: "Kaggle repo for Momentum128 3D SR"
