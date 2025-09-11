@@ -1,0 +1,185 @@
+{
+    "global": {
+        "dataset_id": "blastnet/channelflow-dns-Re544-eq-p357-377",
+        "Nxyz": [
+            1536,
+            384,
+            1024
+        ],
+        "snapshots": 21,
+        "variables": [
+            "UZ_ms-1",
+            "UY_ms-1",
+            "UX_ms-1"
+        ],
+        "compression": null,
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "bc": "Periodic boundary conditions in x and z directions, and no-slip/no-penetration boundary conditions at the wall.",
+        "numerics": {
+            "streamwise": "Fourier pseudo-spectral",
+            "spanwise": "Fourier pseudo-spectral",
+            "wall-normal": "B spline collocation",
+            "temporal": {
+                "viscous_terms": "Crank-Nicolson",
+                "nonlinear_terms": "3rd-order Runge-Kutta"
+            }
+        },
+        "ic": "",
+        "description": "DNS of turbulent channel flow at friction Re = 544 and bulk Re = 10000, with nu = 0.0001",
+        "doi": "https://doi.org/10.1017/jfm.2015.268",
+        "contributors": "Myoungkyu Lee"
+    },
+    "local": [
+        {
+            "id": 357,
+            "time": 179.8,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0357.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0357.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0357.dat"
+        },
+        {
+            "id": 358,
+            "time": 180.25,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0358.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0358.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0358.dat"
+        },
+        {
+            "id": 359,
+            "time": 180.7,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0359.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0359.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0359.dat"
+        },
+        {
+            "id": 360,
+            "time": 181.2,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0360.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0360.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0360.dat"
+        },
+        {
+            "id": 361,
+            "time": 181.65,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0361.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0361.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0361.dat"
+        },
+        {
+            "id": 362,
+            "time": 182.1,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0362.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0362.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0362.dat"
+        },
+        {
+            "id": 363,
+            "time": 182.55,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0363.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0363.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0363.dat"
+        },
+        {
+            "id": 364,
+            "time": 183.05,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0364.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0364.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0364.dat"
+        },
+        {
+            "id": 365,
+            "time": 183.5,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0365.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0365.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0365.dat"
+        },
+        {
+            "id": 366,
+            "time": 183.95,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0366.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0366.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0366.dat"
+        },
+        {
+            "id": 367,
+            "time": 184.4,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0367.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0367.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0367.dat"
+        },
+        {
+            "id": 368,
+            "time": 184.9,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0368.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0368.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0368.dat"
+        },
+        {
+            "id": 369,
+            "time": 185.35,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0369.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0369.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0369.dat"
+        },
+        {
+            "id": 370,
+            "time": 185.8,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0370.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0370.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0370.dat"
+        },
+        {
+            "id": 371,
+            "time": 186.25,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0371.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0371.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0371.dat"
+        },
+        {
+            "id": 372,
+            "time": 186.7,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0372.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0372.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0372.dat"
+        },
+        {
+            "id": 373,
+            "time": 187.2,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0373.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0373.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0373.dat"
+        },
+        {
+            "id": 374,
+            "time": 187.65,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0374.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0374.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0374.dat"
+        },
+        {
+            "id": 375,
+            "time": 188.1,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0375.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0375.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0375.dat"
+        },
+        {
+            "id": 376,
+            "time": 188.55,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0376.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0376.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0376.dat"
+        },
+        {
+            "id": 377,
+            "time": 189.05,
+            "UZ_ms-1 filename": "./data/UX_ms-1_id0377.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0377.dat",
+            "UX_ms-1 filename": "./data/UZ_ms-1_id0377.dat"
+        }
+    ]
+}
