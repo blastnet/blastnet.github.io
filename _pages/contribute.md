@@ -3,22 +3,21 @@ permalink: /contribute
 layout: single
 toc: true
 title: Contribute & Collaborate
-description: Find out how to contribute to BLASTNet.
 ---
 
 The best way to start contributing and collaborating with us is to send an email to [blast.net.ml@gmail.com](mailto:blast.net.ml@gmail.com) for onboarding instructions.
 
-We also have a [google forms](https://forms.gle/VYMWvuNjFqPMJjwo6) that provides a checklist on your contribute data.
+We also have a [Google Form](https://forms.gle/VYMWvuNjFqPMJjwo6) that provides a checklist for your contributed data.
 
-Before doing this checkout the standards and formats below.
+Before that, do check out our standards and formats below.
 
 ## Standards for BLASTNet
-To ensure that all files available on BLASTNet has consistent file formats, we present some necessary standards for improved access:
+To ensure that all files available on BLASTNet have consistent file formats, we present some necessary standards for improved access:
 
-1. All simulation datasets must contain [U,&rho;,T,P,Y] to ensure that any additional variables can be easily post-processed. Provide chemkin or cantera files so that thermodynamic and transport properties can 
-2. X,Y,Z variables can be provided as a mathematical function for structured grids or a single share a single snapshot of the X,Y,Z values. 
+1. All simulation datasets must contain [U,&rho;,T,P,Y] to ensure that any additional variables can be easily post-processed. Provide Chemkin or Cantera files if used so that thermodynamic and transport properties can be computed.
+2. X,Y,Z variables can be provided as a mathematical function for structured grids or a single snapshot of the X,Y,Z values. 
 3. Shared simulation datasets must have a corresponding publication or conference submission.
-4. All uncompressed files should be in little endian float32 binaries. A Colab/tutorial on how to read and write this format in python is provided [here](./tutorial.html).
+4. All uncompressed files should be in Little Endian float32 binaries. A Colab/tutorial on how to read and write this format in Python can be found [here](./tutorial.html).
 <!-- 5. Use .gz, .tar, .tar.gz, and .zip files for lossless compressed files.  -->
 <!-- 5. All lossy compressed files should be compressed via [SZ2](https://github.com/szcompressor/SZ) with a point-wise error bound of 1% if possible. A study that we conducted concluded that deep learning algorithms are robust to a point-wise error bound of 4%. This is the hard limit for files on BLASTNet if your files need further compression. Tutorials for compression and decompression are provided [here](./tutorial.html). -->
 6. Datasets should be uploaded onto Kaggle ([tutorial](./tutorial.html)) to simplify batch access via a command line API.
@@ -27,7 +26,7 @@ To ensure that all files available on BLASTNet has consistent file formats, we p
 
 ## Metadata Format
 
-Each submission on blastnet should have a global and local metadata in an info.json file which provides all the important information required to train an ML model. You can interact with these files [here](https://colab.research.google.com/drive/1_dk1IPQsOK-Dxq9VYSci4lB_LOyVCb5c?usp=sharing).
+Each submission on BLASTNet should have global and local metadata contained in an `info.json` file, which provides all the important information required to train an ML model. You can interact with these files [here](https://colab.research.google.com/drive/1_dk1IPQsOK-Dxq9VYSci4lB_LOyVCb5c?usp=sharing).
 
 ### Global Metadata
 ```py
@@ -84,7 +83,7 @@ We thank the following people for contributing and curating this network-of-data
 | Name      | Affilliation | Date Joined |
 | ----------| -----------  | ---------- |
 | [Wai Tong Chung](https://waitong94.github.io/) | Stanford University   | June 6 2022 |
-| [Matthias Ihme](https://web.stanford.edu/group/ihmegroup/cgi-bin/MatthiasIhme/people/matthias-ihme/) | Stanford University, SLAC National Laboratory  | June 6 2022 |
+| [Matthias Ihme](https://fxlab.stanford.edu) | Stanford University, SLAC National Laboratory  | June 6 2022 |
 | [Ki Sung Jung](https://scholar.google.com/citations?hl=en&user=BrRefdgAAAAJ)   | Sandia National Laboratory   | June 6 2022 |
 | [Jacqueline H. Chen](https://scholar.google.com/citations?user=-YNowMsAAAAJ&hl=en) | Sandia National Laboratory   | June 6 2022 |
 | [Jack Guo](https://www.linkedin.com/in/jackguo1/) | Stanford University   | June 6 2022 |
@@ -104,14 +103,17 @@ We thank the following people for contributing and curating this network-of-data
 | [Michael Gauding](https://www.itv.rwth-aachen.de/institut/mitarbeiter/michael-gauding/)| RWTH Aachen University|November 22 2024|
 | [Roshan Samuel](https://roshansamuel.github.io)| Technische Universität Ilmenau | November 22 2024|
 | [Mathis Bode](https://www.fz-juelich.de/profile/bode_m)| Jülich Supercomputing Centre | November 22 2024 |
-| [Jen Zen Ho](https://www.linkedin.com/in/jen-zen-ho/)| Stanford University | March 5 2025 |
 | [Jörg Schumacher](https://scholar.google.com/citations?user=6rt9LDUAAAAJ&hl=en)| TU Ilmenau | November 22 2024 |
+| [Beverley Yeo](https://beverleyy.github.io)| Stanford University | December 11 2024 |
+| [Jen Zen Ho](https://www.linkedin.com/in/jen-zen-ho/)| Stanford University | March 5 2025 |
 | [Quentin Malé](https://quentinmale.github.io) | Harvard University |April 15 2025|
 | [Cenk Gazen](https://www.linkedin.com/in/cenk-gazen-4717795) | Google |April 15 2025|
 | [Daniel Dotson](http://daniel.dotsoncentral.com) | Georgia Institute of Technology | September 8 2025|
 | [P.K Yeung](https://ae.gatech.edu/directory/person/pui-kuen-yeung) | Georgia Institute of Technology | September 8 2025|
 | [Myoungkyu Lee](https://www.me.uh.edu/faculty/lee-myoungkyu) | University of Houston| September 10 2025|
+
 <!-- | [M Rieth] -->
+
 ## Funding
 ![nsf logo](./assets/img/nsf.png) <!-- {: .center-image} -->
 

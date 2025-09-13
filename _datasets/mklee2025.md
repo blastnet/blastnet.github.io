@@ -5,7 +5,11 @@ title: Non-Reacting Channel Flow
 description: Non-Reacting Channel Flow DNS
 header:
   teaser: /assets/img/ico_mklee2015.png
-categories: nonreacting
+categories: 
+- nonreacting
+- channel
+- turbulent
+- numerical
 ---
 <!-- <div style="text-align: center;">
     <img src="./assets/img/mklee2015.png" alt="Image 1" style="max-width: 100%;">

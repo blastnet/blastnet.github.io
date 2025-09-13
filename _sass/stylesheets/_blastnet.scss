@@ -43,6 +43,11 @@ $base0d: #268bd2 !default;
 $base0e: #6c71c4 !default;
 $base0f: #d33682 !default;
 
+/* hide screen reader text */
+.sr-only {
+  display:none!important;
+}
+
 /* custom styles */
 .page__footer {
   color: #fff !important; // override
