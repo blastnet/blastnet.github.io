@@ -22,7 +22,7 @@ The numerical methods employ a Fourier-Galerkin approach in the streamwise and s
 ## Quick Info
 * Contributors: Myoungkyu Lee
 * N<sub>x</sub> = 1536, N<sub>y</sub> = 384, N<sub>z</sub> = 1024
-* N<sub>&#632;</sub> = 3
+* N<sub>&#632;</sub> = 4
 * <a href="https://doi.org/10.1017/jfm.2015.268">DOI</a>
 * <a href="./assets/bib/mklee2024.bib">.bib</a>
 
@@ -42,7 +42,7 @@ The numerical methods employ a Fourier-Galerkin approach in the streamwise and s
         <td align="center"> 0 </td>
         <td align="center">544</td>
         <td align="center">One Flow Through Time</td>
-        <td align="center">3.4</td>
+        <td align="center">4.5</td>
         <td align="center">
         <div>
           <a href="https://www.kaggle.com/datasets/blastnet/channelflow-dns-Re544-seq-p000-020">Kaggle<sub>000-020</sub></a>, <a href="./assets/json/mklee2015/channelflow-dns-Re544-seq-p000-020-info.json">info.json<sub>000-020</sub></a>,
@@ -126,7 +126,7 @@ The numerical methods employ a Fourier-Galerkin approach in the streamwise and s
         <td align="center"> 1 </td>
         <td align="center">544</td>
         <td align="center">Collection of snapshots at different time</td>
-        <td align="center">3.4</td>
+        <td align="center">4.5</td>
         <td align="center">
         <div>
           <a href="https://www.kaggle.com/datasets/blastnet/channelflow-dns-Re544-eq-p000-020">Kaggle<sub>000-020</sub></a>, <a href="./assets/json/mklee2015/channelflow-dns-Re544-eq-p000-020-info.json">info.json<sub>000-020</sub></a>,
