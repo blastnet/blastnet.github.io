@@ -8,9 +8,10 @@
         ],
         "snapshots": 6,
         "variables": [
-            "UZ_ms-1",
+            "P_Pa",
+            "UX_ms-1",
             "UY_ms-1",
-            "UX_ms-1"
+            "UZ_ms-1"
         ],
         "compression": null,
         "grid": {
@@ -29,7 +30,7 @@
             }
         },
         "ic": "",
-        "description": "DNS of turbulent channel flow at friction Re = 544 and bulk Re = 10000, with nu = 0.0001",
+        "description": "DNS of turbulent channel flow at friction Re = 544 and bulk Re = 10000, with nu = 0.0001. This dataset contains sequential snapshots of one flow through time.",
         "doi": "https://doi.org/10.1017/jfm.2015.268",
         "contributors": "Myoungkyu Lee"
     },
@@ -37,44 +38,50 @@
         {
             "id": 504,
             "time": 25.2,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0504.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0504.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0504.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0504.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0504.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0504.dat",
+            "P_Pa filename": "./data/P_Pa_id0504.dat"
         },
         {
             "id": 505,
             "time": 25.25,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0505.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0505.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0505.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0505.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0505.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0505.dat",
+            "P_Pa filename": "./data/P_Pa_id0505.dat"
         },
         {
             "id": 506,
             "time": 25.3,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0506.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0506.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0506.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0506.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0506.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0506.dat",
+            "P_Pa filename": "./data/P_Pa_id0506.dat"
         },
         {
             "id": 507,
             "time": 25.35,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0507.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0507.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0507.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0507.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0507.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0507.dat",
+            "P_Pa filename": "./data/P_Pa_id0507.dat"
         },
         {
             "id": 508,
             "time": 25.4,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0508.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0508.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0508.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0508.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0508.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0508.dat",
+            "P_Pa filename": "./data/P_Pa_id0508.dat"
         },
         {
             "id": 509,
             "time": 25.45,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0509.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0509.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0509.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0509.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0509.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0509.dat",
+            "P_Pa filename": "./data/P_Pa_id0509.dat"
         }
     ]
 }

@@ -8,9 +8,10 @@
         ],
         "snapshots": 21,
         "variables": [
-            "UZ_ms-1",
+            "P_Pa",
+            "UX_ms-1",
             "UY_ms-1",
-            "UX_ms-1"
+            "UZ_ms-1"
         ],
         "compression": null,
         "grid": {
@@ -29,7 +30,7 @@
             }
         },
         "ic": "",
-        "description": "DNS of turbulent channel flow at friction Re = 544 and bulk Re = 10000, with nu = 0.0001",
+        "description": "DNS of turbulent channel flow at friction Re = 544 and bulk Re = 10000, with nu = 0.0001. This dataset contains sequential snapshots of one flow through time.",
         "doi": "https://doi.org/10.1017/jfm.2015.268",
         "contributors": "Myoungkyu Lee"
     },
@@ -37,149 +38,170 @@
         {
             "id": 84,
             "time": 4.2,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0084.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0084.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0084.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0084.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0084.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0084.dat",
+            "P_Pa filename": "./data/P_Pa_id0084.dat"
         },
         {
             "id": 85,
             "time": 4.25,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0085.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0085.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0085.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0085.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0085.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0085.dat",
+            "P_Pa filename": "./data/P_Pa_id0085.dat"
         },
         {
             "id": 86,
             "time": 4.3,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0086.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0086.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0086.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0086.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0086.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0086.dat",
+            "P_Pa filename": "./data/P_Pa_id0086.dat"
         },
         {
             "id": 87,
             "time": 4.35,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0087.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0087.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0087.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0087.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0087.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0087.dat",
+            "P_Pa filename": "./data/P_Pa_id0087.dat"
         },
         {
             "id": 88,
             "time": 4.4,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0088.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0088.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0088.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0088.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0088.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0088.dat",
+            "P_Pa filename": "./data/P_Pa_id0088.dat"
         },
         {
             "id": 89,
             "time": 4.45,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0089.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0089.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0089.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0089.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0089.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0089.dat",
+            "P_Pa filename": "./data/P_Pa_id0089.dat"
         },
         {
             "id": 90,
             "time": 4.5,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0090.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0090.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0090.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0090.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0090.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0090.dat",
+            "P_Pa filename": "./data/P_Pa_id0090.dat"
         },
         {
             "id": 91,
             "time": 4.55,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0091.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0091.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0091.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0091.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0091.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0091.dat",
+            "P_Pa filename": "./data/P_Pa_id0091.dat"
         },
         {
             "id": 92,
             "time": 4.6,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0092.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0092.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0092.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0092.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0092.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0092.dat",
+            "P_Pa filename": "./data/P_Pa_id0092.dat"
         },
         {
             "id": 93,
             "time": 4.65,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0093.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0093.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0093.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0093.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0093.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0093.dat",
+            "P_Pa filename": "./data/P_Pa_id0093.dat"
         },
         {
             "id": 94,
             "time": 4.7,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0094.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0094.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0094.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0094.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0094.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0094.dat",
+            "P_Pa filename": "./data/P_Pa_id0094.dat"
         },
         {
             "id": 95,
             "time": 4.75,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0095.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0095.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0095.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0095.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0095.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0095.dat",
+            "P_Pa filename": "./data/P_Pa_id0095.dat"
         },
         {
             "id": 96,
             "time": 4.8,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0096.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0096.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0096.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0096.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0096.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0096.dat",
+            "P_Pa filename": "./data/P_Pa_id0096.dat"
         },
         {
             "id": 97,
             "time": 4.85,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0097.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0097.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0097.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0097.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0097.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0097.dat",
+            "P_Pa filename": "./data/P_Pa_id0097.dat"
         },
         {
             "id": 98,
             "time": 4.9,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0098.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0098.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0098.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0098.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0098.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0098.dat",
+            "P_Pa filename": "./data/P_Pa_id0098.dat"
         },
         {
             "id": 99,
             "time": 4.95,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0099.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0099.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0099.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0099.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0099.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0099.dat",
+            "P_Pa filename": "./data/P_Pa_id0099.dat"
         },
         {
             "id": 100,
             "time": 5.0,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0100.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0100.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0100.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0100.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0100.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0100.dat",
+            "P_Pa filename": "./data/P_Pa_id0100.dat"
         },
         {
             "id": 101,
             "time": 5.05,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0101.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0101.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0101.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0101.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0101.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0101.dat",
+            "P_Pa filename": "./data/P_Pa_id0101.dat"
         },
         {
             "id": 102,
             "time": 5.1,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0102.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0102.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0102.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0102.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0102.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0102.dat",
+            "P_Pa filename": "./data/P_Pa_id0102.dat"
         },
         {
             "id": 103,
             "time": 5.15,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0103.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0103.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0103.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0103.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0103.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0103.dat",
+            "P_Pa filename": "./data/P_Pa_id0103.dat"
         },
         {
             "id": 104,
             "time": 5.2,
-            "UZ_ms-1 filename": "./data/UX_ms-1_id0104.dat",
-            "UY_ms-1 filename": "./data/UY_ms-1_id0104.dat",
-            "UX_ms-1 filename": "./data/UZ_ms-1_id0104.dat"
+            "UY_ms-1 filename": "./data/UX_ms-1_id0104.dat",
+            "UX_ms-1 filename": "./data/UY_ms-1_id0104.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0104.dat",
+            "P_Pa filename": "./data/P_Pa_id0104.dat"
         }
     ]
 }
