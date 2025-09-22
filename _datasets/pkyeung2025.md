@@ -52,7 +52,7 @@ scalars — at a single instant in time. The three scalars are each subjected to
         <td align="center">225`</td>
         <td align="center">
         <div>
-        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re390-vp">Kaggle<sub>VP</sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re390-scalar-info.json">info.json<sub>VP</sub></a>,
+        <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re390-vp">Kaggle<sub>VP</sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re390-vp-info.json">info.json<sub>VP</sub></a>,
         </div>
         <div>
         <a href="https://www.kaggle.com/datasets/blastnet/forcedhit-dns-re390-scalar">Kaggle<sub>Y</sub></a>, <a href="./assets/json/pkyeung2025/forcedhit-dns-re390-scalar-info.json">info.json<sub>Y</sub></a>
