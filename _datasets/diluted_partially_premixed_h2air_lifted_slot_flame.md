@@ -1,0 +1,32 @@
+---
+layout: datapage 
+title: Slot Burner
+excerpt: (1 case)
+header:
+  teaser: /assets/img/ico_jung2021.png
+description: Slot Burner Diluted Partially-Premixed H2-air Lifted Flame DNS
+categories: 
+- numerical
+- reacting
+- jet
+- turbulent
+---
+
+<div style="text-align: center;">
+    <img src="./assets/img/jung2021.png" alt="Image 1" style="max-width: 50%;">
+</div>
+
+## Description
+
+This DNS configuration involves a turbulent lifted hydrogen jet flame in heated co-flow air. A diluted fuel mixture (65% H2 and 35% N2 by volume) is issued from the central slot at an inlet temperature of 400 K. This central jet is surrounded on either side by co-flowing heated air streams with an inlet temperature of 850 K, at atmospheric pressure. The jet width at the inlet is 2 mm. The jet Reynolds number is 8000. Velocity fluctuations, u′, which is 10% of Ujet, is obtained by generating an auxiliary homogeneous isotropic turbulence field. These fluctuations are then fed from the inlet using Taylor’s hypothesis. This 2000 × 1600 × 400 computational domain is 15H × 20H × 3H in the streamwise x-, transverse y-, and spanwise z- directions, respectively, resulting in a total of 1.28 billion cells. A uniform grid size of 15 μm is placed in the x- and z-directions, while the y-directional grid is algebraically stretched outside the flame and shear zones. Improved non-reflecting boundary conditions are adopted in the x- and y-directions, while periodic boundary conditions are applied in the z-direction. The data is collected after four jet flow-through times after the flame becomes statistically stationary.
+
+The Sandia DNS code, S3D, is employed for solving the compressible Navier–Stokes, species conservation, and total energy equations. Spatial derivatives are approximated with an eighth-order central difference scheme, and a tenth-order filter is used to remove any spurious high-frequency fluctuations in the solution. For time integration, a fourth-order explicit Runge-Kutta method is used. The employed detailed hydrogen-air chemical mechanism composed of 9 species and 21 elementary reaction steps was developed by Li et al.
+
+## Quick Info
+* <a href="https://www.kaggle.com/datasets/waitongchung/full-lifted-flame-dns-li">Kaggle Link</a><BR>
+* Contributors: Ki Sung Jung,  Jacqueline H. Chen
+* N<sub>x</sub> = 2000, N<sub>y</sub> = 1600, N<sub>z</sub> = 400, N<sub>&#632;</sub> = 6 + 9  <BR>
+* Size = 93 GB 
+* <a href="https://doi.org/10.1016/j.combustflame.2021.111758">DOI</a><BR>
+* <a href="./assets/bib/jung2021.bib">.bib</a><BR>
+* <a href="./assets/json/jung2021_full_info.json">info.json</a>
