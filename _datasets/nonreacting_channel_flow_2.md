@@ -11,9 +11,9 @@ categories:
 - turbulent
 - numerical
 ---
-<!-- <div style="text-align: center;">
-    <img src="./assets/img/mklee2015.png" alt="Image 1" style="max-width: 100%;">
-</div> -->
+<div style="text-align: center;">
+    <img src="./assets/img/mklee2015.png" alt="Image 1" style="max-width: 70%;">
+</div>
 
 ## Description
 These snapshots are from a Direct Numerical Simulation (DNS) of incompressible turbulent channel flow at friction Reynolds number $$Re_\tau = 544$$ and bulk Reynolds number $$Re_b = 10,000$$ [1]. The computational domain has dimensions $$L_x = 8\pi$$ and $$L_z = 3\pi$$ in the streamwise and spanwise directions respectively, with periodic boundary conditions applied in both directions. The channel width is set to $$L_y = 2$$. No-slip/no-penetration boundary conditions are enforced at the walls. The flow is driven by a uniform pressure gradient that varies in time to maintain constant mass flux through the channel.
