@@ -1,6 +1,6 @@
 ---
 layout: datapage
-excerpt: (5 cases)
+excerpt: (6 cases)
 title: Jet Fuel Laminar Spray Flame
 description: Jet Fuel Laminar Spray Flame DNS
 header:
