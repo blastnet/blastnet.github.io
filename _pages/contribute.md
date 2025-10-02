@@ -111,7 +111,10 @@ We thank the following people for contributing and curating this network-of-data
 | [Daniel Dotson](http://daniel.dotsoncentral.com) | Georgia Institute of Technology | September 8 2025|
 | [P.K Yeung](https://ae.gatech.edu/directory/person/pui-kuen-yeung) | Georgia Institute of Technology | September 8 2025|
 | [Myoungkyu Lee](https://www.me.uh.edu/faculty/lee-myoungkyu) | University of Houston| September 10 2025|
-<!-- | [M Rieth](https://scholar.google.com/citations?user=xHEIguYAAAAJ&hl=de) | Sandia National Laboratory   |  |-->
+| [Zhang Yanqi](https://www.researchgate.net/profile/Zhang-Yanqi-6) | Kyoto University| October 2 2025|
+| [Jiangkuan Xing](https://www.sciencedirect.com/author/57193526093/jiangkuan-xing) | Kyoto University| October 2 2025|
+| [Ryoichi Kurose](http://www.tse.me.kyoto-u.ac.jp/members/kurose/kurose_e.php) | Kyoto University| October 2 2025|
+<!-- | [M Rieth](https://scholar.google.com/citations?user=xHEIguYAAAAJ&hl=de) | Sandia National Laboratory   |  | -->
 
 ## Funding
 ![nsf logo](./assets/img/nsf.png) <!-- {: .center-image} -->
