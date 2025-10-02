@@ -114,7 +114,9 @@ We thank the following people for contributing and curating this network-of-data
 | [Zhang Yanqi](https://www.researchgate.net/profile/Zhang-Yanqi-6) | Kyoto University| October 2 2025|
 | [Jiangkuan Xing](https://www.sciencedirect.com/author/57193526093/jiangkuan-xing) | Kyoto University| October 2 2025|
 | [Ryoichi Kurose](http://www.tse.me.kyoto-u.ac.jp/members/kurose/kurose_e.php) | Kyoto University| October 2 2025|
-<!-- | [M Rieth](https://scholar.google.com/citations?user=xHEIguYAAAAJ&hl=de) | Sandia National Laboratory   |  | -->
+
+<!-- DO NOT DELETE THE WHITESPACE ABOVE THIS, it will break the table -->
+<!-- | [M Rieth](https://scholar.google.com/citations?user=xHEIguYAAAAJ&hl=de) | Sandia National Laboratory |  | -->
 
 ## Funding
 ![nsf logo](./assets/img/nsf.png) <!-- {: .center-image} -->
