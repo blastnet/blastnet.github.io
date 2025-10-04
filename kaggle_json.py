@@ -84,7 +84,7 @@ for filename in search_map:
         # Old Kaggle Api <1.7
         try:
             user = dsn.split("/")[0]
-            dataset = vars(next((d for d in usernames[user] if vars(d)['ref'] == dsn)))
+            dataset = vars(next((d for d in usernames[user] if vars(d)['ref'].lower() == dsn.lower())))
             downloads.append(int(dataset['downloadCount']))
             views.append(int(dataset['viewCount']))
             sizes.append(int(dataset['totalBytes']))
@@ -94,7 +94,7 @@ for filename in search_map:
         except KeyError:
             try:
                 user = dsn.split("/")[0]
-                dataset = next((d for d in usernames[user] if d.ref == dsn))
+                dataset = next((d for d in usernames[user] if d.ref.lower() == dsn.lower()))
                 downloads.append(int(dataset.download_count))
                 views.append(int(dataset.view_count))
                 sizes.append(int(dataset.total_bytes))
