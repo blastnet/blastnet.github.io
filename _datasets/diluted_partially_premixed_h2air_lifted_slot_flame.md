@@ -10,6 +10,7 @@ categories:
 - reacting
 - jet
 - turbulent
+- steady
 ---
 
 <div style="text-align: center;">

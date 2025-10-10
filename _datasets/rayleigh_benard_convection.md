@@ -12,6 +12,7 @@ categories:
 - pipe
 - turbulent 
 - numerical
+- steady
 ---
 
 <!--

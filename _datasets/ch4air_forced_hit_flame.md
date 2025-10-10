@@ -10,6 +10,7 @@ categories:
 - hit
 - turbulent
 - numerical
+- steady
 ---
 
 ![image](./assets/img/poludnenko.png)
