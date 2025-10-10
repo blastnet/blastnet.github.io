@@ -10,6 +10,7 @@ categories:
 - jet
 - laminar
 - numerical 
+- steady
 ---
 
 <div style="text-align: center;">

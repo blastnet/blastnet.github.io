@@ -10,6 +10,7 @@ categories:
 - channel
 - numerical
 - turbulent
+- steady
 ---
 
 <div style="text-align: center;">

@@ -10,6 +10,7 @@ categories:
 - channel
 - turbulent
 - numerical
+- steady
 ---
 <div style="text-align: center;">
     <img src="./assets/img/mklee2015.png" alt="Image 1" style="max-width: 70%;">

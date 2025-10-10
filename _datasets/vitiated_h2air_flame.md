@@ -9,6 +9,7 @@ categories:
 - reacting
 - turbulent
 - numerical
+- steady
 ---
 
 <div style="text-align: center;">

@@ -10,6 +10,12 @@
     - { name: "Reacting", filter: ".reacting" }
     - { name: "Non-reacting", filter: ".nonreacting" }
 
+- title: "Time Dependence" 
+  group: "Time"
+  items:
+    - { name: "Transient", filter: ".transient" }
+    - { name: "Statistically Steady", filter: ".steady" }
+
 - title: "Flow Configuration"
   group: "FlowType"
   items:

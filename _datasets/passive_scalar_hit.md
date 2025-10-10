@@ -8,6 +8,7 @@ header:
 categories: 
 - nonreacting
 - hit
+- steady
 - numerical
 - turbulent
 ---

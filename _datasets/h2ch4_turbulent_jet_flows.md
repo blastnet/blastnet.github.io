@@ -10,6 +10,7 @@ categories:
 - jet
 - turbulent
 - numerical
+- steady
 ---
 
 <div class="sidebar__right" style="top:200px; text-align: center;">

@@ -10,6 +10,7 @@ categories:
 - nonreacting
 - hit
 - turbulent
+- steady
 ---
 <div style="text-align: center;">
     <img src="./assets/img/pkyeung2025.png" alt="Image 1" style="max-width: 100%;">

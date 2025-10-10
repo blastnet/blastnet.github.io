@@ -9,6 +9,7 @@ categories:
 - channel
 - turbulent
 - numerical
+- steady
 description: Transcritical Channel Flow N2 Turbulence DNS
 ---
 

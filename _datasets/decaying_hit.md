@@ -10,6 +10,7 @@ categories:
 - nonreacting
 - hit
 - turbulent
+- steady
 ---
 
 <div style="text-align: center;">
