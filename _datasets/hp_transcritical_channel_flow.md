@@ -39,7 +39,7 @@ The equations of fluid motion are computationally solved using the in-house flow
 <table align="center">
     <tr class="header">
     <th style="width:2%;">Case</th>
-    <th style="width:10%;">P_b/P$_c$</th>
+    <th style="width:10%;">$P_b/P_c$</th>
     <th style="width:10%;">$T_{hw}/T_c$</th>
     <th style="width:10%;">$T_{cw}/T_c$</th>
     <th style="width:10%;">Size (GB)</th>
