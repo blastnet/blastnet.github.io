@@ -1,7 +1,7 @@
 ---
 layout: datapage
 excerpt: (21 cases)
-title: Dispersive shock wave
+title: Dispersive shock waves
 description: Mach reflection and expansion of two-dimensional dispersive shock waves
 header:
   teaser: /assets/img/ico_bivolcic2025.png
