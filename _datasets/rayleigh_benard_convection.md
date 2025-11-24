@@ -9,7 +9,7 @@ header:
 categories: 
 - nonreacting
 - channel
-- pipe
+# - pipe
 - turbulent 
 - numerical
 - steady
