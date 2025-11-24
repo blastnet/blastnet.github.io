@@ -127,7 +127,7 @@ for filename in search_map:
     ds_size_raw = np.sum(size_in_bytes)
     ds_size = format_bytes(ds_size_raw)
     ds_views = np.max(views) #np.sum(views)
-    ds_downs = np.max(downloads) #np.sum(downloads)
+    ds_downs = np.sum(downloads) #np.sum(downloads)
     print(f'{filename} ({ds_size}) processed. {ds_views} views, {ds_downs} downloads.')
 
     if not ds_size_raw:
