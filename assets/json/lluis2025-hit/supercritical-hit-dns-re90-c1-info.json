@@ -1,0 +1,118 @@
+{
+    "global": {
+        "dataset_id": "blastnet/supercritical-hit-dns-re90-c1",
+        "Nxyz": [
+            962,
+            962,
+            962
+        ],
+        "snapshots": 6,
+        "variables": [
+            "CP_JK-1",
+            "KAPPA_Wm-1K-1",
+            "MU_Pas",
+            "P_Pa",
+            "RHO_kgm-3",
+            "T_K",
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1"
+        ],
+        "compression": null,
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "bc": "Periodic in x-, y-, and z-directions.",
+        "numerics": {
+            "spatial": "Second-order central difference",
+            "temporal": "Third-order Strong Stability Preserving Runge\u2013Kutta (SSP-RK3)",
+            "other": "RHEA solver; solenoidal linear forcing; kinetic-energy-preserving scheme"
+        },
+        "ic": "Uniform P0 and T0 fields; internally consistent e0; divergence-free velocity field from Passot\u2013Pouquet spectrum with peak at k = L0/8",
+        "description": "A high-fidelity Batchelor-resolved direct numerical simulation (DNS) database of supercritical CO2 homogeneous isotropic turbulence (HIT) near the pseudo-boiling region with Re_lambda = 90.",
+        "doi": "https://doi.org/10.1038/s41597-025-05693-3",
+        "contributors": "David Martin, Lluis Jofre"
+    },
+    "local": [
+        {
+            "id": 0,
+            "time": 2.75e-06,
+            "CP_JK-1 filename": "./data/CP_JK-1_id000.dat",
+            "KAPPA_Wm-1K-1 filename": "./data/KAPPA_Wm-1K-1_id000.dat",
+            "MU_Pas filename": "./data/MU_Pas_id000.dat",
+            "P_Pa filename": "./data/P_Pa_id000.dat",
+            "RHO_kgm-3 filename": "./data/RHO_kgm-3_id000.dat",
+            "T_K filename": "./data/T_K_id000.dat",
+            "UX_ms-1 filename": "./data/UX_ms-1_id000.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id000.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id000.dat"
+        },
+        {
+            "id": 1,
+            "time": 2.78e-06,
+            "CP_JK-1 filename": "./data/CP_JK-1_id001.dat",
+            "KAPPA_Wm-1K-1 filename": "./data/KAPPA_Wm-1K-1_id001.dat",
+            "MU_Pas filename": "./data/MU_Pas_id001.dat",
+            "P_Pa filename": "./data/P_Pa_id001.dat",
+            "RHO_kgm-3 filename": "./data/RHO_kgm-3_id001.dat",
+            "T_K filename": "./data/T_K_id001.dat",
+            "UX_ms-1 filename": "./data/UX_ms-1_id001.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id001.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id001.dat"
+        },
+        {
+            "id": 2,
+            "time": 2.8e-06,
+            "CP_JK-1 filename": "./data/CP_JK-1_id002.dat",
+            "KAPPA_Wm-1K-1 filename": "./data/KAPPA_Wm-1K-1_id002.dat",
+            "MU_Pas filename": "./data/MU_Pas_id002.dat",
+            "P_Pa filename": "./data/P_Pa_id002.dat",
+            "RHO_kgm-3 filename": "./data/RHO_kgm-3_id002.dat",
+            "T_K filename": "./data/T_K_id002.dat",
+            "UX_ms-1 filename": "./data/UX_ms-1_id002.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id002.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id002.dat"
+        },
+        {
+            "id": 3,
+            "time": 2.82e-06,
+            "CP_JK-1 filename": "./data/CP_JK-1_id003.dat",
+            "KAPPA_Wm-1K-1 filename": "./data/KAPPA_Wm-1K-1_id003.dat",
+            "MU_Pas filename": "./data/MU_Pas_id003.dat",
+            "P_Pa filename": "./data/P_Pa_id003.dat",
+            "RHO_kgm-3 filename": "./data/RHO_kgm-3_id003.dat",
+            "T_K filename": "./data/T_K_id003.dat",
+            "UX_ms-1 filename": "./data/UX_ms-1_id003.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id003.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id003.dat"
+        },
+        {
+            "id": 4,
+            "time": 2.84e-06,
+            "CP_JK-1 filename": "./data/CP_JK-1_id004.dat",
+            "KAPPA_Wm-1K-1 filename": "./data/KAPPA_Wm-1K-1_id004.dat",
+            "MU_Pas filename": "./data/MU_Pas_id004.dat",
+            "P_Pa filename": "./data/P_Pa_id004.dat",
+            "RHO_kgm-3 filename": "./data/RHO_kgm-3_id004.dat",
+            "T_K filename": "./data/T_K_id004.dat",
+            "UX_ms-1 filename": "./data/UX_ms-1_id004.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id004.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id004.dat"
+        },
+        {
+            "id": 5,
+            "time": 2.86e-06,
+            "CP_JK-1 filename": "./data/CP_JK-1_id005.dat",
+            "KAPPA_Wm-1K-1 filename": "./data/KAPPA_Wm-1K-1_id005.dat",
+            "MU_Pas filename": "./data/MU_Pas_id005.dat",
+            "P_Pa filename": "./data/P_Pa_id005.dat",
+            "RHO_kgm-3 filename": "./data/RHO_kgm-3_id005.dat",
+            "T_K filename": "./data/T_K_id005.dat",
+            "UX_ms-1 filename": "./data/UX_ms-1_id005.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id005.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id005.dat"
+        }
+    ]
+}
