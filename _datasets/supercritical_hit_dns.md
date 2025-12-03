@@ -1,8 +1,8 @@
 ---
 layout: datapage
 excerpt: (3 cases)
-title: Supercrtical HIT CO$$_2$$ (Re$$_\lambda$$ = 30, 60, 90)
-description: Supercrtical Homogeneous Isotropic Turbulence DNS
+title: Supercritical HIT CO$$_2$$ (Re$$_\lambda$$ = 30, 60, 90)
+description: Supercritical Homogeneous Isotropic Turbulence DNS
 header:
   teaser: /assets/img/ico_lluis2025-hit.png
 categories: 
