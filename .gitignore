@@ -6,4 +6,5 @@ Gemfile.lock
 .jekyll-cache
 *.sqlite
 kaggle_stats.json
+blastnet_backend.json
 **/.DS_Store

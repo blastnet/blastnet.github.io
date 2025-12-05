@@ -1,29 +1,33 @@
-name: Update Gist
+name: Update Firebase JSON Live
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 * * * *'  # every hour
   workflow_dispatch:
 
 jobs:
-  update-gist:
+  update-firebase:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        #with:
+        #  repository: blastnet/blastnet.github.io
 
       - name: Setup Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
 
       - name: Run Python script
         env:
-          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          FIREBASE: ${{ secrets.FIREBASE }}
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_APIKEY }}
         run: python kaggle_json.py
+
