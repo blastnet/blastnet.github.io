@@ -1,11 +1,19 @@
 from github import Github
+import firebase_admin
 import traceback,github,requests_cache,re,os,kaggle,json,numpy as np
+from firebase_admin import credentials, db
+from datetime import datetime,timezone
 
-GITHUB_TOKEN = os.getenv("GIST_TOKEN")
-GIST_ID = "c9112c25c5acd400b90741efa81aa411"
+# Firebase
+cred_json = os.getenv("FIREBASE")
+cred_dict = json.loads(cred_json)
+cred = credentials.Certificate(cred_dict)
+#cred = credentials.Certificate("blastnet_backend.json")
 
-g = Github(GITHUB_TOKEN)
-gist = g.get_gist(GIST_ID)
+firebase_admin.initialize_app(cred, {
+    'databaseURL': "https://blastnet-backend-default-rtdb.firebaseio.com/"
+})
+ref = db.reference("/")
 
 # Format the filesize to unit'ed format
 def format_bytes(num_bytes):
@@ -154,7 +162,7 @@ if not total_bytes:
 json_dump['total_bytes'] = total_bytes
 json_dump['total_size'] = total_size
     
-# Update the gist
+# Update the database
 # Need the custom encoder class to convert numpy numbers to json readable ones
 class NpEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -166,12 +174,28 @@ class NpEncoder(json.JSONEncoder):
             return obj.tolist()
         return super(NpEncoder, self).default(obj)
 
-print('Updating {gist}...')
+print(f'Updating Firebase…')
+
 try:
-    gist.edit(files={'kaggle_stats.json': github.InputFileContent(content=json.dumps(json_dump,indent=4,cls=NpEncoder))})
+    new_json_string = json.dumps(json_dump, indent=4, cls=NpEncoder)
+    current_json_string = ref.child("kaggle_stats").get()
+
+    if current_json_string is None:
+        current_json_string = ""
+    if current_json_string.strip() == new_json_string.strip():
+        print("No change detected, skipping...")
+    else:
+        print("Changes detected, writing to firebase...")
+        ref.update({
+            "kaggle_stats": new_json_string,
+            "last_updated": datetime.now(timezone.utc).isoformat()
+        })
+        print("Firebase updated.")
+
 except Exception as e:
-    print(f'Could not update {gist}: {e}')
-    print(f'Dumping to file...')
-    with open('kaggle_stats.json','w') as f:
-        json.dump(json_dump,f,indent=4,cls=NpEncoder)
+    print(f"Could not update Firebase: {e}")
+    print(f"Dumping to local file…")
+    with open("kaggle_stats.json", "w") as f:
+        json.dump(json_dump, f, indent=4, cls=NpEncoder)
+
 print("Done.")

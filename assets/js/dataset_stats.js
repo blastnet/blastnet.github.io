@@ -1,40 +1,57 @@
-async function fetchGistData() {
-    const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-    const gistURL = 'https://gist.githubusercontent.com/beverleyy/c9112c25c5acd400b90741efa81aa411/raw/kaggle_stats.json';
-    const localURL = './kaggle_stats.json'; // Path to the local JSON file
+async function fetchFirebaseData() {
+    const firebaseURL = "https://blastnet-backend-default-rtdb.firebaseio.com/kaggle_stats.json";
 
-    let dataURL = gistURL;
+    // Try to get cached ETag and JSON from localStorage
+    let etag = localStorage.getItem("kaggle_etag");
+    let cachedJSON = localStorage.getItem("kaggle_stats_json");
 
-    if (isLocal) {
-        try {
-            // Check if the local JSON file exists
-            const response = await fetch(localURL, { method: 'HEAD' });
-            if (response.ok) {
-                dataURL = localURL;
-            } else {
-                console.log("Local JSON file not found. Falling back to Gist.");
-            }
-        } catch (error) {
-            console.log("Error checking local JSON file. Falling back to Gist:", error);
-        }
+    let headers = {};
+    if (etag) {
+        headers["If-None-Match"] = etag;
+    } else {
+        headers["X-Firebase-ETag"] = "true"; // ask Firebase to return an ETag
     }
 
     try {
-        // Fetch data from the appropriate source
-        console.log(`Fetching data from: ${dataURL}`);
-        const response = await fetch(dataURL);
-        const data = await response.json();
+        console.log(`Fetching data from Firebase REST API: ${firebaseURL}`);
 
+        const response = await fetch(firebaseURL, { method: "GET", headers });
+
+        let data;
+        if (response.status === 304) {
+            // Data hasn't changed — use cached version
+            data = JSON.parse(cachedJSON);
+            console.log("Using cached data (not modified).");
+        } else if (response.ok) {
+            // New data — save it and the new ETag
+            const newETag = response.headers.get("ETag");
+            const jsonString = await response.text();
+
+            localStorage.setItem("kaggle_etag", newETag);
+            localStorage.setItem("kaggle_stats_json", jsonString);
+
+            data = JSON.parse(jsonString);
+            console.log("Loaded fresh data from Firebase.");
+        } else {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        // Parse the data string again
+        data = JSON.parse(data)
+
+        // Extract stats for current page
         let fileName = window.location.pathname;
         fileName = fileName.split("/").slice(-1)[0].split(".")[0] + ".md";
         const stats = data[fileName];
 
-        document.querySelectorAll('#kaggle_views')[0].innerHTML = stats.views.toString() + " views";
-        document.querySelectorAll('#kaggle_downloads')[0].innerHTML = stats.downloads.toString() + " downloads";
-        document.querySelectorAll('#kaggle_size')[0].innerHTML = stats.size;
+        document.querySelector('#kaggle_views').innerHTML = stats.views.toString() + " views";
+        document.querySelector('#kaggle_downloads').innerHTML = stats.downloads.toString() + " downloads";
+        document.querySelector('#kaggle_size').innerHTML = stats.size;
+
     } catch (error) {
-        console.log("Failed to fetch data:", error);
+        console.error("Failed to fetch Firebase data:", error);
     }
 }
 
-fetchGistData();
+fetchFirebaseData();
+
