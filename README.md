@@ -107,7 +107,7 @@ Make sure to not touch anything in the `_config.yml` file unless you know what y
 
 ## Pushing to production
 
-The site is built and hosted on Github pages, so it suffices to simply run `bundle exec jekyll clean` to remove the build files, then commit changes and push to the `master` branch. Please try to make major code-breaking or other stylistic changes on a development branch or fork, before making a pull request to the master branch.
+The site is built and hosted on Github pages, so it suffices to simply run `bundle exec jekyll clean` to remove the build files, then commit changes. **Please make changes on a development branch or fork, before making a pull request to the master branch. DO NOT COMMIT AND PUSH TO MASTER DIRECTLY!**
 
 ---
 
@@ -119,18 +119,18 @@ The site is built and hosted on Github pages, so it suffices to simply run `bund
     - Make sure the `.bib` file is uploaded to the assets/bib folder
     - For consistency, recommend to name the files `authorYYYY.md', `authorYYYY.bib`, `authorYYYY.png` etc.
 3. Commit the changes and push to the main branch. For people without push access, create a pull request.
-4. Run the `Update Gist` workflow to update the statistics on the backend (optional).
+4. Run the `Update Firebase JSON Live` workflow to update the statistics on the backend immediately (optional, it will update the next hour).
 5. The site will rebuild automatically.
 
 If you'd like to preview, you can also clone the repository to your local machine, make the above changes, and build the website using `bundle exec jekyll serve` (assuming you have a working Jekyll installation - if not, install Jekyll, then run `bundle install` before building). If it looks good, clean up the repository by running `bundle exec jekyll clean` (so that the built files are not also uploaded). Then, you can commit the changes and open a pull request. 
 
 ## Statistics workflow
 
-Using Github actions, we can pipe Kaggle API data to a JSON file hosted on Github's Gist. The JSON file is processed via Javascript Fetch API and processed client-side. This method reduces the number of deployments. It's akin to making a fake server-side API interface. See `kaggle_json.py` for more details on how the data is ported to the JSON file. Currently, the JSON file is refreshed once every hour, and we are monitoring the number of Kaggle API calls to ensure that we are not rate-limited (because it will break the JSON file).
+Using Github actions, we can pipe Kaggle API data to a JSON file hosted on Firebase. The JSON file is processed via Javascript Fetch API and processed client-side. This method reduces the number of Kaggle API calls and provides a backend that allows us to access the precomputed data from Kaggle. The 2024/25 version of this repository used Gist instead of Firebase and that was akin to making a fake server-side API interface, but Firebase provides a real REST API that can be used to load the JSON file, among other things. In future, the entire workflow will be moved to Firebase and Cloud Functions, but for now, please see `kaggle_json.py` for more details on how the data is ported to the JSON file. Currently, the JSON file is refreshed once every hour, and we are monitoring the number of Kaggle API calls to ensure that we are not rate-limited (because it will break the JSON file).
 
-**IMPORTANT:** Make sure the Kaggle API key, Kaggle username, and Github PAT (which should give Gist read and write access) are all stored as repository secrets. To confirm, go to `Settings --> Secrets and variables --> Actions` and check that `Repository secrets` has (at least) 3 items: `GIST_TOKEN`, `KAGGLE_APIKEY`, `KAGGLE_USERNAME`. Otherwise, the JSON update will break!
+**IMPORTANT:** Make sure the Kaggle API key, Kaggle username, and Firebase API key (providing the "Firebase Realtime Database Admin" role) are all stored as repository secrets. To confirm, go to `Settings --> Secrets and variables --> Actions` and check that `Repository secrets` has (at least) 3 items: `FIREBASE`, `KAGGLE_APIKEY`, `KAGGLE_USERNAME`. Otherwise, the JSON update will break!
 
-**BUG:** Sometimes the Kaggle API stops working and everything returns a zero output. This is unintended. As a fallback, old data will currently be used. Working on a fix.
+**BUG:** Sometimes the Kaggle API stops working and everything returns a zero output. This is unintended. As a fallback, old data will currently be used.
 
 ## Dataset pages
 
@@ -163,13 +163,13 @@ For each new dataset, count the number of cases and update the excerpt. Add in r
 ```
 Note that the `top` style property needs to be adjusted based on the table of contents height (may take trial and error; currently we are working on fixing this).
 
-The statistics at the top of the page (views, downloads, size) should be generated automatically during the next cron scheduled update, otherwise, you can manually run the update workflow by going to `Actions --> Update Gist --> Run workflow`. 
+The statistics at the top of the page (views, downloads, size) should be generated automatically during the next cron scheduled update, otherwise, you can manually run the update workflow by going to `Actions --> Update Firebase JSON Live --> Run workflow`. 
 
 Dataset description and other text can be written using Github-flavored markdown, HTML, a mixture of the two, and even LaTex (powered by MathJax). To insert equations into the page, use double `$$` like `$$y=mx+c$$` for a block equation, or single `$` like `$y=mx+c$` for an inline equation.
 
 **IMPORTANT:** If using inline equations in a paragraph, please wrap the paragraph in `{::nomarkdown}` and `{:/}` tags.
 
-Once the new dataset is pushed to the repository, the website should automatically rebuild and deploy. The view/download statistics may only be available after an hour or so, unless the `Update Gist` workflow is run manually.
+Once the new dataset is pushed to the repository, the website should automatically rebuild and deploy. The view/download statistics may only be available after an hour or so, unless the `Update Firebase JSON Live` workflow is run manually.
 
 ## Site pages
 
