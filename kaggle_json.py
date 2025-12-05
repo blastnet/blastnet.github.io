@@ -1,6 +1,5 @@
-from github import Github
 import firebase_admin
-import traceback,github,requests_cache,re,os,kaggle,json,numpy as np
+import traceback,requests_cache,re,os,kaggle,json,numpy as np
 from firebase_admin import credentials, db
 from datetime import datetime,timezone
 
