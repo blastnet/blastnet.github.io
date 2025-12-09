@@ -50,6 +50,7 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
+google_analytics         :  G-XVDHEHWD3F
 # SEO Related
 google_site_verification :
 bing_site_verification   :
