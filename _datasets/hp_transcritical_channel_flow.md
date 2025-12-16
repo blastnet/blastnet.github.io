@@ -26,7 +26,7 @@ The equations of fluid motion are computationally solved using the in-house flow
 
 
 ## Quick Info
-* Contributors: Reda El Mansy, Guillem Barea, Lluis Jofre
+* Contributors: Guillem Barea, Carlos Monteiro, and Lluís Jofre.
 * N<sub>x</sub> = 98, N<sub>y</sub> = 130, N<sub>z</sub> = 98, N<sub>&#632;</sub> = 5 + 4
 
 * <a href="https://doi.org/10.1063/5.0296855">DOI</a>

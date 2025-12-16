@@ -34,7 +34,7 @@
         "ic": "Each simulation is initialized with a randomly perturbed parabolic velocity profile. The flow evolves until a statistically steady turbulent state is reached after approximately 10 flow-through times, followed by statistical sampling over an additional 15 flow-through times.",
         "description": "High-pressure transcritical turbulent channel flow DNS simulations with carbon dioxide (CO2) as the working fluid.  The thermodynamic condition for this case is set as: the reduced pressure (Pb/Pc) = 1.5, the hot-wall reduced temperature (Thw/Tc) = 1.4, and the cold-wall reduced temperature (Tcw/Tc) = 0.8.",
         "doi": "https://doi.org/10.1063/5.0296855",
-        "contributors": "Reda El Mansy, Guillem Barea, Lluis Jofre"
+        "contributors": "Guillem Barea, Carlos Monteiro, Lluís Jofre"
     },
     "local": [
         {

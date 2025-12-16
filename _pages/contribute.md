@@ -117,9 +117,9 @@ We thank the following people for contributing and curating this network-of-data
 | [Gino Biondini](https://www.buffalo.edu/cas/math/people/faculty/biondini.html) | University at Buffalo | November 10 2025|
 | [Alexander Bivolcic](https://www.linkedin.com/in/alexander-bivolcic) | University at Buffalo | November 10 2025|
 | [Lluis Jofre](https://sites.google.com/view/lluisjofre/home) | Universitat Politècnica de Catalunya | December 1 2025|
-| [Reda El Mansy](https://es.linkedin.com/in/reda-elmansy-a6728b53) | Universitat Politècnica de Catalunya | December 1 2025|
 | [David Martin](https://es.linkedin.com/in/david-martín-ribes-8a8b95225) | Universitat Politècnica de Catalunya | December 1 2025|
 | [Guillem Barea](https://es.linkedin.com/in/guillem-barea) | Universitat Politècnica de Catalunya | December 1 2025|
+| [Carlos Monteiro](https://pt.linkedin.com/in/carlosabmonteiro) | Universitat Politècnica de Catalunya | December 1 2025|
 
 <!-- DO NOT DELETE THE WHITESPACE ABOVE THIS, it will break the table -->
 <!-- | [M Rieth](https://scholar.google.com/citations?user=xHEIguYAAAAJ&hl=de) | Sandia National Laboratory |  | -->
