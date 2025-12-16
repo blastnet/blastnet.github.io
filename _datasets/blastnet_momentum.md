@@ -32,4 +32,5 @@ Each sample is accompanied by pre-computed low-resolution inputs at multiple dow
 * Size = 75.15 GB 
 * <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/f458af2455b1e12608c2a16c308d663d-Paper-Datasets_and_Benchmarks.pdf">DOI</a><BR>
 * <a href="./assets/bib/chung2022.bib">.bib</a><BR>
+* <a href="./assets/bash/sub/momentum_3d_sr.sh">Download.sh</a><BR>
 <!-- * <a href="./assets/json/chung2022_info.json">info.json</a> -->

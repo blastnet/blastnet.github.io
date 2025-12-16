@@ -31,6 +31,7 @@ The equations of fluid motion are computationally solved using the in-house flow
 
 * <a href="https://doi.org/10.1063/5.0296855">DOI</a>
 * <a href="./assets/bib/lluis2025.bib">.bib</a>
+* <a href="./assets/bash/sub/hp_transcritical_channel.sh">Download.sh</a><BR>
 
 ## Links to different cases
 

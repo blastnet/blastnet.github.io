@@ -27,6 +27,7 @@ The DNS is performed using the code NTMIX-CHEMKIN, which solves fully compressib
 * Contributors: Jen Zen Ho, Mohsen Talei
 * <a href="https://doi.org/10.1016/j.ijhydene.2024.07.283">DOI</a>
 * <a href="./assets/bib/ho2024.bib">.bib</a>
+* <a href="./assets/bash/sub/h2ch4_jet.sh">Download.sh</a><BR>
 
 ## Links to different cases
 

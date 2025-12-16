@@ -26,6 +26,7 @@ The numerical methods employ a Fourier-Galerkin approach in the streamwise and s
 * N<sub>&#632;</sub> = 4
 * <a href="https://doi.org/10.1017/jfm.2015.268">DOI</a>
 * <a href="./assets/bib/mklee2024.bib">.bib</a>
+* <a href="./assets/bash/sub/channel_flow_re544.sh">Download.sh</a><BR> 
 
 ## Links to different cases
 

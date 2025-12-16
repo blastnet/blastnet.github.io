@@ -66,6 +66,7 @@ element routines of NekRS itself to ensure maximum accuracy. There are 20 snapsh
 
 * <a href="https://doi.org/10.1017/jfm.2024.853">DOI</a>
 * <a href="./assets/bib/roshan2024.bib">.bib</a>
+* <a href="./assets/bash/sub/canoncial_rbc.sh">Download.sh</a><BR> 
 
 ## Links to different cases
 

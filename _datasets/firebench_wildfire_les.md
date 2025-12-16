@@ -53,6 +53,7 @@ Specifically, the cases span a range of mean inlet velocity at 10 m above ground
 * N<sub>x</sub> = 900, N<sub>y</sub> = 252
 * <a href="https://doi.org/10.1071/WF24097">DOI</a>
 * <a href="./assets/bib/wang2024.bib">.bib</a>
+* <a href="./assets/bash/sub/firebench.sh">Download.sh</a><BR>
 
 ## Links to different cases
 <!--<script src="./assets/js/table.js"></script>-->

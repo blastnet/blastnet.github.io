@@ -29,6 +29,7 @@ The time integration is performed using an integrating factor Runge-Kutta fourth
 
 * <a href="https://journals.aps.org/prl/abstract/10.1103/cdvf-xnfw">DOI</a>
 * <a href="./assets/bib/bivolcic2025.bib">.bib</a>
+* <a href="./assets/bash/sub/shock_wave.sh">Download.sh</a><BR>
 
 ## Links to different cases
 

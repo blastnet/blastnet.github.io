@@ -35,6 +35,7 @@ For all other non-stiff operators, we utilize a strong stability preserving thir
 * <a href="./assets/bib/sharma2024.bib">.bib</a>
 * <a href="https://www.kaggle.com/datasets/sharmapushan/pimapnet">ML model source code</a>
 * Contributor: Pushan Sharma, Wai Tong Chung and Matthias Ihme
+* <a href="./assets/bash/sub/hydrogen_jet.sh">Download.sh</a><BR>
 
 ## Links to different cases
 

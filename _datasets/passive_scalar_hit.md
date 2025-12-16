@@ -26,6 +26,7 @@ This DNS configuration simulates non-reacting forced homogeneous isotropic turbu
 *  N<sub>&#632;</sub> = 4
 * <a href="https://doi.org/10.1017/jfm.2022.367">DOI</a>
 * <a href="./assets/bib/gauding2022.bib">.bib</a>
+* <a href="./assets/bash/sub/passive_fhit.sh">Download.sh</a><BR> 
 
 # Links to different cases
 

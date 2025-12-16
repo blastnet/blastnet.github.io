@@ -61,6 +61,7 @@ training and inference is available via GitLab at https://gitlab.com/male.quenti
 
 * <a href="https://doi.org/10.1017/dce.2025.1">DOI</a>
 * <a href="./assets/bib/quentin2024.bib">.bib</a>
+* <a href="./assets/bash/sub/premixed_flame-h2air.sh">Download.sh</a><BR> 
 
 ## Links to different cases
 

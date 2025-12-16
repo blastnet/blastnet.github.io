@@ -25,6 +25,7 @@ A DNS decaying homogeneous isotropic turbulence simulation is developed by Wang 
 * N<sub>x</sub> = 2040, N<sub>y</sub> = 2040, N<sub>z</sub> = 2048, N<sub>&#632;</sub> = 4
 * <a href="https://doi.org/10.1016/j.cpc.2022.108292">DOI</a>
 * <a href="./assets/bib/shatanau.bib">.bib</a>
+* <a href="./assets/bash/sub/canonical_hit_dns.sh">Download.sh</a><BR>
 
 ## Links to different cases
 

@@ -35,3 +35,4 @@ The numerical solver used for the DNS study is NTMIX-CHEMKIN. This solver featur
 * <a href="https://doi.org/10.1016/j.combustflame.2021.111432">DOI</a><BR>
 * <a href="./assets/bib/jiang2021.bib">.bib</a><BR>
 * <a href="./assets/json/jiang2021_info.json">info.json</a>
+* <a href="./assets/bash/sub/premixed_flame_wall.sh">Download.sh</a><BR> 

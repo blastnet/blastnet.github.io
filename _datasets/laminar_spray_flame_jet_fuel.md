@@ -26,6 +26,7 @@ These snapshots are from a series of Direct Numerical Simulation (DNS) of SAF/Je
 
 * <a href="https://doi.org/10.1016/j.fuel.2025.135757">DOI</a>
 * <a href="./assets/bib/zhang2025.bib">.bib</a>
+* <a href="./assets/bash/sub/saf_jeta_spray.sh">Download.sh</a><BR>
 
 ## Links to different cases
 

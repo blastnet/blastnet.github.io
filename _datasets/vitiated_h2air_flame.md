@@ -30,6 +30,7 @@ The low Mach number form of the governing equations is solved using the energy c
 * <a href="https://doi.org/10.1016/j.combustflame.2019.07.020">DOI</a>
 * <a href="./assets/bib/savard2019.bib">.bib</a>
 * Contributor: Bruno Savard
+* <a href="./assets/bash/sub/free_propagating_h2_vit.sh">Download.sh</a><BR> 
 
 ## Links to different cases
 

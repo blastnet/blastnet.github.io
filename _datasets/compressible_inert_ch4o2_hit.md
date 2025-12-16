@@ -27,3 +27,4 @@ The HIT DNS simulation is performed on a 3D cubic domain of length L, where a sp
 * <a href="https://doi.org/10.1016/j.combustflame.2021.111758">DOI</a><BR>
 * <a href="./assets/bib/chung2022.bib">.bib</a><BR>
 * <a href="./assets/json/chung2022_info.json">info.json</a>
+* <a href="./assets/bash/sub/inert_ch4o2_hit.sh">Download.sh</a><BR>

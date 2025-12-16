@@ -31,6 +31,7 @@ scalars — at a single instant in time. The three scalars are each subjected to
 
 * <a href="TBD">DOI</a>
 * <a href="./assets/bib/pkyeung2024.bib">.bib</a>
+* <a href="./assets/bash/sub/fhit_re390_650.sh">Download.sh</a><BR>
 
 ## Links to different cases
 

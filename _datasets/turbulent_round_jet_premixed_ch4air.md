@@ -27,6 +27,7 @@ The DNS is performed using the code NTMIX-CHEMKIN, which solves fully compressib
 * Contributors: Davy Brouzet, Mohsen Talei
 * <a href="https://doi.org/10.1017/jfm.2020.1184">DOI</a>
 * <a href="./assets/bib/brouzet2021.bib">.bib</a>
+* <a href="./assets/bash/sub/round_jet_premixed.sh">Download.sh</a><BR> 
 
 ## BFER Case
 * <a href="https://www.kaggle.com/datasets/waitongchung/round-jet-premixed-bfer">Kaggle Link</a><BR>

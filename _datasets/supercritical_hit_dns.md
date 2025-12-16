@@ -33,6 +33,7 @@ corresponding to 5 snapshots per characteristic time $t_0$. This results in weak
 
 * <a href="https://doi.org/10.1038/s41597-025-05693-3">DOI</a>
 * <a href="./assets/bib/lluis2025-hit.bib">.bib</a>
+* <a href="./assets/bash/sub/supercritical_hit.sh">Download.sh</a><BR> 
 
 ## Links to different cases
 

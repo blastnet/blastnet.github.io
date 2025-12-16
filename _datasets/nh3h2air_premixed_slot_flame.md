@@ -28,3 +28,4 @@ This DNS corresponds to a slot burner turbulent flame, where burnt gases at equi
 * <a href="https://doi.org/10.1016/j.combustflame.2023.112933">DOI</a><BR>
 * <a href="./assets/bib/coulon2023.bib">.bib</a><BR>
 * <a href="./assets/json/coulon2023/premixed-flame-nh3-h2-dns-1-info.json">info.json<sub>1</sub> </a>, <a href="./assets/json/coulon2023/premixed-flame-nh3-h2-dns-2-info.json">info.json<sub>2</sub> </a>, <a href="./assets/json/coulon2023/premixed-flame-nh3-h2-dns-3-info.json">info.json<sub>3</sub> </a>,<a href="./assets/json/coulon2023/premixed-flame-nh3-h2-dns-4-info.json">info.json<sub>4</sub> </a>
+* <a href="./assets/bash/sub/premixed_flame_nh3_h2.sh">Download.sh</a><BR>
