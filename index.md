@@ -19,7 +19,7 @@ feature_row:
     btn_label: 'Details'
     excerpt: >
       <nav><ul>
-        <li><a href="/assets/bash/batch_download_v2.1.sh" title="Bash script; uses Kaggle API">Download all BLASTNet data</a></li>
+        <li><a href="/assets/bash/batch_download_v3.0.sh" title="Bash script; uses Kaggle API">Download all BLASTNet data</a></li>
         <li><a href="/assets/bash/mom_download.sh" title="Bash script; uses Kaggle API">Download Momentum128 3D SR Dataset</a></li>
         <li><a href="https://www.kaggle.com/datasets/waitongchung/blastnet-momentum-3d-sr-dataset">Kaggle repository for Momentum128 3D SR Dataset</a></li>
       </ul></nav>
@@ -49,7 +49,7 @@ These contributions now include (i) <span id="data_size">4.8 TB</span> of high-f
 
 Our ML resources are shared via GitHub and Kaggle. Specifically, code is shared via GitHub, while data and models are shared via Kaggle.
 
-To circumvent Kaggle storage constraints, we partition our data into a network of \<100 GB subsets, with each subset containing a separate simulation configuration. This partitioned data can then be uploaded as separate datasets on Kaggle. To download all cases via [Kaggle API](./tutorial.html), download [this bash script](./assets/bash/batch_download.sh). Summaries of the data are available [here](./datasets.html)!
+To circumvent Kaggle storage constraints, we partition our data into a network of \<100 GB subsets, with each subset containing a separate simulation configuration. This partitioned data can then be uploaded as separate datasets on Kaggle. To download all cases via [Kaggle API](./tutorial.html), download [this bash script](./assets/bash/batch_download_v3.0.sh). Summaries of the data are available [here](./datasets.html)!
 
 Our network of datasets approach:
 ![approach](./assets/img/approach.png)
