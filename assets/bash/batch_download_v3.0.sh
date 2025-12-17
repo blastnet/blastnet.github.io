@@ -1,4 +1,33 @@
 #!/bin/bash
+#
+# ================================================================
+#  BLASTNet Datasets Download Script
+# ================================================================
+#
+#  WARNING:
+#  This script downloads approximately **25 TERABYTES** of data
+#  from the BLASTNet repository on Kaggle.
+#
+#  Before running this script, ensure that:
+#    - You have sufficient disk space (>= 25 TB recommended)
+#    - You have a stable, high-bandwidth network connection
+#    - You understand any data usage, storage, and access policies
+#      associated with BLASTNet
+#    - You have permission to store this data on your system
+#
+#  Recommended:
+#    - Run on a server or HPC system
+#    - Monitor disk usage and network load
+#    - This script performs **sequential downloads by default**
+#    - Users with **limited internet bandwidth** may choose to
+#      modify or wrap this script to enable **parallel downloading**
+
+#
+#  Usage:
+#      bash download_blastnet_dataset.sh
+#
+# ================================================================
+
 # BLASTNet Momentum128 3D SR Dataset
 kaggle datasets download -d waitongchung/blastnet-momentum-3d-sr-dataset --unzip
 
