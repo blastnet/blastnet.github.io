@@ -3,7 +3,7 @@ layout: datapage
 title: BLASTNet Momentum128 3D SR Dataset
 excerpt: 
 header:
-  teaser: /assets/img/ico_chung2022.png
+  teaser: /assets/img/ico_momentum2023.png
 description: Collection of BLASTNet Simulations
 categories: 
 - numerical
