@@ -11,14 +11,31 @@ description:  Related Work
 
 When using this dataset, please cite: (i) our NeurIPS paper (ii) our dataset:
 
-Cite our NeurIPS paper [Links: [Paper](https://arxiv.org/pdf/2309.13457.pdf) | [.bib](./assets/bib/neurips.bib)]:
-```
-W. T. Chung, B. Akoush, P. Sharma, A. Tamkin, K. S. Jung, J. H. Chen, J. Guo, D. Brouzet, M. Talei, B. Savard, A.Y. Poludnenko & M. Ihme. Turbulence in Focus: Benchmarking Scaling Behavior of 3D Volumetric Super-Resolution with BLASTNet 2.0 Data. Advances in Neural Information Processing Systems (2023) 36.
+Cite this website/datasets [Links: [Zenodo DOI](https://doi.org/10.5281/zenodo.7242864) | [.bib](./assets/bib/blastnet.bib)]:
+```bibtex
+@dataset{blastnet2.0_2023,
+  author       = {W. T. Chung, M. Ihme, K. S. Jung, J. H. Chen, J. Guo,  D. Brouzet, M. Talei, B. Jiang, B. Savard, A. Y. Poludnenko, B. Akoush, P. Sharma & A. Tamkin},
+  title        = {BLASTNet Simulation Dataset},
+  month        = june,
+  year         = 2023,
+  note         = {URL: https://blastnet.github.io/},
+  publisher    = {Zenodo},
+  version      = {2.0},
+  doi          = {10.5281/zenodo.8034232},
+  url          = {https://doi.org/10.5281/zenodo.8034232}
+}
 ```
 
-Cite this website/datasets [Links: [Zenodo DOI](https://doi.org/10.5281/zenodo.7242864) | [.bib](./assets/bib/blastnet.bib)]:
-```
-W. T. Chung, M. Ihme, K. S. Jung, J. H. Chen, J. Guo,  D. Brouzet, M. Talei, B. Jiang, B. Savard, A. Y. Poludnenko, B. Akoush, P. Sharma & A. Tamkin. BLASTNet Simulation Dataset (Version 2.0), 2023. https://blastnet.github.io/. 
+Cite our NeurIPS paper [Links: [Paper](https://arxiv.org/pdf/2309.13457.pdf) | [.bib](./assets/bib/neurips.bib)]:
+```bibtex
+@article{chung2023turbulence,
+  title={Turbulence in focus: Benchmarking scaling behavior of 3D volumetric super-resolution with BLASTNet 2.0 data},
+  author={W. T. Chung, B. Akoush, P. Sharma, A. Tamkin, K. S. Jung, J. H. Chen, J. Guo, D. Brouzet, M. Talei, B. Savard, A.Y. Poludnenko and M. Ihme},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  pages={77430--77484},
+  year={2023}
+}
 ```
 
 ## Previous Publications
