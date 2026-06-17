@@ -14,6 +14,15 @@ firebase_admin.initialize_app(cred, {
 })
 ref = db.reference("/")
 
+# Fetch the previous stats blob up front so it can be used as a fallback
+# whenever the Kaggle API returns zero data for a dataset (see README "BUG").
+# The value stored at /kaggle_stats is itself a JSON string.
+prev_raw = ref.child("kaggle_stats").get()
+try:
+    prev_stats = json.loads(prev_raw) if prev_raw else {}
+except (TypeError, ValueError):
+    prev_stats = {}
+
 # Format the filesize to unit'ed format
 def format_bytes(num_bytes):
     units = ['B','KB','MB','GB','TB','PB','EB','ZB','YB']
@@ -138,11 +147,18 @@ for filename in search_map:
     print(f'{filename} ({ds_size}) processed. {ds_views} views, {ds_downs} downloads.')
 
     if not ds_size_raw:
-    	# Use old data as fallback
-        kaggle_stats = json.loads(gist.files['kaggle_stats.json'].content)
-        kaggle_stats = kaggle_stats[filename]
-        size_in_bytes = unformat_bytes(kaggle_stats['size'])
-        downloads = kaggle_stats['downloads']
+        # Kaggle returned zero data for this dataset; keep the last known good
+        # values instead of overwriting with zeros (or crashing the whole job).
+        if filename in prev_stats:
+            kaggle_stats = prev_stats[filename]
+            print(f'{filename} returned zero data, falling back to previous stats: {kaggle_stats}')
+            size_in_bytes = unformat_bytes(kaggle_stats['size'])
+            downloads = kaggle_stats['downloads']
+        else:
+            print(f'{filename} returned zero data and has no previous stats; recording zeros')
+            kaggle_stats = {'size': format_bytes(0), 'views': 0, 'downloads': 0}
+            size_in_bytes = 0
+            downloads = 0
     else:
         # Save as dictionary and throw it to the preamble
         kaggle_stats = {
@@ -196,5 +212,8 @@ except Exception as e:
     print(f"Dumping to local file…")
     with open("kaggle_stats.json", "w") as f:
         json.dump(json_dump, f, indent=4, cls=NpEncoder)
+    # Re-raise so the scheduled workflow fails visibly instead of going green
+    # while Firebase was never actually updated.
+    raise
 
 print("Done.")
