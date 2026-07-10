@@ -178,7 +178,6 @@ The hydrogen flames are simulated with a grid resolution Δx⁺=2.71 (uniformly 
 ## Quick Info
 * Contributors: Cheng Chi
 *  N<sub>&#632;</sub> = 5 + 6
-
 * <a href="https://doi.org/10.1017/jfm.2026.11189">DOI</a>
 * <a href="./assets/bib/cheng2026.bib">.bib</a>
 * <a href="./assets/bash/sub/premixdflame_nh3h2air_quenching.sh">Download.sh</a><BR> 
