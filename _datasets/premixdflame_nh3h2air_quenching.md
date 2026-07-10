@@ -202,7 +202,7 @@ The hydrogen flames are simulated with a grid resolution Δx⁺=2.71 (uniformly 
         <td align="center">2048&times;513&times;256</td>
         <td align="center">121</td>
         <td align="center">
-        <a href="https://www.kaggle.com/datasets/blastnet/premixedflame-h2-iso-dns">Kaggle</a>, <a href="./assets/json/ching2026/premixedflame-h2-iso-dns-info.json">info.json</a>
+        <a href="https://www.kaggle.com/datasets/blastnet/premixedflame-h2-iso-dns">Kaggle</a>, <a href="./assets/json/cheng2026/premixedflame-h2-iso-dns-info.json">info.json</a>
         <BR>
         </td>
     </tr>
@@ -213,7 +213,7 @@ The hydrogen flames are simulated with a grid resolution Δx⁺=2.71 (uniformly 
         <td align="center">2048&times;513&times;256</td>
         <td align="center">181</td>
         <td align="center">
-        <a href="https://www.kaggle.com/datasets/blastnet/premixedflame-h2-ad-dns">Kaggle</a>, <a href="./assets/json/ching2026/premixedflame-h2-ad-dns-info.json">info.json</a>        <BR>
+        <a href="https://www.kaggle.com/datasets/blastnet/premixedflame-h2-ad-dns">Kaggle</a>, <a href="./assets/json/cheng2026/premixedflame-h2-ad-dns-info.json">info.json</a>        <BR>
         </td>
     </tr>
     <tr>       
@@ -223,7 +223,7 @@ The hydrogen flames are simulated with a grid resolution Δx⁺=2.71 (uniformly 
         <td align="center">768&times;769&times;256</td>
         <td align="center">85</td>
         <td align="center">
-        <a href="https://www.kaggle.com/datasets/blastnet/premixedflame-nh3h2-iso-dns">Kaggle</a>, <a href="./assets/json/ching2026/premixedflame-nh3h2-iso-dns-info.json">info.json</a>
+        <a href="https://www.kaggle.com/datasets/blastnet/premixedflame-nh3h2-iso-dns">Kaggle</a>, <a href="./assets/json/cheng2026/premixedflame-nh3h2-iso-dns-info.json">info.json</a>
         <BR>
         </td>
     </tr>
@@ -234,7 +234,7 @@ The hydrogen flames are simulated with a grid resolution Δx⁺=2.71 (uniformly 
         <td align="center">768&times;769&times;256</td>
         <td align="center">102</td>
         <td align="center">
-        <a href="https://www.kaggle.com/datasets/blastnet/premixedflame-nh3h2-ad-dns">Kaggle</a>, <a href="./assets/json/ching2026/premixedflame-nh3h2-ad-dns-info.json">info.json</a>               
+        <a href="https://www.kaggle.com/datasets/blastnet/premixedflame-nh3h2-ad-dns">Kaggle</a>, <a href="./assets/json/cheng2026/premixedflame-nh3h2-ad-dns-info.json">info.json</a>               
         <BR>
         </td>
     </tr>
