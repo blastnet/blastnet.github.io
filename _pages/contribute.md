@@ -120,6 +120,8 @@ We thank the following people for contributing and curating this network-of-data
 | [David Martin](https://es.linkedin.com/in/david-martín-ribes-8a8b95225) | Universitat Politècnica de Catalunya | December 1 2025|
 | [Guillem Barea](https://es.linkedin.com/in/guillem-barea) | Universitat Politècnica de Catalunya | December 1 2025|
 | [Carlos Monteiro](https://pt.linkedin.com/in/carlosabmonteiro) | Universitat Politècnica de Catalunya | December 1 2025|
+| [Cheng Chi](https://www.lss.ovgu.de/lss/en/Team/Senior+researchers/Chi.html) | Otto-von-Guericke-Universität Magdeburg | July 10 2026|
+
 
 <!-- DO NOT DELETE THE WHITESPACE ABOVE THIS, it will break the table -->
 <!-- | [M Rieth](https://scholar.google.com/citations?user=xHEIguYAAAAJ&hl=de) | Sandia National Laboratory |  | -->
