@@ -1,13 +1,22 @@
+import os
+import re
+import json
+import traceback
+from datetime import datetime, timezone
+
+import numpy as np
+import requests_cache
+import kaggle
+
 import firebase_admin
-import traceback,requests_cache,re,os,kaggle,json,numpy as np
 from firebase_admin import credentials, db
-from datetime import datetime,timezone
 
 # Firebase
 cred_json = os.getenv("FIREBASE")
 cred_dict = json.loads(cred_json)
 cred = credentials.Certificate(cred_dict)
 #cred = credentials.Certificate("blastnet_backend.json")
+HISTORY_INTERVAL_DAYS = 14 # to update the history every 14 days
 
 firebase_admin.initialize_app(cred, {
     'databaseURL': "https://blastnet-backend-default-rtdb.firebaseio.com/"
@@ -18,10 +27,21 @@ ref = db.reference("/")
 # whenever the Kaggle API returns zero data for a dataset (see README "BUG").
 # The value stored at /kaggle_stats is itself a JSON string.
 prev_raw = ref.child("kaggle_stats").get()
+history_raw = ref.child("total_bytes_history").get()
 try:
     prev_stats = json.loads(prev_raw) if prev_raw else {}
+    history = json.loads(history_raw) if history_raw else []
 except (TypeError, ValueError):
     prev_stats = {}
+    history = {}
+
+should_record = False
+if not history:
+    should_record = True
+else:
+    last_entry_time = datetime.fromisoformat(history[-1]["timestamp"])
+    days_since_last = (datetime.now(timezone.utc) - last_entry_time).days
+    should_record = days_since_last >= HISTORY_INTERVAL_DAYS
 
 # Format the filesize to unit'ed format
 def format_bytes(num_bytes):
@@ -176,6 +196,16 @@ if not total_bytes:
 
 json_dump['total_bytes'] = total_bytes
 json_dump['total_size'] = total_size
+
+if should_record:
+    history.append({
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "total_bytes": total_bytes,
+        "total_size": total_size,
+    })
+    print(f"Appending to total_bytes history ({len(history)} entries so far)...")
+else:
+    print(f"Skipping history update ({days_since_last} days since last entry, need {HISTORY_INTERVAL_DAYS}).")
     
 # Update the database
 # Need the custom encoder class to convert numpy numbers to json readable ones
@@ -203,7 +233,8 @@ try:
         print("Changes detected, writing to firebase...")
         ref.update({
             "kaggle_stats": new_json_string,
-            "last_updated": datetime.now(timezone.utc).isoformat()
+            "last_updated": datetime.now(timezone.utc).isoformat(),
+            "total_bytes_history": json.dumps(history, cls=NpEncoder) if should_record else history_raw,  # only write if changed
         })
         print("Firebase updated.")
 
