@@ -24,6 +24,12 @@ refined to a higher resolution of $$k_{max} η \approx 2.8$$, and the simulation
 numbers $$Re_\lambda \approx 390, 650, 1000 \text{ and } 1600$$. The Schmidt number is $$1.0$$ in all cases. Each snapshot captures the complete flow field — including velocity, pressure, and three passive
 scalars — at a single instant in time. The three scalars are each subjected to a uniform mean gradient along a diﬀerent coordinate direction.
 
+For the case with $$Re_\lambda \approx 650$$, each variable is split equally along the z-axis into two binary files. The complete field can be reconstructed by loading both files and concatenating them along the third dimension:
+```python
+u1 = np.fromfile(filename1, dtype='<f4').reshape((4096, 4096, 2048))
+u2 = np.fromfile(filename2, dtype='<f4').reshape((4096, 4096, 2048))
+u = np.concatenate((u1, u2), axis=2)     # (4096, 4096, 4096)
+```
 
 ## Quick Info
 * Contributors: P.K Yeung, Daniel Dotson
