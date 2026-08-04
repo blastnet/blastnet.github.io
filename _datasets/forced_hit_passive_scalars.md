@@ -21,7 +21,8 @@ These snapshots are from a series of Direct Numerical Simulations (DNS) of passi
 
 The simulations begin from previously evolved velocity fields and are first run at a modest resolution of $$k_{max}\eta  \approx 1.4$$ (where $$k_{max} = \sqrt 2 N/3$$ is the highest wavenumber resolved on an $$N^3$$ grid and $$\eta$$ is the Kolmogorov length scale) until the scalar fields reach statistical stationarity. The grid is then
 refined to a higher resolution of $$k_{max} η \approx 2.8$$, and the simulation proceeds until the smallest scales fully adjust. Snapshots at this highest resolution have been collected for Taylor-scale Reynolds
-numbers $$Re_\lambda \approx 390, 650, 1000 \text{ and } 1600$$. The Schmidt number is $$1.0$$ in all cases. Each snapshot captures the complete flow field — including velocity, pressure, and three passive
+<!-- numbers $$Re_\lambda \approx 390, 650, 1000 \text{ and } 1600$$. The Schmidt number is $$1.0$$ in all cases. Each snapshot captures the complete flow field — including velocity, pressure, and three passive -->
+numbers $$Re_\lambda \approx 390 \text{ and }  650$$. The Schmidt number is $$1.0$$ in all cases. Each snapshot captures the complete flow field — including velocity, pressure, and three passive
 scalars — at a single instant in time. The three scalars are each subjected to a uniform mean gradient along a diﬀerent coordinate direction.
 
 For the case with $$Re_\lambda \approx 650$$, each variable is split equally along the z-axis into two binary files. The complete field can be reconstructed by loading both files and concatenating them along the third dimension:
