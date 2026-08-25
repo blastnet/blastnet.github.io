@@ -66,6 +66,20 @@ body {
   }
 }
 
+/* Pages that render the table of contents in the start-side (left) gutter
+   instead of the default end-side (right) gutter. See _layouts/single.html. */
+.page--toc-left {
+  @include breakpoint($large) {
+    padding-inline-start: $right-sidebar-width-narrow;
+    padding-inline-end: 0;
+  }
+
+  @include breakpoint($x-large) {
+    padding-inline-start: $right-sidebar-width;
+    padding-inline-end: 0;
+  }
+}
+
 .page__title {
   //margin-top: 0;
   margin-top: 1em;
@@ -567,6 +581,16 @@ body {
     @include breakpoint($x-large) {
       padding-inline-end: 0;
     }
+  }
+}
+
+.wide .page--toc-left {
+  @include breakpoint($large) {
+    padding-inline-start: 0;
+  }
+
+  @include breakpoint($x-large) {
+    padding-inline-start: 0;
   }
 }
 

@@ -3,7 +3,7 @@ permalink: /pub
 layout: single
 classes: wide
 toc: false
-title: Publications
+title: Cite
 description:  Related Work
 ---
 
