@@ -4,25 +4,23 @@ layout: single
 classes: wide
 toc: false
 title: Cite
-description:  Related Work
+description:  Citation information for BLASTNet, related works, and constituent datasets.
 ---
 
 ## Current Publications
 
 When using this dataset, please cite: (i) our NeurIPS paper (ii) our dataset:
 
-Cite this website/datasets [Links: [Zenodo DOI](https://doi.org/10.5281/zenodo.7242864) | [.bib](./assets/bib/blastnet.bib)]:
+Cite this website/datasets [Links: [Zenodo DOI](https://doi.org/10.5281/zenodo.21348075) | [.bib](./assets/bib/blastnet.bib)]:
 ```bibtex
-@dataset{blastnet2.0_2023,
-  author       = {W. T. Chung, M. Ihme, K. S. Jung, J. H. Chen, J. Guo,  D. Brouzet, M. Talei, B. Jiang, B. Savard, A. Y. Poludnenko, B. Akoush, P. Sharma & A. Tamkin},
-  title        = {BLASTNet Simulation Dataset},
-  month        = june,
-  year         = 2023,
-  note         = {URL: https://blastnet.github.io/},
+@dataset{blastnet3.0_2026,
+  author       = {W. T. Chung, M. Ihme, K. S. Jung, J. H. Chen, J. Guo, D. Brouzet, M. Telei, B. Jiang, B. Savard, A. Y. Poludnenko, B. Akoush, P. Sharma, A. Tamkin, Q. Wang, S. Shashane, Y. Chen, V. Coulon, C. J. Lapeyre, M. Gauding, R. Samuel, M. Bode, J. Schumacher, B. Yeo, J. Z. Ho, Q. Malé, C. Gazen, D. Dotson, P.K. Yeung, M. Lee, Z. Yanqi, J. Xing, R. Kurose, G. Biondini, A. Bivolcic, L. Jofre Cruanyes, D. Martín, G. Barea, C. Monteiro & C. Chi},
+  title        = {BLASTNet Multiphysics Simulation Dataset},
+  month        = aug,
+  year         = 2026,
   publisher    = {Zenodo},
-  version      = {2.0},
-  doi          = {10.5281/zenodo.8034232},
-  url          = {https://doi.org/10.5281/zenodo.8034232}
+  doi          = {10.5281/zenodo.21348075},
+  url          = {https://doi.org/10.5281/zenodo.21348075},
 }
 ```
 
@@ -38,11 +36,11 @@ Cite our NeurIPS paper [Links: [Paper](https://arxiv.org/pdf/2309.13457.pdf) | [
 }
 ```
 
-## Previous Publications
+## Related Publications
 
-
-1. W. T. Chung, K. S. Jung, J. H. Chen & M. Ihme. BLASTNet: A call for community-involved big data in combustion machine learning. Applications in Energy and Combustion Science (2022) 12 no. 100087. [[Paper](https://doi.org/10.1016/j.jaecs.2022.100087),[.bib](./assets/bib/aecs.bib)]
-2. W. T. Chung, K. S. Jung, J. H. Chen & M. Ihme. The Bearable Lightness of Big Data: Towards Massive Public Datasets in Scientific Machine Learning. In ICML 2022 2nd AI for Science Workshop. [[Paper](https://openreview.net/forum?id=LxGTZM7L6qn),[.bib](./assets/bib/icml_w.bib)]
+1. W. T. Chung, M. Ihme, K. S. Jung, J. H. Chen, J. Guo,  D. Brouzet, M. Talei, B. Jiang, B. Savard, A. Y. Poludnenko, B. Akoush, P. Sharma & A. Tamkin. BLASTNet Multiphysics Simulation Dataset (Version 2), 2023. URL https://doi.org/10.5281/zenodo.7242864. [[Dataset](https://doi.org/10.5281/zenodo.7242864),[.bib](./assets/bib/blastnetv2.bib)]
+2. W. T. Chung, K. S. Jung, J. H. Chen & M. Ihme. BLASTNet: A call for community-involved big data in combustion machine learning. Applications in Energy and Combustion Science (2022) 12 no. 100087. [[Paper](https://doi.org/10.1016/j.jaecs.2022.100087),[.bib](./assets/bib/aecs.bib)]
+3. W. T. Chung, K. S. Jung, J. H. Chen & M. Ihme. The Bearable Lightness of Big Data: Towards Massive Public Datasets in Scientific Machine Learning. In ICML 2022 2nd AI for Science Workshop. [[Paper](https://openreview.net/forum?id=LxGTZM7L6qn),[.bib](./assets/bib/icml_w.bib)]
 
 If you wish to cite individual configurations, please [click here](./datasets.html) to search for .bib files and DOIs.
 
