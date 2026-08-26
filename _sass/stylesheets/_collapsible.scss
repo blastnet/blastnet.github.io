@@ -1,0 +1,97 @@
+/* ==========================================================================
+   COLLAPSIBLE SECTIONS
+   Usage: <details class="collapsible"><summary><h2 id="..">Title</h2></summary>
+          <div class="collapsible__content" markdown="1"> .. </div></details>
+   ========================================================================== */
+
+details.collapsible {
+  margin: 1.5em 0 2em;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  box-shadow: $box-shadow;
+
+  > summary {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 0.75em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    list-style: none;
+    font-family: $sans-serif-narrow;
+    border-radius: $border-radius;
+
+    /* suppress the native disclosure triangle */
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::marker {
+      content: "";
+    }
+
+    &:hover {
+      background-color: mix(#fff, $primary-color, 92%);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $focus-color;
+      outline-offset: 2px;
+    }
+
+    /* CSS-only chevron; rotates when open */
+    &::before {
+      content: "";
+      flex: 0 0 auto;
+      width: 0.45em;
+      height: 0.45em;
+      border-inline-end: 2px solid $primary-color;
+      border-block-end: 2px solid $primary-color;
+      transform: rotate(-45deg);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      display: inline;
+      margin: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+
+  &[open] > summary {
+    border-block-end: 1px solid $border-color;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  .collapsible__hint {
+    margin-inline-start: auto;
+    color: $muted-text-color;
+    font-size: $type-size-6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    /* no room for the hint on narrow screens */
+    @include breakpoint(max-width $medium) {
+      display: none;
+    }
+  }
+
+  &[open] .collapsible__hint {
+    visibility: hidden;
+  }
+
+  .collapsible__content {
+    padding: 0 1em 0.5em;
+
+    > :first-child {
+      margin-top: 1em;
+    }
+  }
+}

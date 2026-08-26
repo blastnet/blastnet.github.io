@@ -175,6 +175,27 @@ Once the new dataset is pushed to the repository, the website should automatical
 
 Adding new pages (for example, maybe new FlameAI) or editing the existing ones is simple - all the pages are rendered by markdown files located in `_pages` (except for the homepage, which is in the root folder and called `index.md`). General pages use the `single` layout; the dataset page uses the `datasets` custom layout and the homepage uses the `splash` layout, which has been significantly modified from the Minimal Mistakes file. ~~Yes, I know hardcoding is bad practice; no, I don't care.~~ The layout should be specified in the preamble using the `layout:` keyword. To add a new page or external link to the navigation menu, go to `_data/navigation.yml` and add a new entry under `main`. 
 
+### Table of contents position
+
+Pages using the `single` layout render their table of contents (`toc: true`) in the **left** gutter by default. To put it back in the right gutter for a specific page, set `toc_position: right` in the preamble. Dataset pages (`datapage` layout) always use the right gutter.
+
+### Collapsible sections
+
+Long reference material can be folded away with a plain HTML `<details>` element - no JavaScript or extra dependencies involved. Give it the `collapsible` class for the site styling (chevron, framed box, optional hint text) and use `markdown="1"` so that Kramdown still renders the markdown inside:
+
+```html
+<details class="collapsible" markdown="1">
+<summary><h2 id="my-section">My Section</h2><span class="collapsible__hint">optional hint</span></summary>
+<div class="collapsible__content" markdown="1">
+
+Regular markdown goes here.
+
+</div>
+</details>
+```
+
+The `<h2>` in the `<summary>` keeps the section in the table of contents (an explicit `id` is required, since Kramdown only auto-generates ids for markdown headings). Headings *inside* the collapsed body should be tagged with `{: .no_toc}` so the table of contents does not link into hidden content. See `_pages/contribute.md` for a working example, and `_sass/stylesheets/_collapsible.scss` for the styling.
+
 ## Filters
 
 The datasets summary page contains a list of filters which are generated from the list in `_data/filters.yml`. Filter category keywords from each of the dataset pages should correspond to these. To add more filters or filter groups, modify `_data/filters.yml`.

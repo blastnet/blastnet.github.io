@@ -11,7 +11,10 @@ We also have a [Google Form](https://forms.gle/VYMWvuNjFqPMJjwo6) that provides 
 
 Before that, do check out our standards and formats below.
 
-## Standards for BLASTNet
+<details class="collapsible" markdown="1">
+<summary><h2 id="standards-for-blastnet">Standards for BLASTNet</h2><span class="collapsible__hint">Standards &amp; metadata format</span></summary>
+<div class="collapsible__content" markdown="1">
+
 To ensure that all files available on BLASTNet have consistent file formats, we present some necessary standards for improved access:
 
 1. All simulation datasets must contain [U,&rho;,T,P,Y] to ensure that any additional variables can be easily post-processed. Provide Chemkin or Cantera files if used so that thermodynamic and transport properties can be computed.
@@ -24,11 +27,13 @@ To ensure that all files available on BLASTNet have consistent file formats, we 
 7. Once files are shared with these standards are met, join BLASTNet by **submitting [the form](https://forms.gle/VYMWvuNjFqPMJjwo6) above**. 
 
 
-## Metadata Format
+### Metadata Format
+{: .no_toc}
 
 Each submission on BLASTNet should have global and local metadata contained in an `info.json` file, which provides all the important information required to train an ML model. You can interact with these files [here](https://colab.research.google.com/drive/1_dk1IPQsOK-Dxq9VYSci4lB_LOyVCb5c?usp=sharing).
 
-### Global Metadata
+#### Global Metadata
+{: .no_toc}
 ```py
 metadata['global'] = {
 	"dataset_id":"waitongchung/inert-ch4o2-hit-dns",
@@ -54,7 +59,8 @@ metadata['global'] = {
 	}
 ```
 
-### Local Metadata
+#### Local Metadata
+{: .no_toc}
 
 ```py
 metadata['local'] = [
@@ -75,6 +81,9 @@ metadata['local'] = [
    ]   
 
 ```
+
+</div>
+</details>
 
 ## Authors and Contributors
 
