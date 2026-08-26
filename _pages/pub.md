@@ -18,7 +18,9 @@ Cite this website/datasets [Links: [Zenodo DOI](https://doi.org/10.5281/zenodo.2
   title        = {BLASTNet Multiphysics Simulation Dataset},
   month        = aug,
   year         = 2026,
+  note         = {URL: https://blastnet.github.io/},
   publisher    = {Zenodo},
+  version      = {3.0},
   doi          = {10.5281/zenodo.21348075},
   url          = {https://doi.org/10.5281/zenodo.21348075},
 }
