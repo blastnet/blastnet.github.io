@@ -350,3 +350,42 @@ kaggle datasets download -d blastnet/supercritical-hit-dns-re30 --unzip
 kaggle datasets download -d blastnet/supercritical-hit-dns-re60 --unzip
 kaggle datasets download -d blastnet/supercritical-hit-dns-re90-c1 --unzip
 kaggle datasets download -d blastnet/supercritical-hit-dns-re90-c2 --unzip
+
+# Turbulent Premixed Flame NH3-H2-Air Quenching
+kaggle datasets download -d blastnet/premixedflame-h2-iso-dns --unzip
+kaggle datasets download -d blastnet/premixedflame-h2-ad-dns --unzip
+kaggle datasets download -d blastnet/premixedflame-nh3h2-ad-dns --unzip
+kaggle datasets download -d blastnet/premixedflame-nh3h2-iso-dns --unzip
+
+# Non-Reacting Channel Flow (Re$$_\tau$$ = 1000)
+kaggle datasets download -d blastnet/channelflow-dns-Re1000-seq-p1 --unzip
+kaggle datasets download -d blastnet/channelflow-dns-Re1000-seq-p2 --unzip
+kaggle datasets download -d blastnet/channelflow-dns-Re1000-seq-p3 --unzip
+kaggle datasets download -d blastnet/channelflow-dns-Re1000-rnd-p1 --unzip
+kaggle datasets download -d blastnet/channelflow-dns-Re1000-rnd-p2 --unzip
+
+# Forced HIT (Re$$_\lambda$$ = 433)
+# coarse timestep
+kaggle datasets download -d blastnet/fhitcoarse-dns-Re433-seq-p1 --unzip
+kaggle datasets download -d blastnet/fhitcoarse-dns-Re433-seq-p2 --unzip
+kaggle datasets download -d blastnet/fhitcoarse-dns-Re433-rnd --unzip
+# fine timestep
+kaggle datasets download -d blastnet/fhitfine-dns-Re433-seq-p1 --unzip
+kaggle datasets download -d blastnet/fhitfine-dns-Re433-seq-p2 --unzip
+kaggle datasets download -d blastnet/fhitfine-dns-Re433-rnd --unzip
+
+# Forced MHD
+kaggle datasets download -d blastnet/fmhd-dns-Re186-seq-p1 --unzip
+kaggle datasets download -d blastnet/fmhd-dns-Re186-seq-p2 --unzip
+kaggle datasets download -d blastnet/fmhd-dns-Re186-seq-p3 --unzip
+kaggle datasets download -d blastnet/fmhd-dns-Re186-seq-p4 --unzip
+kaggle datasets download -d blastnet/fmhd-dns-Re186-rnd-p1 --unzip
+kaggle datasets download -d blastnet/fmhd-dns-Re186-rnd-p2 --unzip
+
+# Transition Boundary Layer (TBL)
+kaggle datasets download -d blastnet/transitionbl-dns-seq-p1 --unzip
+kaggle datasets download -d blastnet/transitionbl-dns-seq-p2 --unzip
+kaggle datasets download -d blastnet/transitionbl-dns-seq-p3 --unzip
+kaggle datasets download -d blastnet/transitionbl-dns-rnd-p1 --unzip
+kaggle datasets download -d blastnet/transitionbl-dns-rnd-p2 --unzip
+
