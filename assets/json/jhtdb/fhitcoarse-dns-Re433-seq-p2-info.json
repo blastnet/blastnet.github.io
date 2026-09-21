@@ -1,0 +1,113 @@
+{
+    "global": {
+        "dataset_id": "blastnet/fhitcoarse-dns-Re433-seq-p2",
+        "Nxyz": [
+            1024,
+            1024,
+            1024
+        ],
+        "snapshots": 9,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "P_Pa"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "split": "snapshots",
+        "bc": "periodic cube",
+        "numerics": [
+            {
+                "spatial": "Fourier psuedospectral",
+                "temporal": "2nd-order Adams-Bashforth, with viscous terms solved analytically by an integrating factor.",
+                "dealiasing": [
+                    "spherical truncation",
+                    "random phase shifting"
+                ]
+            }
+        ],
+        "ic": "",
+        "description": "DNS of forced Homogeneous Isotropic Turbulence with Re = 433. This dataset contains sequential snapshots. These snapshots were saved every 10 DNS steps.",
+        "doi": "https://doi.org/10.7281/T1KK98XB",
+        "contributors": "Charles Meneveau"
+    },
+    "local": [
+        {
+            "id": 12,
+            "time_idx_jhtdb": 12,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0012.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0012.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0012.dat",
+            "P_Pa filename": "./data/P_Pa_id0012.dat"
+        },
+        {
+            "id": 13,
+            "time_idx_jhtdb": 13,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0013.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0013.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0013.dat",
+            "P_Pa filename": "./data/P_Pa_id0013.dat"
+        },
+        {
+            "id": 14,
+            "time_idx_jhtdb": 14,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0014.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0014.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0014.dat",
+            "P_Pa filename": "./data/P_Pa_id0014.dat"
+        },
+        {
+            "id": 15,
+            "time_idx_jhtdb": 15,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0015.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0015.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0015.dat",
+            "P_Pa filename": "./data/P_Pa_id0015.dat"
+        },
+        {
+            "id": 16,
+            "time_idx_jhtdb": 16,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0016.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0016.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0016.dat",
+            "P_Pa filename": "./data/P_Pa_id0016.dat"
+        },
+        {
+            "id": 17,
+            "time_idx_jhtdb": 17,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0017.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0017.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0017.dat",
+            "P_Pa filename": "./data/P_Pa_id0017.dat"
+        },
+        {
+            "id": 18,
+            "time_idx_jhtdb": 18,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0018.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0018.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0018.dat",
+            "P_Pa filename": "./data/P_Pa_id0018.dat"
+        },
+        {
+            "id": 19,
+            "time_idx_jhtdb": 19,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0019.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0019.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0019.dat",
+            "P_Pa filename": "./data/P_Pa_id0019.dat"
+        },
+        {
+            "id": 20,
+            "time_idx_jhtdb": 20,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0020.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0020.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0020.dat",
+            "P_Pa filename": "./data/P_Pa_id0020.dat"
+        }
+    ]
+}

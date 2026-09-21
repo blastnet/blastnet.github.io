@@ -1,0 +1,72 @@
+{
+    "global": {
+        "dataset_id": "blastnet/transitionbl-dns-seq-p3",
+        "Nxyz": [
+            3320,
+            224,
+            2048
+        ],
+        "snapshots": 4,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "P_Pa"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "split": "snapshots",
+        "bc": "At the wall, a no-slip boundary condition is applied, while periodic boundary conditions are applied in                             the spanwise direction. The boundary condition at the top of the computational domain used continuity and                             an active control to keep the zero pressure gradient in both laminar and turbulent regions. An advection                             boundary condition is applied at the downstream end of the top region;. The outflow boundary condition on the                             bottom surface is a mirror copy of the same grid line on the top surface",
+        "numerics": [
+            {
+                "spatial": "A fractional-step algorithm",
+                "temporal": "The viscous terms were integrated in time implicitly using the Crank\u2013Nicolson and the advection terms were treated explicitly using the Adams\u2013Bashforth scheme.",
+                "dealiasing": [
+                    "spherical truncation"
+                ]
+            }
+        ],
+        "ic": "",
+        "description": "DNS of transitional boundary layer of incompressible flow over a flat plate with an elliptical leading edge. This dataset contains sequential snapshots.",
+        "doi": "https://doi.org/10.1007/s10494-013-9502-8",
+        "contributors": "Jin Lee, Tamer Zaki"
+    },
+    "local": [
+        {
+            "id": 17,
+            "time_idx_jhtdb": 17,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0017.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0017.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0017.dat",
+            "P_Pa filename": "./data/P_Pa_id0017.dat"
+        },
+        {
+            "id": 18,
+            "time_idx_jhtdb": 18,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0018.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0018.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0018.dat",
+            "P_Pa filename": "./data/P_Pa_id0018.dat"
+        },
+        {
+            "id": 19,
+            "time_idx_jhtdb": 19,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0019.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0019.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0019.dat",
+            "P_Pa filename": "./data/P_Pa_id0019.dat"
+        },
+        {
+            "id": 20,
+            "time_idx_jhtdb": 20,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0020.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0020.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0020.dat",
+            "P_Pa filename": "./data/P_Pa_id0020.dat"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "global": {
+        "dataset_id": "blastnet/channelflow-dns-Re1000-seq-p3",
+        "Nxyz": [
+            2048,
+            512,
+            1536
+        ],
+        "snapshots": 6,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "P_Pa"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "split": "snapshots",
+        "bc": "periodic boundary conditions in the longitudinal and transverse directions, and no-slip conditions at the top and bottom walls.",
+        "numerics": [
+            {
+                "spatial": "Fourier-Galerkin pseudo-spectral ",
+                "temporal": "third-order Runge-Kutta",
+                "dealiasing": [
+                    "spherical truncation"
+                ]
+            }
+        ],
+        "ic": "the flow is driven using a constant volume flux control (imposing a bulk channel mean velocity of U = 1) until stationary conditions are reached.",
+        "description": "DNS of turbulent channel flow with Re = 1000. This dataset contains sequential snapshots.",
+        "doi": "https://doi.org/10.1080/14685248.2015.1088656",
+        "contributors": "Charles Meneveau"
+    },
+    "local": [
+        {
+            "id": 15,
+            "time_idx_jhtdb": 15,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0015.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0015.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0015.dat",
+            "P_Pa filename": "./data/P_Pa_id0015.dat"
+        },
+        {
+            "id": 16,
+            "time_idx_jhtdb": 16,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0016.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0016.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0016.dat",
+            "P_Pa filename": "./data/P_Pa_id0016.dat"
+        },
+        {
+            "id": 17,
+            "time_idx_jhtdb": 17,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0017.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0017.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0017.dat",
+            "P_Pa filename": "./data/P_Pa_id0017.dat"
+        },
+        {
+            "id": 18,
+            "time_idx_jhtdb": 18,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0018.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0018.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0018.dat",
+            "P_Pa filename": "./data/P_Pa_id0018.dat"
+        },
+        {
+            "id": 19,
+            "time_idx_jhtdb": 19,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0019.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0019.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0019.dat",
+            "P_Pa filename": "./data/P_Pa_id0019.dat"
+        },
+        {
+            "id": 20,
+            "time_idx_jhtdb": 20,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0020.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0020.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0020.dat",
+            "P_Pa filename": "./data/P_Pa_id0020.dat"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "global": {
+        "dataset_id": "blastnet/channelflow-dns-Re1000-rnd-p2",
+        "Nxyz": [
+            2048,
+            512,
+            1536
+        ],
+        "snapshots": 3,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "P_Pa"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "split": "snapshots",
+        "bc": "periodic boundary conditions in the longitudinal and transverse directions, and no-slip conditions at the top and bottom walls.",
+        "numerics": [
+            {
+                "spatial": "Fourier-Galerkin pseudo-spectral ",
+                "temporal": "third-order Runge-Kutta",
+                "dealiasing": [
+                    "spherical truncation"
+                ]
+            }
+        ],
+        "ic": "the flow is driven using a constant volume flux control (imposing a bulk channel mean velocity of U = 1) until stationary conditions are reached.",
+        "description": "DNS of turbulent channel flow with Re = 1000. This dataset contains randomly sampled snapshots.",
+        "doi": "https://doi.org/10.1080/14685248.2015.1088656",
+        "contributors": "Charles Meneveau"
+    },
+    "local": [
+        {
+            "id": 8,
+            "time_idx_jhtdb": 615,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0008.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0008.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0008.dat",
+            "P_Pa filename": "./data/P_Pa_id0008.dat"
+        },
+        {
+            "id": 9,
+            "time_idx_jhtdb": 701,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0009.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0009.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0009.dat",
+            "P_Pa filename": "./data/P_Pa_id0009.dat"
+        },
+        {
+            "id": 10,
+            "time_idx_jhtdb": 861,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0010.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0010.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0010.dat",
+            "P_Pa filename": "./data/P_Pa_id0010.dat"
+        }
+    ]
+}

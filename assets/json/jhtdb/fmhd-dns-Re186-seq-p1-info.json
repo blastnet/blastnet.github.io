@@ -1,0 +1,111 @@
+{
+    "global": {
+        "dataset_id": "blastnet/fmhd-dns-Re186-seq-p1",
+        "Nxyz": [
+            1024,
+            1024,
+            1024
+        ],
+        "snapshots": 6,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "P_Pa",
+            "AX_m2s-1",
+            "AY_m2s-1",
+            "AZ_m2s-1"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "split": "snapshots",
+        "bc": "periodic cube",
+        "numerics": [
+            {
+                "spatial": "Fourier psuedospectral",
+                "temporal": "2nd-order Adams-Bashforth, with viscous and resistive terms solved analytically by an integrating factor.",
+                "dealiasing": [
+                    "spherical truncation",
+                    "random phase shifting"
+                ],
+                "forcing": "Taylor-Green flow"
+            }
+        ],
+        "ic": "",
+        "description": "DNS of Forced homogeneous isotropic magnetohydrodynamic (MHD) turbulence from solving the incompressible                                         MHD equations for the velocity field, pressure and magnetic vector potential. This dataset contains sequential snapshots.",
+        "doi": "https://doi.org/10.1038/nature12128",
+        "contributors": "Charles Meneveau"
+    },
+    "local": [
+        {
+            "id": 1,
+            "time_idx_jhtdb": 1,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0001.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0001.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0001.dat",
+            "P_Pa filename": "./data/P_Pa_id0001.dat",
+            "AX_m2s-1 filename": "./data/AX_m2s-1_id0001.dat",
+            "AY_m2s-1 filename": "./data/AY_m2s-1_id0001.dat",
+            "AZ_m2s-1 filename": "./data/AZ_m2s-1_id0001.dat"
+        },
+        {
+            "id": 2,
+            "time_idx_jhtdb": 2,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0002.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0002.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0002.dat",
+            "P_Pa filename": "./data/P_Pa_id0002.dat",
+            "AX_m2s-1 filename": "./data/AX_m2s-1_id0002.dat",
+            "AY_m2s-1 filename": "./data/AY_m2s-1_id0002.dat",
+            "AZ_m2s-1 filename": "./data/AZ_m2s-1_id0002.dat"
+        },
+        {
+            "id": 3,
+            "time_idx_jhtdb": 3,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0003.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0003.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0003.dat",
+            "P_Pa filename": "./data/P_Pa_id0003.dat",
+            "AX_m2s-1 filename": "./data/AX_m2s-1_id0003.dat",
+            "AY_m2s-1 filename": "./data/AY_m2s-1_id0003.dat",
+            "AZ_m2s-1 filename": "./data/AZ_m2s-1_id0003.dat"
+        },
+        {
+            "id": 4,
+            "time_idx_jhtdb": 4,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0004.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0004.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0004.dat",
+            "P_Pa filename": "./data/P_Pa_id0004.dat",
+            "AX_m2s-1 filename": "./data/AX_m2s-1_id0004.dat",
+            "AY_m2s-1 filename": "./data/AY_m2s-1_id0004.dat",
+            "AZ_m2s-1 filename": "./data/AZ_m2s-1_id0004.dat"
+        },
+        {
+            "id": 5,
+            "time_idx_jhtdb": 5,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0005.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0005.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0005.dat",
+            "P_Pa filename": "./data/P_Pa_id0005.dat",
+            "AX_m2s-1 filename": "./data/AX_m2s-1_id0005.dat",
+            "AY_m2s-1 filename": "./data/AY_m2s-1_id0005.dat",
+            "AZ_m2s-1 filename": "./data/AZ_m2s-1_id0005.dat"
+        },
+        {
+            "id": 6,
+            "time_idx_jhtdb": 6,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0006.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0006.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0006.dat",
+            "P_Pa filename": "./data/P_Pa_id0006.dat",
+            "AX_m2s-1 filename": "./data/AX_m2s-1_id0006.dat",
+            "AY_m2s-1 filename": "./data/AY_m2s-1_id0006.dat",
+            "AZ_m2s-1 filename": "./data/AZ_m2s-1_id0006.dat"
+        }
+    ]
+}

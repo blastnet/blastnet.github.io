@@ -1,0 +1,67 @@
+{
+    "global": {
+        "dataset_id": "blastnet/fmhd-dns-Re186-seq-p4",
+        "Nxyz": [
+            1024,
+            1024,
+            1024
+        ],
+        "snapshots": 2,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "P_Pa",
+            "AX_m2s-1",
+            "AY_m2s-1",
+            "AZ_m2s-1"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "split": "snapshots",
+        "bc": "periodic cube",
+        "numerics": [
+            {
+                "spatial": "Fourier psuedospectral",
+                "temporal": "2nd-order Adams-Bashforth, with viscous and resistive terms solved analytically by an integrating factor.",
+                "dealiasing": [
+                    "spherical truncation",
+                    "random phase shifting"
+                ],
+                "forcing": "Taylor-Green flow"
+            }
+        ],
+        "ic": "",
+        "description": "DNS of Forced homogeneous isotropic magnetohydrodynamic (MHD) turbulence from solving the incompressible                                         MHD equations for the velocity field, pressure and magnetic vector potential. This dataset contains sequential snapshots.",
+        "doi": "https://doi.org/10.1038/nature12128",
+        "contributors": "Charles Meneveau"
+    },
+    "local": [
+        {
+            "id": 19,
+            "time_idx_jhtdb": 19,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0019.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0019.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0019.dat",
+            "P_Pa filename": "./data/P_Pa_id0019.dat",
+            "AX_m2s-1 filename": "./data/AX_m2s-1_id0019.dat",
+            "AY_m2s-1 filename": "./data/AY_m2s-1_id0019.dat",
+            "AZ_m2s-1 filename": "./data/AZ_m2s-1_id0019.dat"
+        },
+        {
+            "id": 20,
+            "time_idx_jhtdb": 20,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0020.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0020.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0020.dat",
+            "P_Pa filename": "./data/P_Pa_id0020.dat",
+            "AX_m2s-1 filename": "./data/AX_m2s-1_id0020.dat",
+            "AY_m2s-1 filename": "./data/AY_m2s-1_id0020.dat",
+            "AZ_m2s-1 filename": "./data/AZ_m2s-1_id0020.dat"
+        }
+    ]
+}

@@ -1,0 +1,129 @@
+{
+    "global": {
+        "dataset_id": "blastnet/fhitfine-dns-Re433-seq-p1",
+        "Nxyz": [
+            1024,
+            1024,
+            1024
+        ],
+        "snapshots": 11,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "P_Pa"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "split": "snapshots",
+        "bc": "periodic cube",
+        "numerics": [
+            {
+                "spatial": "Fourier psuedospectral",
+                "temporal": "2nd-order Adams-Bashforth, with viscous terms solved analytically by an integrating factor.",
+                "dealiasing": [
+                    "spherical truncation",
+                    "random phase shifting"
+                ]
+            }
+        ],
+        "ic": "",
+        "description": "DNS of forced Homogeneous Isotropic Turbulence with Re = 433. This dataset contains sequential snapshots. These snapshots were saved every single DNS step.",
+        "doi": "https://doi.org/10.7281/T1KK98XB",
+        "contributors": "Charles Meneveau"
+    },
+    "local": [
+        {
+            "id": 1,
+            "time_idx_jhtdb": 1,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0001.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0001.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0001.dat",
+            "P_Pa filename": "./data/P_Pa_id0001.dat"
+        },
+        {
+            "id": 2,
+            "time_idx_jhtdb": 2,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0002.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0002.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0002.dat",
+            "P_Pa filename": "./data/P_Pa_id0002.dat"
+        },
+        {
+            "id": 3,
+            "time_idx_jhtdb": 3,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0003.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0003.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0003.dat",
+            "P_Pa filename": "./data/P_Pa_id0003.dat"
+        },
+        {
+            "id": 4,
+            "time_idx_jhtdb": 4,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0004.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0004.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0004.dat",
+            "P_Pa filename": "./data/P_Pa_id0004.dat"
+        },
+        {
+            "id": 5,
+            "time_idx_jhtdb": 5,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0005.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0005.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0005.dat",
+            "P_Pa filename": "./data/P_Pa_id0005.dat"
+        },
+        {
+            "id": 6,
+            "time_idx_jhtdb": 6,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0006.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0006.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0006.dat",
+            "P_Pa filename": "./data/P_Pa_id0006.dat"
+        },
+        {
+            "id": 7,
+            "time_idx_jhtdb": 7,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0007.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0007.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0007.dat",
+            "P_Pa filename": "./data/P_Pa_id0007.dat"
+        },
+        {
+            "id": 8,
+            "time_idx_jhtdb": 8,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0008.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0008.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0008.dat",
+            "P_Pa filename": "./data/P_Pa_id0008.dat"
+        },
+        {
+            "id": 9,
+            "time_idx_jhtdb": 9,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0009.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0009.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0009.dat",
+            "P_Pa filename": "./data/P_Pa_id0009.dat"
+        },
+        {
+            "id": 10,
+            "time_idx_jhtdb": 10,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0010.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0010.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0010.dat",
+            "P_Pa filename": "./data/P_Pa_id0010.dat"
+        },
+        {
+            "id": 11,
+            "time_idx_jhtdb": 11,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0011.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0011.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0011.dat",
+            "P_Pa filename": "./data/P_Pa_id0011.dat"
+        }
+    ]
+}

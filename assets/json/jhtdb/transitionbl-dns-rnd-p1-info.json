@@ -1,0 +1,104 @@
+{
+    "global": {
+        "dataset_id": "blastnet/transitionbl-dns-rnd-p1",
+        "Nxyz": [
+            3320,
+            224,
+            2048
+        ],
+        "snapshots": 8,
+        "variables": [
+            "UX_ms-1",
+            "UY_ms-1",
+            "UZ_ms-1",
+            "P_Pa"
+        ],
+        "compression": "None",
+        "grid": {
+            "x": "./grid/X_m.dat",
+            "y": "./grid/Y_m.dat",
+            "z": "./grid/Z_m.dat"
+        },
+        "split": "snapshots",
+        "bc": "At the wall, a no-slip boundary condition is applied, while periodic boundary conditions are applied in                             the spanwise direction. The boundary condition at the top of the computational domain used continuity and                             an active control to keep the zero pressure gradient in both laminar and turbulent regions. An advection                             boundary condition is applied at the downstream end of the top region;. The outflow boundary condition on the                             bottom surface is a mirror copy of the same grid line on the top surface",
+        "numerics": [
+            {
+                "spatial": "A fractional-step algorithm",
+                "temporal": "The viscous terms were integrated in time implicitly using the Crank\u2013Nicolson and the advection terms were treated explicitly using the Adams\u2013Bashforth scheme.",
+                "dealiasing": [
+                    "spherical truncation"
+                ]
+            }
+        ],
+        "ic": "",
+        "description": "DNS of transitional boundary layer of incompressible flow over a flat plate with an elliptical leading edge. This dataset contains randomly sampled snapshots.",
+        "doi": "https://doi.org/10.1007/s10494-013-9502-8",
+        "contributors": "Jin Lee, Tamer Zaki"
+    },
+    "local": [
+        {
+            "id": 1,
+            "time_idx_jhtdb": 131,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0001.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0001.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0001.dat",
+            "P_Pa filename": "./data/P_Pa_id0001.dat"
+        },
+        {
+            "id": 2,
+            "time_idx_jhtdb": 467,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0002.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0002.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0002.dat",
+            "P_Pa filename": "./data/P_Pa_id0002.dat"
+        },
+        {
+            "id": 3,
+            "time_idx_jhtdb": 861,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0003.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0003.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0003.dat",
+            "P_Pa filename": "./data/P_Pa_id0003.dat"
+        },
+        {
+            "id": 4,
+            "time_idx_jhtdb": 1686,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0004.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0004.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0004.dat",
+            "P_Pa filename": "./data/P_Pa_id0004.dat"
+        },
+        {
+            "id": 5,
+            "time_idx_jhtdb": 2920,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0005.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0005.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0005.dat",
+            "P_Pa filename": "./data/P_Pa_id0005.dat"
+        },
+        {
+            "id": 6,
+            "time_idx_jhtdb": 3093,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0006.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0006.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0006.dat",
+            "P_Pa filename": "./data/P_Pa_id0006.dat"
+        },
+        {
+            "id": 7,
+            "time_idx_jhtdb": 3172,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0007.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0007.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0007.dat",
+            "P_Pa filename": "./data/P_Pa_id0007.dat"
+        },
+        {
+            "id": 8,
+            "time_idx_jhtdb": 3445,
+            "UX_ms-1 filename": "./data/UX_ms-1_id0008.dat",
+            "UY_ms-1 filename": "./data/UY_ms-1_id0008.dat",
+            "UZ_ms-1 filename": "./data/UZ_ms-1_id0008.dat",
+            "P_Pa filename": "./data/P_Pa_id0008.dat"
+        }
+    ]
+}
